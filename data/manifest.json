@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T11:31:52-06:00",
+ "updated": "2026-10-20T11:31:54-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -733,12 +733,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "v2 (mañana)",
+     "href": "fut/2026-10-20/stu-atm/v/v2-manana/index.html"
+    }
+   ],
    "published": "2026-10-20T01:07:11-06:00",
-   "pick": "🟢 Sólido: VfB Stuttgart +2.5 (hándicap) (83%)",
+   "pick": "🟢 Sólido: VfB Stuttgart +1.5 (hándicap) (73%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T01:07:11-06:00"
+   "updated": "2026-10-20T11:31:54-06:00",
+   "note": "Modelo v3"
   },
   {
    "id": "fut/2026-10-20/gdl-nec",
@@ -1273,7 +1279,7 @@
   "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
+  "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html",
   "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
@@ -1283,7 +1289,8 @@
   "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html"
+  "futbol_analisis/2026-10-20/v3/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
