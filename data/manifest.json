@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T14:38:58-06:00",
+ "updated": "2026-10-20T14:39:00-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -812,6 +812,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 (19:19)",
+     "href": "fut/2026-10-20/asl-qro/v/v4-19-19/index.html"
+    },
+    {
      "label": "v4 (19:12)",
      "href": "fut/2026-10-20/asl-qro/v/v4-19-12/index.html"
     },
@@ -825,11 +829,11 @@
     }
    ],
    "published": "2026-10-20T01:07:15-06:00",
-   "pick": "🟢 Sólido: Menos de 3.5 goles (76%)",
+   "pick": "🟢 Sólido: Querétaro +1.5 (hándicap) (80%)",
    "kickoff": "19:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T13:18:55-06:00",
-   "note": "Formato v4 · modelo v3 · córners 1T corregidos (encogimiento + NB)"
+   "updated": "2026-10-20T14:39:00-06:00",
+   "note": "Formato v4 · modelo v3 · Lectura de línea (mezcla con el casino)"
   },
   {
    "id": "fut/2026-10-20/jua-atl",
