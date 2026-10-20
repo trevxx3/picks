@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:06:49-06:00",
+ "updated": "2026-10-20T01:06:51-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -485,6 +485,26 @@
    "updated": "2026-10-20T01:06:49-06:00"
   },
   {
+   "id": "fut/2026-10-20/sab-dor",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "sab-dor",
+   "dir": "fut/2026-10-20/sab-dor",
+   "kind": "game",
+   "title": "Sabah FK – Dortmund",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/sab-dor/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:06:51-06:00",
+   "pick": "🟢 Sólido: Córners Sabah FK +2.5 (hándicap) (86%)",
+   "kickoff": "10:45",
+   "league": "Champions League · J3",
+   "updated": "2026-10-20T01:06:51-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -926,7 +946,8 @@
   "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/index.html",
   "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/index.html",
   "futbol_analisis/2026-10-20/partidos/TAA-QAD/TAA-QAD.html": "fut/2026-10-20/taa-qad/index.html",
-  "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/index.html"
+  "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/index.html",
+  "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
