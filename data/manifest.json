@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T12:03:18-06:00",
+ "updated": "2026-10-20T12:03:20-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -693,11 +693,11 @@
     }
    ],
    "published": "2026-10-20T01:07:09-06:00",
-   "pick": "🟢 Sólido: Paris Saint-Germain +2.5 (hándicap) (87%)",
+   "pick": "🟢 Sólido: Paris Saint-Germain +1.5 (hándicap) (74%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T11:31:52-06:00",
-   "note": "Modelo v3"
+   "updated": "2026-10-20T12:03:20-06:00",
+   "note": "Modelo v3 · XI confirmado"
   },
   {
    "id": "fut/2026-10-20/rom-slo",
