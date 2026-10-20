@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T12:03:29-06:00",
+ "updated": "2026-10-20T13:11:51-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -766,16 +766,20 @@
    "extras": [],
    "older": [
     {
+     "label": "v3 (13:00)",
+     "href": "fut/2026-10-20/gdl-nec/v/v3-13-00/index.html"
+    },
+    {
      "label": "v2 (mañana)",
      "href": "fut/2026-10-20/gdl-nec/v/v2-manana/index.html"
     }
    ],
    "published": "2026-10-20T01:07:13-06:00",
-   "pick": "🟢 Sólido: Guadalajara o empate (1X) (85%)",
+   "pick": "🟢 Sólido: Necaxa menos de 1.5 (74%)",
    "kickoff": "18:07",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T11:35:21-06:00",
-   "note": "Modelo v3"
+   "updated": "2026-10-20T13:11:51-06:00",
+   "note": "Formato v4 · modelo v3 · líneas refrescadas"
   },
   {
    "id": "fut/2026-10-20/asl-qro",
