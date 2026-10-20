@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:07:15-06:00",
+ "updated": "2026-10-20T01:07:17-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -745,6 +745,26 @@
    "updated": "2026-10-20T01:07:15-06:00"
   },
   {
+   "id": "fut/2026-10-20/jua-atl",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "jua-atl",
+   "dir": "fut/2026-10-20/jua-atl",
+   "kind": "game",
+   "title": "FC Juárez – Atlante",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/jua-atl/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:07:17-06:00",
+   "pick": "🟢 Sólido: FC Juárez +2.5 (hándicap) (90%)",
+   "kickoff": "19:00",
+   "league": "Liga MX · Apertura",
+   "updated": "2026-10-20T01:07:17-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -1199,7 +1219,8 @@
   "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
   "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
   "futbol_analisis/2026-10-20/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html",
-  "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html"
+  "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
+  "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
