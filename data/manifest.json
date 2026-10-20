@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:06:53-06:00",
+ "updated": "2026-10-20T01:06:55-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -525,6 +525,26 @@
    "updated": "2026-10-20T01:06:53-06:00"
   },
   {
+   "id": "fut/2026-10-20/nas-neo",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "nas-neo",
+   "dir": "fut/2026-10-20/nas-neo",
+   "kind": "game",
+   "title": "Al Nassr – Neom SC",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/nas-neo/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:06:55-06:00",
+   "pick": "🟢 Sólido: Al Nassr o empate (1X) (77%)",
+   "kickoff": "12:00",
+   "league": "Saudi Pro League",
+   "updated": "2026-10-20T01:06:55-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -968,7 +988,8 @@
   "futbol_analisis/2026-10-20/partidos/TAA-QAD/TAA-QAD.html": "fut/2026-10-20/taa-qad/index.html",
   "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/index.html",
   "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/index.html",
-  "futbol_analisis/2026-10-20/partidos/ETT-ITT/ETT-ITT.html": "fut/2026-10-20/ett-itt/index.html"
+  "futbol_analisis/2026-10-20/partidos/ETT-ITT/ETT-ITT.html": "fut/2026-10-20/ett-itt/index.html",
+  "futbol_analisis/2026-10-20/partidos/NAS-NEO/NAS-NEO.html": "fut/2026-10-20/nas-neo/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
