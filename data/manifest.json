@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T12:03:20-06:00",
+ "updated": "2026-10-20T12:03:22-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -745,11 +745,11 @@
     }
    ],
    "published": "2026-10-20T01:07:11-06:00",
-   "pick": "🟢 Sólido: VfB Stuttgart +1.5 (hándicap) (73%)",
+   "pick": "🟢 Sólido: VfB Stuttgart +1.5 (hándicap) (75%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T11:31:54-06:00",
-   "note": "Modelo v3"
+   "updated": "2026-10-20T12:03:22-06:00",
+   "note": "Modelo v3 · XI confirmado"
   },
   {
    "id": "fut/2026-10-20/gdl-nec",
