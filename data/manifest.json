@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:06:34-06:00",
+ "updated": "2026-10-20T01:06:44-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -415,9 +415,14 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "publicada 2026-10-20 01:06",
+     "href": "fut/2026-10-20/cartelera/v/publicada-2026-10-20-01-06/index.html"
+    }
+   ],
    "published": "2026-10-20T01:06:34-06:00",
-   "updated": "2026-10-20T01:06:34-06:00"
+   "updated": "2026-10-20T01:06:44-06:00"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
