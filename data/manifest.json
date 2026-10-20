@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:06:59-06:00",
+ "updated": "2026-10-20T01:07:01-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -565,6 +565,26 @@
    "updated": "2026-10-20T01:06:57-06:00"
   },
   {
+   "id": "fut/2026-10-20/por-psv",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "por-psv",
+   "dir": "fut/2026-10-20/por-psv",
+   "kind": "game",
+   "title": "FC Porto – PSV Eindhoven",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/por-psv/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:07:01-06:00",
+   "pick": "🟢 Sólido: FC Porto o empate (1X) (83%)",
+   "kickoff": "13:00",
+   "league": "Champions League · J3",
+   "updated": "2026-10-20T01:07:01-06:00"
+  },
+  {
    "id": "fut/2026-10-20/rom-slo",
    "section": "fut",
    "date": "2026-10-20",
@@ -1031,7 +1051,8 @@
   "futbol_analisis/2026-10-20/partidos/ETT-ITT/ETT-ITT.html": "fut/2026-10-20/ett-itt/index.html",
   "futbol_analisis/2026-10-20/partidos/NAS-NEO/NAS-NEO.html": "fut/2026-10-20/nas-neo/index.html",
   "futbol_analisis/2026-10-20/partidos/WOL-POR/WOL-POR.html": "fut/2026-10-20/wol-por/index.html",
-  "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html"
+  "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
+  "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
