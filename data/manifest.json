@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T13:18:56-06:00",
+ "updated": "2026-10-20T13:18:58-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -838,6 +838,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 (19:12)",
+     "href": "fut/2026-10-20/jua-atl/v/v4-19-12/index.html"
+    },
+    {
      "label": "v3 (13:00)",
      "href": "fut/2026-10-20/jua-atl/v/v3-13-00/index.html"
     },
@@ -847,11 +851,11 @@
     }
    ],
    "published": "2026-10-20T01:07:17-06:00",
-   "pick": "🟢 Sólido: 1T córners más de 3.5 (79%)",
+   "pick": "🟢 Sólido: Córners más de 8.5 (71%)",
    "kickoff": "19:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T13:11:56-06:00",
-   "note": "Formato v4 · modelo v3 · líneas refrescadas"
+   "updated": "2026-10-20T13:18:58-06:00",
+   "note": "Formato v4 · modelo v3 · córners 1T corregidos (encogimiento + NB)"
   },
   {
    "id": "fut/2026-10-20/tig-leo",
