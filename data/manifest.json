@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T17:19:44-06:00",
+ "updated": "2026-10-20T17:19:47-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -417,6 +417,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 lectura de línea (sin XI)",
+     "href": "fut/2026-10-20/cartelera/v/v4-lectura-de-linea-sin-xi/index.html"
+    },
+    {
      "label": "v4 (19:19)",
      "href": "fut/2026-10-20/cartelera/v/v4-19-19/index.html"
     },
@@ -438,7 +442,7 @@
     }
    ],
    "published": "2026-10-20T01:06:34-06:00",
-   "updated": "2026-10-20T14:39:06-06:00",
+   "updated": "2026-10-20T17:19:46-06:00",
    "note": "Formato v4 (Liga MX) · vista previa de mercados"
   },
   {
