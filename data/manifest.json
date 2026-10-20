@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T11:31:41-06:00",
+ "updated": "2026-10-20T11:31:43-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -637,12 +637,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "v2 (mañana)",
+     "href": "fut/2026-10-20/por-psv/v/v2-manana/index.html"
+    }
+   ],
    "published": "2026-10-20T01:07:01-06:00",
-   "pick": "🟢 Sólido: FC Porto o empate (1X) (83%)",
+   "pick": "🟢 Sólido: PSV Eindhoven +2.5 (hándicap) (81%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T01:07:01-06:00"
+   "updated": "2026-10-20T11:31:43-06:00",
+   "note": "Modelo v3"
   },
   {
    "id": "fut/2026-10-20/psg-bar",
@@ -1238,7 +1244,7 @@
   "futbol_analisis/2026-10-20/partidos/NAS-NEO/NAS-NEO.html": "fut/2026-10-20/nas-neo/index.html",
   "futbol_analisis/2026-10-20/partidos/WOL-POR/WOL-POR.html": "fut/2026-10-20/wol-por/index.html",
   "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html",
+  "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
   "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
   "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
@@ -1248,7 +1254,8 @@
   "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
   "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html"
+  "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
