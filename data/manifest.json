@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T11:31:45-06:00",
+ "updated": "2026-10-20T11:31:47-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -603,12 +603,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "v2 (mañana)",
+     "href": "fut/2026-10-20/mci-aek/v/v2-manana/index.html"
+    }
+   ],
    "published": "2026-10-20T01:07:05-06:00",
-   "pick": "🟢 Sólido: No hay empate (12) (88%)",
+   "pick": "🟢 Sólido: No hay empate (12) (85%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T01:07:05-06:00"
+   "updated": "2026-10-20T11:31:47-06:00",
+   "note": "Modelo v3"
   },
   {
    "id": "fut/2026-10-20/nap-bod",
@@ -1252,7 +1258,7 @@
   "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
+  "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
   "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
   "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
@@ -1262,7 +1268,8 @@
   "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html"
+  "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
