@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T13:11:56-06:00",
+ "updated": "2026-10-20T13:11:58-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -856,16 +856,20 @@
    "extras": [],
    "older": [
     {
+     "label": "v3 (13:00)",
+     "href": "fut/2026-10-20/tig-leo/v/v3-13-00/index.html"
+    },
+    {
      "label": "v2 (mañana)",
      "href": "fut/2026-10-20/tig-leo/v/v2-manana/index.html"
     }
    ],
    "published": "2026-10-20T01:07:19-06:00",
-   "pick": "🟢 Sólido: León +2.5 (hándicap) (90%)",
-   "kickoff": "21:00",
+   "pick": "🟢 Sólido: 1T córners Tigres UANL más de 1.5 (86%)",
+   "kickoff": "21:10",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T11:35:28-06:00",
-   "note": "Modelo v3"
+   "updated": "2026-10-20T13:11:58-06:00",
+   "note": "Formato v4 · modelo v3 · líneas refrescadas"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
