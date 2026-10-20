@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T13:12:03-06:00",
+ "updated": "2026-10-20T13:18:53-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -770,6 +770,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 (19:12)",
+     "href": "fut/2026-10-20/gdl-nec/v/v4-19-12/index.html"
+    },
+    {
      "label": "v3 (13:00)",
      "href": "fut/2026-10-20/gdl-nec/v/v3-13-00/index.html"
     },
@@ -779,11 +783,11 @@
     }
    ],
    "published": "2026-10-20T01:07:13-06:00",
-   "pick": "🟢 Sólido: Necaxa menos de 1.5 (74%)",
+   "pick": "🟢 Sólido: Necaxa menos de 1.5 (73%)",
    "kickoff": "18:07",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T13:11:51-06:00",
-   "note": "Formato v4 · modelo v3 · líneas refrescadas"
+   "updated": "2026-10-20T13:18:53-06:00",
+   "note": "Formato v4 · modelo v3 · córners 1T corregidos (encogimiento + NB)"
   },
   {
    "id": "fut/2026-10-20/asl-qro",
