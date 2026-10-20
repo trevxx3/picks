@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T11:32:01-06:00",
+ "updated": "2026-10-20T11:35:22-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -759,12 +759,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "v2 (mañana)",
+     "href": "fut/2026-10-20/gdl-nec/v/v2-manana/index.html"
+    }
+   ],
    "published": "2026-10-20T01:07:13-06:00",
-   "pick": "🟢 Sólido: Necaxa +2.5 (hándicap) (83%)",
+   "pick": "🟢 Sólido: Guadalajara o empate (1X) (85%)",
    "kickoff": "18:07",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T01:07:13-06:00"
+   "updated": "2026-10-20T11:35:21-06:00",
+   "note": "Modelo v3"
   },
   {
    "id": "fut/2026-10-20/asl-qro",
@@ -1280,7 +1286,7 @@
   "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html",
+  "futbol_analisis/2026-10-20/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
   "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
@@ -1290,7 +1296,8 @@
   "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html"
+  "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
