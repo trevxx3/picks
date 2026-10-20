@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:06:44-06:00",
+ "updated": "2026-10-20T01:06:46-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -423,6 +423,26 @@
    ],
    "published": "2026-10-20T01:06:34-06:00",
    "updated": "2026-10-20T01:06:44-06:00"
+  },
+  {
+   "id": "fut/2026-10-20/dir-riy",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "dir-riy",
+   "dir": "fut/2026-10-20/dir-riy",
+   "kind": "game",
+   "title": "Al Diriyah – Al Riyadh",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/dir-riy/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:06:46-06:00",
+   "pick": "🟢 Sólido: Al Riyadh menos de 2.5 goles (92%)",
+   "kickoff": "09:00",
+   "league": "Saudi Pro League",
+   "updated": "2026-10-20T01:06:46-06:00"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
@@ -863,7 +883,8 @@
   "futbol_analisis/2026-10-19/v2/partidos/TRA-BJK/TRA-BJK.pdf": "fut/2026-10-19/tra-bjk/tra-bjk.pdf",
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.html": "fut/2026-10-19/vib-mid/index.html",
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.pdf": "fut/2026-10-19/vib-mid/vib-mid.pdf",
-  "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/index.html"
+  "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/index.html",
+  "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
