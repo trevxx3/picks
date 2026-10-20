@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:07:09-06:00",
+ "updated": "2026-10-20T01:07:11-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -685,6 +685,26 @@
    "updated": "2026-10-20T01:06:59-06:00"
   },
   {
+   "id": "fut/2026-10-20/stu-atm",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "stu-atm",
+   "dir": "fut/2026-10-20/stu-atm",
+   "kind": "game",
+   "title": "VfB Stuttgart – Atlético Madrid",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/stu-atm/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:07:11-06:00",
+   "pick": "🟢 Sólido: VfB Stuttgart +2.5 (hándicap) (83%)",
+   "kickoff": "13:00",
+   "league": "Champions League · J3",
+   "updated": "2026-10-20T01:07:11-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -1136,7 +1156,8 @@
   "futbol_analisis/2026-10-20/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
   "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
   "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
-  "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html"
+  "futbol_analisis/2026-10-20/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
+  "futbol_analisis/2026-10-20/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
