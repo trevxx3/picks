@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T11:35:26-06:00",
+ "updated": "2026-10-20T11:35:28-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -837,12 +837,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "v2 (mañana)",
+     "href": "fut/2026-10-20/tig-leo/v/v2-manana/index.html"
+    }
+   ],
    "published": "2026-10-20T01:07:19-06:00",
-   "pick": "🟢 Sólido: León +2.5 (hándicap) (88%)",
+   "pick": "🟢 Sólido: León +2.5 (hándicap) (90%)",
    "kickoff": "21:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T01:07:19-06:00"
+   "updated": "2026-10-20T11:35:28-06:00",
+   "note": "Modelo v3"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
@@ -1301,7 +1307,7 @@
   "futbol_analisis/2026-10-20/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
+  "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
@@ -1311,7 +1317,8 @@
   "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html"
+  "futbol_analisis/2026-10-20/v3/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
