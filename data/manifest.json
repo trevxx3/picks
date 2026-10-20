@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T14:39:02-06:00",
+ "updated": "2026-10-20T14:39:04-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -888,6 +888,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 (19:19)",
+     "href": "fut/2026-10-20/tig-leo/v/v4-19-19/index.html"
+    },
+    {
      "label": "v4 (19:12)",
      "href": "fut/2026-10-20/tig-leo/v/v4-19-12/index.html"
     },
@@ -904,8 +908,8 @@
    "pick": "🟢 Sólido: 1T córners Tigres UANL más de 1.5 (79%)",
    "kickoff": "21:10",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T13:19:00-06:00",
-   "note": "Formato v4 · modelo v3 · córners 1T corregidos (encogimiento + NB)"
+   "updated": "2026-10-20T14:39:04-06:00",
+   "note": "Formato v4 · modelo v3 · Lectura de línea (mezcla con el casino)"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
