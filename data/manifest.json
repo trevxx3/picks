@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T13:11:54-06:00",
+ "updated": "2026-10-20T13:11:56-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -826,16 +826,20 @@
    "extras": [],
    "older": [
     {
+     "label": "v3 (13:00)",
+     "href": "fut/2026-10-20/jua-atl/v/v3-13-00/index.html"
+    },
+    {
      "label": "v2 (mañana)",
      "href": "fut/2026-10-20/jua-atl/v/v2-manana/index.html"
     }
    ],
    "published": "2026-10-20T01:07:17-06:00",
-   "pick": "🟢 Sólido: FC Juárez +2.5 (hándicap) (90%)",
+   "pick": "🟢 Sólido: 1T córners más de 3.5 (79%)",
    "kickoff": "19:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T11:35:26-06:00",
-   "note": "Modelo v3"
+   "updated": "2026-10-20T13:11:56-06:00",
+   "note": "Formato v4 · modelo v3 · líneas refrescadas"
   },
   {
    "id": "fut/2026-10-20/tig-leo",
