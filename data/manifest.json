@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T01:07:05-06:00",
+ "updated": "2026-10-20T01:07:07-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -605,6 +605,26 @@
    "updated": "2026-10-20T01:07:05-06:00"
   },
   {
+   "id": "fut/2026-10-20/nap-bod",
+   "section": "fut",
+   "date": "2026-10-20",
+   "slug": "nap-bod",
+   "dir": "fut/2026-10-20/nap-bod",
+   "kind": "game",
+   "title": "Napoli – Bodø/Glimt",
+   "status": "pendiente",
+   "report": "fut/2026-10-20/nap-bod/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-20T01:07:07-06:00",
+   "pick": "🟢 Sólido: Bodo/Glimt +2.5 (hándicap) (89%)",
+   "kickoff": "13:00",
+   "league": "Champions League · J3",
+   "updated": "2026-10-20T01:07:07-06:00"
+  },
+  {
    "id": "fut/2026-10-20/por-psv",
    "section": "fut",
    "date": "2026-10-20",
@@ -1094,7 +1114,8 @@
   "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
   "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html",
   "futbol_analisis/2026-10-20/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/index.html",
-  "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html"
+  "futbol_analisis/2026-10-20/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
+  "futbol_analisis/2026-10-20/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
