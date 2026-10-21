@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T02:07:48-06:00",
+ "updated": "2026-10-21T02:07:51-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1174,13 +1174,18 @@
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "modelo v5 · auditoría córners UCL",
+     "href": "fut/2026-10-21/avl-vik/v/modelo-v5-auditoria-corners-ucl/index.html"
+    }
+   ],
    "published": "2026-10-21T01:53:31-06:00",
-   "pick": "",
+   "pick": "🟢 Sólido: Córners Aston Villa menos de 7.5 (72%)",
    "kickoff": "13:00",
    "league": "UEFA Champions League (J3, fase liga)",
-   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
-   "updated": "2026-10-21T01:53:31-06:00"
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea",
+   "updated": "2026-10-21T02:07:51-06:00"
   },
   {
    "id": "fut/2026-10-21/bay-ars",
