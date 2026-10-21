@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:17-06:00",
+ "updated": "2026-10-21T01:15:19-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -624,17 +624,24 @@
    "dir": "fut/2026-10-20/wol-por",
    "kind": "game",
    "title": "Wolverhampton – Portsmouth",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/wol-por/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/wol-por/v/formato-v4-anterior/index.html"
+    }
+   ],
    "published": "2026-10-20T01:06:57-06:00",
    "pick": "🟢 Sólido: Portsmouth +2.5 (hándicap) (92%)",
    "kickoff": "12:45",
    "league": "Championship · ING 2",
-   "updated": "2026-10-20T01:06:57-06:00"
+   "updated": "2026-10-21T01:15:19-06:00",
+   "score": "Wolverhampton 1 – Portsmouth 1",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron"
   },
   {
    "id": "fut/2026-10-20/liv-vil",
@@ -1448,7 +1455,7 @@
   "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/ETT-ITT/ETT-ITT.html": "fut/2026-10-20/ett-itt/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/NAS-NEO/NAS-NEO.html": "fut/2026-10-20/nas-neo/v/formato-v4-anterior/index.html",
-  "futbol_analisis/2026-10-20/partidos/WOL-POR/WOL-POR.html": "fut/2026-10-20/wol-por/index.html",
+  "futbol_analisis/2026-10-20/partidos/WOL-POR/WOL-POR.html": "fut/2026-10-20/wol-por/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/v/v2-manana/index.html",
@@ -1477,7 +1484,8 @@
   "futbol_analisis/2026-10-20/racha/fen-sla/index.html": "fut/2026-10-20/fen-sla/index.html",
   "futbol_analisis/2026-10-20/racha/sab-dor/index.html": "fut/2026-10-20/sab-dor/index.html",
   "futbol_analisis/2026-10-20/racha/ett-itt/index.html": "fut/2026-10-20/ett-itt/index.html",
-  "futbol_analisis/2026-10-20/racha/nas-neo/index.html": "fut/2026-10-20/nas-neo/index.html"
+  "futbol_analisis/2026-10-20/racha/nas-neo/index.html": "fut/2026-10-20/nas-neo/index.html",
+  "futbol_analisis/2026-10-20/racha/wol-por/index.html": "fut/2026-10-20/wol-por/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
