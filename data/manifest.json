@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:10-06:00",
+ "updated": "2026-10-21T01:15:12-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -542,17 +542,24 @@
    "dir": "fut/2026-10-20/sab-dor",
    "kind": "game",
    "title": "Sabah FK – Dortmund",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/sab-dor/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/sab-dor/v/formato-v4-anterior/index.html"
+    }
+   ],
    "published": "2026-10-20T01:06:51-06:00",
    "pick": "🟢 Sólido: Córners Sabah FK +2.5 (hándicap) (86%)",
    "kickoff": "10:45",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T01:06:51-06:00"
+   "updated": "2026-10-21T01:15:12-06:00",
+   "score": "Sabah FK 1 – Dortmund 2",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron"
   },
   {
    "id": "fut/2026-10-20/ett-itt",
@@ -1423,7 +1430,7 @@
   "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/TAA-QAD/TAA-QAD.html": "fut/2026-10-20/taa-qad/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/v/formato-v4-anterior/index.html",
-  "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/index.html",
+  "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/ETT-ITT/ETT-ITT.html": "fut/2026-10-20/ett-itt/index.html",
   "futbol_analisis/2026-10-20/partidos/NAS-NEO/NAS-NEO.html": "fut/2026-10-20/nas-neo/index.html",
   "futbol_analisis/2026-10-20/partidos/WOL-POR/WOL-POR.html": "fut/2026-10-20/wol-por/index.html",
@@ -1452,7 +1459,8 @@
   "futbol_analisis/2026-10-20/v3/cartelera.html": "fut/2026-10-20/cartelera/v/v3-13-00/index.html",
   "futbol_analisis/2026-10-20/racha/dir-riy/index.html": "fut/2026-10-20/dir-riy/index.html",
   "futbol_analisis/2026-10-20/racha/taa-qad/index.html": "fut/2026-10-20/taa-qad/index.html",
-  "futbol_analisis/2026-10-20/racha/fen-sla/index.html": "fut/2026-10-20/fen-sla/index.html"
+  "futbol_analisis/2026-10-20/racha/fen-sla/index.html": "fut/2026-10-20/fen-sla/index.html",
+  "futbol_analisis/2026-10-20/racha/sab-dor/index.html": "fut/2026-10-20/sab-dor/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
