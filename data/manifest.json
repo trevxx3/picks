@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T18:19:27-06:00",
+ "updated": "2026-10-20T20:24:03-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -787,6 +787,10 @@
    "older": [
     {
      "label": "v4 lectura de línea (sin XI)",
+     "href": "fut/2026-10-20/gdl-nec/v/v4-lectura-de-linea-sin-xi-3/index.html"
+    },
+    {
+     "label": "v4 lectura de línea (sin XI)",
      "href": "fut/2026-10-20/gdl-nec/v/v4-lectura-de-linea-sin-xi-2/index.html"
     },
     {
@@ -814,8 +818,8 @@
    "pick": "🟢 Sólido: Córners Guadalajara más de 4.5 (85%)",
    "kickoff": "18:07",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T18:19:18-06:00",
-   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL)"
+   "updated": "2026-10-20T20:24:02-06:00",
+   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL, TIG-LEO)"
   },
   {
    "id": "fut/2026-10-20/asl-qro",
