@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T20:24:14-06:00",
+ "updated": "2026-10-21T01:15:05-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -461,17 +461,24 @@
    "dir": "fut/2026-10-20/dir-riy",
    "kind": "game",
    "title": "Al Diriyah – Al Riyadh",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/dir-riy/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/dir-riy/v/formato-v4-anterior/index.html"
+    }
+   ],
    "published": "2026-10-20T01:06:46-06:00",
    "pick": "🟢 Sólido: Al Riyadh menos de 2.5 goles (92%)",
    "kickoff": "09:00",
    "league": "Saudi Pro League",
-   "updated": "2026-10-20T01:06:46-06:00"
+   "updated": "2026-10-21T01:15:05-06:00",
+   "score": "Al Diriyah 1 – Al Riyadh 0",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron"
   },
   {
    "id": "fut/2026-10-20/taa-qad",
@@ -1399,7 +1406,7 @@
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.html": "fut/2026-10-19/vib-mid/index.html",
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.pdf": "fut/2026-10-19/vib-mid/vib-mid.pdf",
   "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/index.html",
-  "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/index.html",
+  "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/TAA-QAD/TAA-QAD.html": "fut/2026-10-20/taa-qad/index.html",
   "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/index.html",
   "futbol_analisis/2026-10-20/partidos/SAB-DOR/SAB-DOR.html": "fut/2026-10-20/sab-dor/index.html",
@@ -1428,7 +1435,8 @@
   "futbol_analisis/2026-10-20/v3/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
-  "futbol_analisis/2026-10-20/v3/cartelera.html": "fut/2026-10-20/cartelera/v/v3-13-00/index.html"
+  "futbol_analisis/2026-10-20/v3/cartelera.html": "fut/2026-10-20/cartelera/v/v3-13-00/index.html",
+  "futbol_analisis/2026-10-20/racha/dir-riy/index.html": "fut/2026-10-20/dir-riy/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
