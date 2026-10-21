@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:16:09-06:00",
+ "updated": "2026-10-21T01:18:00-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -454,7 +454,7 @@
     }
    ],
    "published": "2026-10-20T01:06:34-06:00",
-   "updated": "2026-10-21T01:15:47-06:00",
+   "updated": "2026-10-21T01:18:00-06:00",
    "note": "Formato oficial: tema Racha"
   },
   {
@@ -1097,7 +1097,7 @@
    "kind": "game",
    "title": "Houston Texans @ Jacksonville Jaguars",
    "status": "final",
-   "report": "nfl/2026-10-18/hou-jax/index.html",
+   "report": "nfl/2026-10-18/hou-jax/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1107,7 +1107,8 @@
    "score": "HOU 34 – JAX 31",
    "kickoff": "07:30",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/hou-jax/index.html"
   },
   {
    "id": "nfl/2026-10-18/bal-cle",
@@ -1118,7 +1119,7 @@
    "kind": "game",
    "title": "Baltimore Ravens @ Cleveland Browns",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/bal-cle/index.html",
+   "report": "nfl/2026-10-18/bal-cle/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1127,7 +1128,8 @@
    "pick": "🟢 Principal: CLE +3 (DK)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/bal-cle/index.html"
   },
   {
    "id": "nfl/2026-10-18/car-phi",
@@ -1138,7 +1140,7 @@
    "kind": "game",
    "title": "Carolina Panthers @ Philadelphia Eagles",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/car-phi/index.html",
+   "report": "nfl/2026-10-18/car-phi/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1147,7 +1149,8 @@
    "pick": "🟢 Principal: Over 39.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/car-phi/index.html"
   },
   {
    "id": "nfl/2026-10-18/chi-atl",
@@ -1158,7 +1161,7 @@
    "kind": "game",
    "title": "Chicago Bears @ Atlanta Falcons",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/chi-atl/index.html",
+   "report": "nfl/2026-10-18/chi-atl/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1167,7 +1170,8 @@
    "pick": "🟢 Principal: Under 52.5 (-110)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/chi-atl/index.html"
   },
   {
    "id": "nfl/2026-10-18/no-nyg",
@@ -1178,7 +1182,7 @@
    "kind": "game",
    "title": "New Orleans Saints @ New York Giants",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/no-nyg/index.html",
+   "report": "nfl/2026-10-18/no-nyg/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1187,7 +1191,8 @@
    "pick": "🟢 Principal: NO +1.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/no-nyg/index.html"
   },
   {
    "id": "nfl/2026-10-18/nyj-ne",
@@ -1198,7 +1203,7 @@
    "kind": "game",
    "title": "New York Jets @ New England Patriots",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/nyj-ne/index.html",
+   "report": "nfl/2026-10-18/nyj-ne/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1207,7 +1212,8 @@
    "pick": "🟢 Principal: NYJ +7.5 (DK)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/nyj-ne/index.html"
   },
   {
    "id": "nfl/2026-10-18/pit-tb",
@@ -1218,7 +1224,7 @@
    "kind": "game",
    "title": "Pittsburgh Steelers @ Tampa Bay Buccaneers",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/pit-tb/index.html",
+   "report": "nfl/2026-10-18/pit-tb/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1227,7 +1233,8 @@
    "pick": "🟢 Principal: TB +2.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/pit-tb/index.html"
   },
   {
    "id": "nfl/2026-10-18/ten-ind",
@@ -1238,7 +1245,7 @@
    "kind": "game",
    "title": "Tennessee Titans @ Indianapolis Colts",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/ten-ind/index.html",
+   "report": "nfl/2026-10-18/ten-ind/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1247,7 +1254,8 @@
    "pick": "🟢 Principal: Under 44.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/ten-ind/index.html"
   },
   {
    "id": "nfl/2026-10-18/indice-tarde",
@@ -1276,7 +1284,7 @@
    "kind": "game",
    "title": "Arizona Cardinals @ Los Angeles Rams",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/ari-lar/index.html",
+   "report": "nfl/2026-10-18/ari-lar/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1290,7 +1298,8 @@
    "pick": "🟢 Principal: ARI +12.5 (-108)",
    "kickoff": "14:05",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/ari-lar/index.html"
   },
   {
    "id": "nfl/2026-10-18/buf-lv",
@@ -1301,7 +1310,7 @@
    "kind": "game",
    "title": "Buffalo Bills @ Las Vegas Raiders",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/buf-lv/index.html",
+   "report": "nfl/2026-10-18/buf-lv/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1315,7 +1324,8 @@
    "pick": "🟢 Principal: Over 53.5 (-112)",
    "kickoff": "14:25",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/buf-lv/index.html"
   },
   {
    "id": "nfl/2026-10-18/lac-kc",
@@ -1326,7 +1336,7 @@
    "kind": "game",
    "title": "Los Angeles Chargers @ Kansas City Chiefs",
    "status": "sin_resultado",
-   "report": "nfl/2026-10-18/lac-kc/index.html",
+   "report": "nfl/2026-10-18/lac-kc/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
@@ -1340,7 +1350,8 @@
    "pick": "🟢 Principal: Omarion Hampton over 9.5 acarreos (74% over; 73 acarreos en 2026)",
    "kickoff": "14:25",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-18/lac-kc/index.html"
   },
   {
    "id": "nfl/2026-10-18/dal-gb",
@@ -1351,7 +1362,7 @@
    "kind": "game",
    "title": "Dallas Cowboys @ Green Bay Packers",
    "status": "final",
-   "report": "nfl/2026-10-18/dal-gb/index.html",
+   "report": "nfl/2026-10-18/dal-gb/reporte/index.html",
    "pdf": null,
    "grading": null,
    "extras": [
@@ -1376,7 +1387,8 @@
    "score": "DAL 13 – GB 23",
    "kickoff": "18:20",
    "league": "NFL · Semana 6",
-   "updated": "2026-10-20T00:01:52-06:00"
+   "updated": "2026-10-20T00:01:52-06:00",
+   "page": "nfl/2026-10-18/dal-gb/index.html"
   },
   {
    "id": "nfl/2026-10-19/indice-mnf",
@@ -1405,7 +1417,7 @@
    "kind": "game",
    "title": "Washington Commanders @ San Francisco 49ers",
    "status": "final",
-   "report": "nfl/2026-10-19/wsh-sf/index.html",
+   "report": "nfl/2026-10-19/wsh-sf/reporte/index.html",
    "pdf": "nfl/2026-10-19/wsh-sf/wsh-sf.pdf",
    "grading": {
     "html": "nfl/2026-10-19/wsh-sf/grading/index.html",
@@ -1436,32 +1448,33 @@
    "score": "WSH 17 – SF 23",
    "kickoff": "18:15",
    "league": "NFL · Semana 6 · MNF",
-   "updated": "2026-10-20T00:01:53-06:00"
+   "updated": "2026-10-20T00:01:53-06:00",
+   "page": "nfl/2026-10-19/wsh-sf/index.html"
   }
  ],
  "sources": {
   "nfl_analisis/2026-10-18/NFL_2026-10-18_index.html": "nfl/2026-10-18/indice-manana/index.html",
   "nfl_analisis/2026-10-18/NFL_2026-10-18_tarde_index.html": "nfl/2026-10-18/indice-tarde/index.html",
-  "nfl_analisis/2026-10-18/partidos/ARI-LAR/v2/ARI-LAR_v2.html": "nfl/2026-10-18/ari-lar/index.html",
+  "nfl_analisis/2026-10-18/partidos/ARI-LAR/v2/ARI-LAR_v2.html": "nfl/2026-10-18/ari-lar/reporte/index.html",
   "nfl_analisis/2026-10-18/partidos/ARI-LAR/ARI-LAR.html": "nfl/2026-10-18/ari-lar/v/v1-manana/index.html",
-  "nfl_analisis/2026-10-18/partidos/BAL-CLE/BAL-CLE.html": "nfl/2026-10-18/bal-cle/index.html",
-  "nfl_analisis/2026-10-18/partidos/BUF-LV/v2/BUF-LV_v2.html": "nfl/2026-10-18/buf-lv/index.html",
+  "nfl_analisis/2026-10-18/partidos/BAL-CLE/BAL-CLE.html": "nfl/2026-10-18/bal-cle/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/BUF-LV/v2/BUF-LV_v2.html": "nfl/2026-10-18/buf-lv/reporte/index.html",
   "nfl_analisis/2026-10-18/partidos/BUF-LV/BUF-LV.html": "nfl/2026-10-18/buf-lv/v/v1-manana/index.html",
-  "nfl_analisis/2026-10-18/partidos/CAR-PHI/CAR-PHI.html": "nfl/2026-10-18/car-phi/index.html",
-  "nfl_analisis/2026-10-18/partidos/CHI-ATL/CHI-ATL.html": "nfl/2026-10-18/chi-atl/index.html",
-  "nfl_analisis/2026-10-18/partidos/DAL-GB/v2/DAL-GB_v2.html": "nfl/2026-10-18/dal-gb/index.html",
+  "nfl_analisis/2026-10-18/partidos/CAR-PHI/CAR-PHI.html": "nfl/2026-10-18/car-phi/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/CHI-ATL/CHI-ATL.html": "nfl/2026-10-18/chi-atl/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/DAL-GB/v2/DAL-GB_v2.html": "nfl/2026-10-18/dal-gb/reporte/index.html",
   "nfl_analisis/2026-10-18/partidos/DAL-GB/live/v2/DAL-GB_live_v2.html": "nfl/2026-10-18/dal-gb/x/en-vivo/index.html",
   "nfl_analisis/2026-10-18/partidos/DAL-GB/DAL-GB.html": "nfl/2026-10-18/dal-gb/v/v1-manana/index.html",
   "nfl_analisis/2026-10-18/partidos/DAL-GB/live/DAL-GB_live.html": "nfl/2026-10-18/dal-gb/v/en-vivo-v1/index.html",
-  "nfl_analisis/2026-10-18/partidos/HOU-JAX/HOU-JAX.html": "nfl/2026-10-18/hou-jax/index.html",
-  "nfl_analisis/2026-10-18/partidos/LAC-KC/v2/LAC-KC_v2.html": "nfl/2026-10-18/lac-kc/index.html",
+  "nfl_analisis/2026-10-18/partidos/HOU-JAX/HOU-JAX.html": "nfl/2026-10-18/hou-jax/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/LAC-KC/v2/LAC-KC_v2.html": "nfl/2026-10-18/lac-kc/reporte/index.html",
   "nfl_analisis/2026-10-18/partidos/LAC-KC/LAC-KC.html": "nfl/2026-10-18/lac-kc/v/v1-manana/index.html",
-  "nfl_analisis/2026-10-18/partidos/NO-NYG/NO-NYG.html": "nfl/2026-10-18/no-nyg/index.html",
-  "nfl_analisis/2026-10-18/partidos/NYJ-NE/NYJ-NE.html": "nfl/2026-10-18/nyj-ne/index.html",
-  "nfl_analisis/2026-10-18/partidos/PIT-TB/PIT-TB.html": "nfl/2026-10-18/pit-tb/index.html",
-  "nfl_analisis/2026-10-18/partidos/TEN-IND/TEN-IND.html": "nfl/2026-10-18/ten-ind/index.html",
+  "nfl_analisis/2026-10-18/partidos/NO-NYG/NO-NYG.html": "nfl/2026-10-18/no-nyg/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/NYJ-NE/NYJ-NE.html": "nfl/2026-10-18/nyj-ne/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/PIT-TB/PIT-TB.html": "nfl/2026-10-18/pit-tb/reporte/index.html",
+  "nfl_analisis/2026-10-18/partidos/TEN-IND/TEN-IND.html": "nfl/2026-10-18/ten-ind/reporte/index.html",
   "nfl_analisis/2026-10-19/NFL_2026-10-19_index.html": "nfl/2026-10-19/indice-mnf/index.html",
-  "nfl_analisis/2026-10-19/partidos/WSH-SF/v2/WSH-SF_v2c.html": "nfl/2026-10-19/wsh-sf/index.html",
+  "nfl_analisis/2026-10-19/partidos/WSH-SF/v2/WSH-SF_v2c.html": "nfl/2026-10-19/wsh-sf/reporte/index.html",
   "nfl_analisis/2026-10-19/partidos/WSH-SF/v2/WSH-SF_v2c.pdf": "nfl/2026-10-19/wsh-sf/wsh-sf.pdf",
   "nfl_analisis/2026-10-19/grading/WSH-SF_grading_R10v2.html": "nfl/2026-10-19/wsh-sf/grading/index.html",
   "nfl_analisis/2026-10-19/grading/WSH-SF_grading_R10v2.pdf": "nfl/2026-10-19/wsh-sf/grading/wsh-sf-calificacion.pdf",
