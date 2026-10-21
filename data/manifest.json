@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:53:38-06:00",
+ "updated": "2026-10-21T01:53:42-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1197,6 +1197,27 @@
    "updated": "2026-10-21T01:53:38-06:00"
   },
   {
+   "id": "fut/2026-10-21/bru-len",
+   "section": "fut",
+   "date": "2026-10-21",
+   "slug": "bru-len",
+   "dir": "fut/2026-10-21/bru-len",
+   "kind": "game",
+   "title": "Club Brugge vs Lens",
+   "status": "pendiente",
+   "report": "fut/2026-10-21/bru-len/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-21T01:53:42-06:00",
+   "pick": "",
+   "kickoff": "13:00",
+   "league": "UEFA Champions League (J3, fase liga)",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
+   "updated": "2026-10-21T01:53:42-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -1703,7 +1724,8 @@
   "futbol_analisis/2026-10-21/racha/lev-ath/index.html": "fut/2026-10-21/lev-ath/index.html",
   "futbol_analisis/2026-10-21/racha/avl-vik/index.html": "fut/2026-10-21/avl-vik/index.html",
   "futbol_analisis/2026-10-21/racha/bay-ars/index.html": "fut/2026-10-21/bay-ars/index.html",
-  "futbol_analisis/2026-10-21/racha/bet-fey/index.html": "fut/2026-10-21/bet-fey/index.html"
+  "futbol_analisis/2026-10-21/racha/bet-fey/index.html": "fut/2026-10-21/bet-fey/index.html",
+  "futbol_analisis/2026-10-21/racha/bru-len/index.html": "fut/2026-10-21/bru-len/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
