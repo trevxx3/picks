@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:30-06:00",
+ "updated": "2026-10-21T01:15:33-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -808,12 +808,16 @@
    "dir": "fut/2026-10-20/rom-slo",
    "kind": "game",
    "title": "Roma – Slovan Bratislava",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/rom-slo/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
    "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/rom-slo/v/formato-v4-anterior/index.html"
+    },
     {
      "label": "v2 (mañana)",
      "href": "fut/2026-10-20/rom-slo/v/v2-manana/index.html"
@@ -823,8 +827,9 @@
    "pick": "🟢 Sólido: No hay empate (12) (83%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T12:03:10-06:00",
-   "note": "Modelo v3 · XI confirmado"
+   "updated": "2026-10-21T01:15:33-06:00",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron",
+   "score": "Roma 4 – Slovan Bratislava 0"
   },
   {
    "id": "fut/2026-10-20/stu-atm",
@@ -1494,7 +1499,7 @@
   "futbol_analisis/2026-10-20/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/v/v2-manana/index.html",
   "futbol_analisis/2026-10-20/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/v/v2-manana/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/v/formato-v4-anterior/index.html",
@@ -1517,7 +1522,8 @@
   "futbol_analisis/2026-10-20/racha/mci-aek/index.html": "fut/2026-10-20/mci-aek/index.html",
   "futbol_analisis/2026-10-20/racha/nap-bod/index.html": "fut/2026-10-20/nap-bod/index.html",
   "futbol_analisis/2026-10-20/racha/por-psv/index.html": "fut/2026-10-20/por-psv/index.html",
-  "futbol_analisis/2026-10-20/racha/psg-bar/index.html": "fut/2026-10-20/psg-bar/index.html"
+  "futbol_analisis/2026-10-20/racha/psg-bar/index.html": "fut/2026-10-20/psg-bar/index.html",
+  "futbol_analisis/2026-10-20/racha/rom-slo/index.html": "fut/2026-10-20/rom-slo/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
