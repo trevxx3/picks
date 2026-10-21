@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T20:24:05-06:00",
+ "updated": "2026-10-20T20:24:08-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -883,6 +883,10 @@
    "older": [
     {
      "label": "v4 lectura de línea (sin XI)",
+     "href": "fut/2026-10-20/jua-atl/v/v4-lectura-de-linea-sin-xi-2/index.html"
+    },
+    {
+     "label": "v4 lectura de línea (sin XI)",
      "href": "fut/2026-10-20/jua-atl/v/v4-lectura-de-linea-sin-xi/index.html"
     },
     {
@@ -906,8 +910,8 @@
    "pick": "🟢 Sólido: Córners más de 8.5 (71%)",
    "kickoff": "19:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T18:19:22-06:00",
-   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL)"
+   "updated": "2026-10-20T20:24:07-06:00",
+   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL, TIG-LEO)"
   },
   {
    "id": "fut/2026-10-20/tig-leo",
