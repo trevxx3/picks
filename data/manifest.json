@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:21-06:00",
+ "updated": "2026-10-21T01:15:24-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -683,12 +683,16 @@
    "dir": "fut/2026-10-20/mci-aek",
    "kind": "game",
    "title": "Man City – AEK Athens",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/mci-aek/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
    "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/mci-aek/v/formato-v4-anterior/index.html"
+    },
     {
      "label": "v2 (mañana)",
      "href": "fut/2026-10-20/mci-aek/v/v2-manana/index.html"
@@ -698,8 +702,9 @@
    "pick": "🟢 Sólido: No hay empate (12) (85%)",
    "kickoff": "13:00",
    "league": "Champions League · J3",
-   "updated": "2026-10-20T12:03:16-06:00",
-   "note": "Modelo v3 · XI confirmado"
+   "updated": "2026-10-21T01:15:23-06:00",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron",
+   "score": "Man City 5 – AEK Athens 1"
   },
   {
    "id": "fut/2026-10-20/nap-bod",
@@ -1476,7 +1481,7 @@
   "futbol_analisis/2026-10-20/v3/partidos/ROM-SLO/ROM-SLO.html": "fut/2026-10-20/rom-slo/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/POR-PSV/POR-PSV.html": "fut/2026-10-20/por-psv/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/LIV-VIL/LIV-VIL.html": "fut/2026-10-20/liv-vil/v/formato-v4-anterior/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/MCI-AEK/MCI-AEK.html": "fut/2026-10-20/mci-aek/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/index.html",
@@ -1492,7 +1497,8 @@
   "futbol_analisis/2026-10-20/racha/ett-itt/index.html": "fut/2026-10-20/ett-itt/index.html",
   "futbol_analisis/2026-10-20/racha/nas-neo/index.html": "fut/2026-10-20/nas-neo/index.html",
   "futbol_analisis/2026-10-20/racha/wol-por/index.html": "fut/2026-10-20/wol-por/index.html",
-  "futbol_analisis/2026-10-20/racha/liv-vil/index.html": "fut/2026-10-20/liv-vil/index.html"
+  "futbol_analisis/2026-10-20/racha/liv-vil/index.html": "fut/2026-10-20/liv-vil/index.html",
+  "futbol_analisis/2026-10-20/racha/mci-aek/index.html": "fut/2026-10-20/mci-aek/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
