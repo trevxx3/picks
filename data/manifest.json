@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:53:49-06:00",
+ "updated": "2026-10-21T01:53:52-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1260,6 +1260,27 @@
    "updated": "2026-10-21T01:53:49-06:00"
   },
   {
+   "id": "fut/2026-10-21/scp-las",
+   "section": "fut",
+   "date": "2026-10-21",
+   "slug": "scp-las",
+   "dir": "fut/2026-10-21/scp-las",
+   "kind": "game",
+   "title": "Sporting CP vs LASK Linz",
+   "status": "pendiente",
+   "report": "fut/2026-10-21/scp-las/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-21T01:53:52-06:00",
+   "pick": "",
+   "kickoff": "13:00",
+   "league": "UEFA Champions League (J3, fase liga)",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
+   "updated": "2026-10-21T01:53:52-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -1769,7 +1790,8 @@
   "futbol_analisis/2026-10-21/racha/bet-fey/index.html": "fut/2026-10-21/bet-fey/index.html",
   "futbol_analisis/2026-10-21/racha/bru-len/index.html": "fut/2026-10-21/bru-len/index.html",
   "futbol_analisis/2026-10-21/racha/int-sha/index.html": "fut/2026-10-21/int-sha/index.html",
-  "futbol_analisis/2026-10-21/racha/rma-rbl/index.html": "fut/2026-10-21/rma-rbl/index.html"
+  "futbol_analisis/2026-10-21/racha/rma-rbl/index.html": "fut/2026-10-21/rma-rbl/index.html",
+  "futbol_analisis/2026-10-21/racha/scp-las/index.html": "fut/2026-10-21/scp-las/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
