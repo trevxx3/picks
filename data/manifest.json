@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:42-06:00",
+ "updated": "2026-10-21T01:15:44-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1027,12 +1027,16 @@
    "dir": "fut/2026-10-20/tig-leo",
    "kind": "game",
    "title": "Tigres – León",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/tig-leo/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
    "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/tig-leo/v/formato-v4-anterior/index.html"
+    },
     {
      "label": "v4 lectura de línea (sin XI)",
      "href": "fut/2026-10-20/tig-leo/v/v4-lectura-de-linea-sin-xi/index.html"
@@ -1058,8 +1062,9 @@
    "pick": "🟢 Sólido: 1T córners Tigres UANL más de 1.5 (79%)",
    "kickoff": "21:10",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T20:24:10-06:00",
-   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL, TIG-LEO)"
+   "updated": "2026-10-21T01:15:44-06:00",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron",
+   "score": "Tigres 0 – León 2"
   },
   {
    "id": "nfl/2026-10-18/indice-manana",
@@ -1529,7 +1534,7 @@
   "futbol_analisis/2026-10-20/v3/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/v/formato-v4-anterior/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/cartelera.html": "fut/2026-10-20/cartelera/v/v3-13-00/index.html",
   "futbol_analisis/2026-10-20/racha/dir-riy/index.html": "fut/2026-10-20/dir-riy/index.html",
   "futbol_analisis/2026-10-20/racha/taa-qad/index.html": "fut/2026-10-20/taa-qad/index.html",
@@ -1547,7 +1552,8 @@
   "futbol_analisis/2026-10-20/racha/stu-atm/index.html": "fut/2026-10-20/stu-atm/index.html",
   "futbol_analisis/2026-10-20/racha/gdl-nec/index.html": "fut/2026-10-20/gdl-nec/index.html",
   "futbol_analisis/2026-10-20/racha/asl-qro/index.html": "fut/2026-10-20/asl-qro/index.html",
-  "futbol_analisis/2026-10-20/racha/jua-atl/index.html": "fut/2026-10-20/jua-atl/index.html"
+  "futbol_analisis/2026-10-20/racha/jua-atl/index.html": "fut/2026-10-20/jua-atl/index.html",
+  "futbol_analisis/2026-10-20/racha/tig-leo/index.html": "fut/2026-10-20/tig-leo/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
