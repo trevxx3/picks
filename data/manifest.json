@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:35-06:00",
+ "updated": "2026-10-21T01:15:37-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -870,12 +870,16 @@
    "dir": "fut/2026-10-20/gdl-nec",
    "kind": "game",
    "title": "Guadalajara – Necaxa",
-   "status": "pendiente",
+   "status": "final",
    "report": "fut/2026-10-20/gdl-nec/index.html",
    "pdf": null,
    "grading": null,
    "extras": [],
    "older": [
+    {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/gdl-nec/v/formato-v4-anterior/index.html"
+    },
     {
      "label": "v4 lectura de línea (sin XI)",
      "href": "fut/2026-10-20/gdl-nec/v/v4-lectura-de-linea-sin-xi-3/index.html"
@@ -909,8 +913,9 @@
    "pick": "🟢 Sólido: Córners Guadalajara más de 4.5 (85%)",
    "kickoff": "18:07",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T20:24:02-06:00",
-   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL, TIG-LEO)"
+   "updated": "2026-10-21T01:15:37-06:00",
+   "note": "Formato oficial: tema Racha (desde 21-oct-2026) · picks tal como se publicaron",
+   "score": "Guadalajara 1 – Necaxa 0"
   },
   {
    "id": "fut/2026-10-20/asl-qro",
@@ -1511,7 +1516,7 @@
   "futbol_analisis/2026-10-20/v3/partidos/NAP-BOD/NAP-BOD.html": "fut/2026-10-20/nap-bod/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/PSG-BAR/PSG-BAR.html": "fut/2026-10-20/psg-bar/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/STU-ATM/STU-ATM.html": "fut/2026-10-20/stu-atm/v/formato-v4-anterior/index.html",
-  "futbol_analisis/2026-10-20/v3/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/index.html",
+  "futbol_analisis/2026-10-20/v3/partidos/GDL-NEC/GDL-NEC.html": "fut/2026-10-20/gdl-nec/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/ASL-QRO/ASL-QRO.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/JUA-ATL/JUA-ATL.html": "fut/2026-10-20/jua-atl/index.html",
   "futbol_analisis/2026-10-20/v3/partidos/TIG-LEO/TIG-LEO.html": "fut/2026-10-20/tig-leo/index.html",
@@ -1529,7 +1534,8 @@
   "futbol_analisis/2026-10-20/racha/por-psv/index.html": "fut/2026-10-20/por-psv/index.html",
   "futbol_analisis/2026-10-20/racha/psg-bar/index.html": "fut/2026-10-20/psg-bar/index.html",
   "futbol_analisis/2026-10-20/racha/rom-slo/index.html": "fut/2026-10-20/rom-slo/index.html",
-  "futbol_analisis/2026-10-20/racha/stu-atm/index.html": "fut/2026-10-20/stu-atm/index.html"
+  "futbol_analisis/2026-10-20/racha/stu-atm/index.html": "fut/2026-10-20/stu-atm/index.html",
+  "futbol_analisis/2026-10-20/racha/gdl-nec/index.html": "fut/2026-10-20/gdl-nec/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
