@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:54:15-06:00",
+ "updated": "2026-10-21T01:54:19-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1428,6 +1428,27 @@
    "updated": "2026-10-21T01:54:15-06:00"
   },
   {
+   "id": "fut/2026-10-21/san-pum",
+   "section": "fut",
+   "date": "2026-10-21",
+   "slug": "san-pum",
+   "dir": "fut/2026-10-21/san-pum",
+   "kind": "game",
+   "title": "Santos vs Pumas UNAM",
+   "status": "pendiente",
+   "report": "fut/2026-10-21/san-pum/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-21T01:54:19-06:00",
+   "pick": "🟢 Sólido: Córners Santos más de 5.5 (69%)",
+   "kickoff": "21:10",
+   "league": "Liga MX",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea",
+   "updated": "2026-10-21T01:54:19-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -1945,7 +1966,8 @@
   "futbol_analisis/2026-10-21/racha/atl-ame/index.html": "fut/2026-10-21/atl-ame/index.html",
   "futbol_analisis/2026-10-21/racha/pue-mty/index.html": "fut/2026-10-21/pue-mty/index.html",
   "futbol_analisis/2026-10-21/racha/tol-tij/index.html": "fut/2026-10-21/tol-tij/index.html",
-  "futbol_analisis/2026-10-21/racha/pac-caz/index.html": "fut/2026-10-21/pac-caz/index.html"
+  "futbol_analisis/2026-10-21/racha/pac-caz/index.html": "fut/2026-10-21/pac-caz/index.html",
+  "futbol_analisis/2026-10-21/racha/san-pum/index.html": "fut/2026-10-21/san-pum/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
