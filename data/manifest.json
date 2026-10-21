@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-20T18:19:18-06:00",
+ "updated": "2026-10-20T18:19:20-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -828,6 +828,10 @@
    "extras": [],
    "older": [
     {
+     "label": "v4 lectura de línea (sin XI)",
+     "href": "fut/2026-10-20/asl-qro/v/v4-lectura-de-linea-sin-xi/index.html"
+    },
+    {
      "label": "v4 (19:19)",
      "href": "fut/2026-10-20/asl-qro/v/v4-19-19/index.html"
     },
@@ -845,11 +849,11 @@
     }
    ],
    "published": "2026-10-20T01:07:15-06:00",
-   "pick": "🟢 Sólido: Querétaro +1.5 (hándicap) (80%)",
+   "pick": "🟢 Sólido: Querétaro +1.5 (hándicap) (81%)",
    "kickoff": "19:00",
    "league": "Liga MX · Apertura",
-   "updated": "2026-10-20T14:39:00-06:00",
-   "note": "Formato v4 · modelo v3 · Lectura de línea (mezcla con el casino)"
+   "updated": "2026-10-20T18:19:20-06:00",
+   "note": "Formato v4 · modelo v3 · Lectura de línea · XI confirmado (GDL-NEC, ASL-QRO, JUA-ATL)"
   },
   {
    "id": "fut/2026-10-20/jua-atl",
