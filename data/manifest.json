@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-21T01:15:44-06:00",
+ "updated": "2026-10-21T01:15:47-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -417,6 +417,10 @@
    "extras": [],
    "older": [
     {
+     "label": "formato v4 (anterior)",
+     "href": "fut/2026-10-20/cartelera/v/formato-v4-anterior/index.html"
+    },
+    {
      "label": "v4 lectura de línea (sin XI)",
      "href": "fut/2026-10-20/cartelera/v/v4-lectura-de-linea-sin-xi-3/index.html"
     },
@@ -450,8 +454,8 @@
     }
    ],
    "published": "2026-10-20T01:06:34-06:00",
-   "updated": "2026-10-20T20:24:12-06:00",
-   "note": "Formato v4 (Liga MX) · vista previa de mercados"
+   "updated": "2026-10-21T01:15:47-06:00",
+   "note": "Formato oficial: tema Racha"
   },
   {
    "id": "fut/2026-10-20/dir-riy",
@@ -1505,7 +1509,7 @@
   "futbol_analisis/2026-10-19/v2/partidos/TRA-BJK/TRA-BJK.pdf": "fut/2026-10-19/tra-bjk/tra-bjk.pdf",
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.html": "fut/2026-10-19/vib-mid/index.html",
   "futbol_analisis/2026-10-19/v2/partidos/VIB-MID/VIB-MID.pdf": "fut/2026-10-19/vib-mid/vib-mid.pdf",
-  "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/index.html",
+  "futbol_analisis/2026-10-20/cartelera.html": "fut/2026-10-20/cartelera/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/DIR-RIY/DIR-RIY.html": "fut/2026-10-20/dir-riy/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/TAA-QAD/TAA-QAD.html": "fut/2026-10-20/taa-qad/v/formato-v4-anterior/index.html",
   "futbol_analisis/2026-10-20/partidos/FEN-SLA/FEN-SLA.html": "fut/2026-10-20/fen-sla/v/formato-v4-anterior/index.html",
@@ -1553,7 +1557,8 @@
   "futbol_analisis/2026-10-20/racha/gdl-nec/index.html": "fut/2026-10-20/gdl-nec/index.html",
   "futbol_analisis/2026-10-20/racha/asl-qro/index.html": "fut/2026-10-20/asl-qro/index.html",
   "futbol_analisis/2026-10-20/racha/jua-atl/index.html": "fut/2026-10-20/jua-atl/index.html",
-  "futbol_analisis/2026-10-20/racha/tig-leo/index.html": "fut/2026-10-20/tig-leo/index.html"
+  "futbol_analisis/2026-10-20/racha/tig-leo/index.html": "fut/2026-10-20/tig-leo/index.html",
+  "futbol_analisis/2026-10-20/racha/cartelera/index.html": "fut/2026-10-20/cartelera/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
