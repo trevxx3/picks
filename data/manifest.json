@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T02:19:08-06:00",
+ "updated": "2026-10-22T02:19:12-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1517,6 +1517,24 @@
    "updated": "2026-10-21T01:54:19-06:00"
   },
   {
+   "id": "fut/2026-10-22/cartelera",
+   "section": "fut",
+   "date": "2026-10-22",
+   "slug": "cartelera",
+   "dir": "fut/2026-10-22/cartelera",
+   "kind": "slate",
+   "title": "Cartelera",
+   "status": "pendiente",
+   "report": "fut/2026-10-22/cartelera/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-22T02:19:12-06:00",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea",
+   "updated": "2026-10-22T02:19:12-06:00"
+  },
+  {
    "id": "fut/2026-10-22/haz-fay",
    "section": "fut",
    "date": "2026-10-22",
@@ -2630,7 +2648,8 @@
   "futbol_analisis/2026-10-22/racha/mon-scf/index.html": "fut/2026-10-22/mon-scf/index.html",
   "futbol_analisis/2026-10-22/racha/oly-spa/index.html": "fut/2026-10-22/oly-spa/index.html",
   "futbol_analisis/2026-10-22/racha/omo-ben/index.html": "fut/2026-10-22/omo-ben/index.html",
-  "futbol_analisis/2026-10-22/racha/plz-lso/index.html": "fut/2026-10-22/plz-lso/index.html"
+  "futbol_analisis/2026-10-22/racha/plz-lso/index.html": "fut/2026-10-22/plz-lso/index.html",
+  "futbol_analisis/2026-10-22/racha/cartelera/index.html": "fut/2026-10-22/cartelera/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
