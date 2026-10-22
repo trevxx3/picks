@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T02:19:16-06:00",
+ "updated": "2026-10-22T12:49:42-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2481,6 +2481,27 @@
    "league": "NFL · Semana 6 · MNF",
    "updated": "2026-10-20T00:01:53-06:00",
    "page": "nfl/2026-10-19/wsh-sf/index.html"
+  },
+  {
+   "id": "nfl/2026-10-22/ne-chi",
+   "section": "nfl",
+   "date": "2026-10-22",
+   "slug": "ne-chi",
+   "dir": "nfl/2026-10-22/ne-chi",
+   "kind": "game",
+   "title": "New England Patriots @ Chicago Bears",
+   "status": "pendiente",
+   "report": "nfl/2026-10-22/ne-chi/reporte/index.html",
+   "pdf": "nfl/2026-10-22/ne-chi/ne-chi.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-22T12:49:42-06:00",
+   "pick": "🟢 Principal: D'Andre Swift over 14.5 acarreos",
+   "kickoff": "18:15",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-22T12:49:42-06:00",
+   "page": "nfl/2026-10-22/ne-chi/index.html"
   }
  ],
  "sources": {
@@ -2649,7 +2670,9 @@
   "futbol_analisis/2026-10-22/racha/oly-spa/index.html": "fut/2026-10-22/oly-spa/index.html",
   "futbol_analisis/2026-10-22/racha/omo-ben/index.html": "fut/2026-10-22/omo-ben/index.html",
   "futbol_analisis/2026-10-22/racha/plz-lso/index.html": "fut/2026-10-22/plz-lso/index.html",
-  "futbol_analisis/2026-10-22/racha/cartelera/index.html": "fut/2026-10-22/cartelera/index.html"
+  "futbol_analisis/2026-10-22/racha/cartelera/index.html": "fut/2026-10-22/cartelera/index.html",
+  "nfl_analisis/2026-10-22/partidos/NE-CHI/NE-CHI.html": "nfl/2026-10-22/ne-chi/reporte/index.html",
+  "nfl_analisis/2026-10-22/partidos/NE-CHI/NE-CHI.pdf": "nfl/2026-10-22/ne-chi/ne-chi.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
