@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T02:18:33-06:00",
+ "updated": "2026-10-22T02:18:37-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1916,6 +1916,27 @@
    "updated": "2026-10-22T02:18:32-06:00"
   },
   {
+   "id": "fut/2026-10-22/hof-lyo",
+   "section": "fut",
+   "date": "2026-10-22",
+   "slug": "hof-lyo",
+   "dir": "fut/2026-10-22/hof-lyo",
+   "kind": "game",
+   "title": "TSG Hoffenheim vs Lyon",
+   "status": "pendiente",
+   "report": "fut/2026-10-22/hof-lyo/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-22T02:18:37-06:00",
+   "pick": "",
+   "kickoff": "13:00",
+   "league": "UEFA Europa League (J3, fase liga)",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
+   "updated": "2026-10-22T02:18:37-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -2454,7 +2475,8 @@
   "futbol_analisis/2026-10-22/racha/bou-mil/index.html": "fut/2026-10-22/bou-mil/index.html",
   "futbol_analisis/2026-10-22/racha/bra-gnt/index.html": "fut/2026-10-22/bra-gnt/index.html",
   "futbol_analisis/2026-10-22/racha/cej-sal/index.html": "fut/2026-10-22/cej-sal/index.html",
-  "futbol_analisis/2026-10-22/racha/cel-clv/index.html": "fut/2026-10-22/cel-clv/index.html"
+  "futbol_analisis/2026-10-22/racha/cel-clv/index.html": "fut/2026-10-22/cel-clv/index.html",
+  "futbol_analisis/2026-10-22/racha/hof-lyo/index.html": "fut/2026-10-22/hof-lyo/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
