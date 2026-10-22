@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T02:17:42-06:00",
+ "updated": "2026-10-22T02:17:46-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1643,6 +1643,27 @@
    "updated": "2026-10-22T02:17:42-06:00"
   },
   {
+   "id": "fut/2026-10-22/juv-ren",
+   "section": "fut",
+   "date": "2026-10-22",
+   "slug": "juv-ren",
+   "dir": "fut/2026-10-22/juv-ren",
+   "kind": "game",
+   "title": "Juventus vs Stade Rennais",
+   "status": "pendiente",
+   "report": "fut/2026-10-22/juv-ren/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-22T02:17:46-06:00",
+   "pick": "",
+   "kickoff": "10:45",
+   "league": "UEFA Europa League (J3, fase liga)",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
+   "updated": "2026-10-22T02:17:46-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -2168,7 +2189,8 @@
   "futbol_analisis/2026-10-22/racha/ara-az/index.html": "fut/2026-10-22/ara-az/index.html",
   "futbol_analisis/2026-10-22/racha/din-nec/index.html": "fut/2026-10-22/din-nec/index.html",
   "futbol_analisis/2026-10-22/racha/fer-tor/index.html": "fut/2026-10-22/fer-tor/index.html",
-  "futbol_analisis/2026-10-22/racha/get-lug/index.html": "fut/2026-10-22/get-lug/index.html"
+  "futbol_analisis/2026-10-22/racha/get-lug/index.html": "fut/2026-10-22/get-lug/index.html",
+  "futbol_analisis/2026-10-22/racha/juv-ren/index.html": "fut/2026-10-22/juv-ren/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
