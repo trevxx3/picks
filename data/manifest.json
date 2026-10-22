@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T02:18:17-06:00",
+ "updated": "2026-10-22T02:18:21-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -1832,6 +1832,27 @@
    "updated": "2026-10-22T02:18:16-06:00"
   },
   {
+   "id": "fut/2026-10-22/bou-mil",
+   "section": "fut",
+   "date": "2026-10-22",
+   "slug": "bou-mil",
+   "dir": "fut/2026-10-22/bou-mil",
+   "kind": "game",
+   "title": "AFC Bournemouth vs AC Milan",
+   "status": "pendiente",
+   "report": "fut/2026-10-22/bou-mil/index.html",
+   "pdf": null,
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-22T02:18:20-06:00",
+   "pick": "",
+   "kickoff": "13:00",
+   "league": "UEFA Europa League (J3, fase liga)",
+   "note": "Tema racha · modelo v5 · picks v5 (ventaja modelo vs casino) · 📏 lectura de línea · 🟢 Sin Sólido: ningún mercado con ventaja suficiente",
+   "updated": "2026-10-22T02:18:20-06:00"
+  },
+  {
    "id": "nfl/2026-10-18/indice-manana",
    "section": "nfl",
    "date": "2026-10-18",
@@ -2366,7 +2387,8 @@
   "futbol_analisis/2026-10-22/racha/usg-hbs/index.html": "fut/2026-10-22/usg-hbs/index.html",
   "futbol_analisis/2026-10-22/racha/ahl-kha/index.html": "fut/2026-10-22/ahl-kha/index.html",
   "futbol_analisis/2026-10-22/racha/aja-ata/index.html": "fut/2026-10-22/aja-ata/index.html",
-  "futbol_analisis/2026-10-22/racha/bes-cry/index.html": "fut/2026-10-22/bes-cry/index.html"
+  "futbol_analisis/2026-10-22/racha/bes-cry/index.html": "fut/2026-10-22/bes-cry/index.html",
+  "futbol_analisis/2026-10-22/racha/bou-mil/index.html": "fut/2026-10-22/bou-mil/index.html"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX."
