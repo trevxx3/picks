@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:48:44-06:00",
+ "updated": "2026-10-23T23:49:06-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2626,6 +2626,27 @@
    "league": "NFL · Semana 7",
    "updated": "2026-10-23T23:47:47-06:00",
    "page": "nfl/2026-10-25/sf-atl/index.html"
+  },
+  {
+   "id": "nfl/2026-10-25/tb-car",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "tb-car",
+   "dir": "nfl/2026-10-25/tb-car",
+   "kind": "game",
+   "title": "Tampa Bay Buccaneers @ Carolina Panthers",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/tb-car/reporte/index.html",
+   "pdf": "nfl/2026-10-25/tb-car/tb-car.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:49:06-06:00",
+   "pick": "🟢 Principal: Tommy Tremble over 1.5 recepciones",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:49:06-06:00",
+   "page": "nfl/2026-10-25/tb-car/index.html"
   }
  ],
  "sources": {
@@ -2807,7 +2828,9 @@
   "nfl_analisis/2026-10-25/partidos/IND-MIN/IND-MIN.html": "nfl/2026-10-25/ind-min/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/IND-MIN/IND-MIN.pdf": "nfl/2026-10-25/ind-min/ind-min.pdf",
   "nfl_analisis/2026-10-25/partidos/MIA-NYJ/MIA-NYJ.html": "nfl/2026-10-25/mia-nyj/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/MIA-NYJ/MIA-NYJ.pdf": "nfl/2026-10-25/mia-nyj/mia-nyj.pdf"
+  "nfl_analisis/2026-10-25/partidos/MIA-NYJ/MIA-NYJ.pdf": "nfl/2026-10-25/mia-nyj/mia-nyj.pdf",
+  "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.html": "nfl/2026-10-25/tb-car/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.pdf": "nfl/2026-10-25/tb-car/tb-car.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
