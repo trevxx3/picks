@@ -1,0 +1,328 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Para ChatGPT · prueba-goles-ctx</title>
+<style>*{box-sizing:border-box}html{scroll-padding-top:128px}body{margin:0;background:#060607;color:#eee;font-family:-apple-system,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.bar{position:fixed;top:0;left:0;right:0;z-index:9;background:#101014;padding:8px 10px;border-bottom:1px solid #222}
+.r1,.r2{display:flex;gap:8px;align-items:center}.r2{margin-top:8px;overflow-x:auto;scrollbar-width:none}.r2::-webkit-scrollbar{display:none}
+button{background:#f7941d;color:#000;border:0;border-radius:10px;padding:11px 12px;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer}
+#b{flex:1 1 auto;font-size:17px}#ib{flex:0 0 auto;background:#2a2a30;color:#eee;border:1px solid #444}
+button.p{flex:1 0 auto;background:#2a2a30;color:#f7941d;border:1px solid #f7941d;padding:8px 12px;font-size:14px}
+#ok{color:#16c784;font-weight:600;font-size:13px;text-align:center;min-height:16px;margin-top:4px}
+#ix{position:fixed;left:0;right:0;top:118px;bottom:0;z-index:8;background:rgba(6,6,7,.97);overflow-y:auto;padding:10px 12px 40px;display:none}#ix.on{display:block}
+#ix input{width:100%;background:#16161b;color:#eee;border:1px solid #333;border-radius:10px;padding:10px;font-size:16px;margin-bottom:6px}
+#ix .il{color:#f7941d;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin:12px 0 4px}
+#ix a{display:flex;gap:10px;color:#ddd;text-decoration:none;padding:9px 4px;border-bottom:1px solid #1d1d22;font-size:15px}#ix a span{color:#888;flex:0 0 74px;font-variant-numeric:tabular-nums}#ix a[hidden],#ix .il[hidden]{display:none}
+.wrap{max-width:820px;margin:0 auto;padding:126px 10px 40px}.nota{color:#999;font-size:12px;margin:4px 2px 10px}
+details.in{background:#101014;border:1px solid #222;border-radius:12px;padding:4px 12px;margin-bottom:12px}details.in summary{padding:10px 0;font-weight:700;cursor:pointer}
+pre{white-space:pre-wrap;word-wrap:break-word;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;line-height:1.45;color:#d6d6d6;margin:8px 0 0}
+.m{background:#101014;border:1px solid #222;border-radius:14px;padding:12px;margin:0 0 12px}.mh{display:flex;gap:10px;align-items:flex-start}.mt{flex:1;min-width:0;font-size:15px;line-height:1.3}
+.mt .hr{color:#f7941d;font-weight:800;font-variant-numeric:tabular-nums}.lg{color:#888;font-size:12px;margin-top:2px}button.c{flex:0 0 auto;padding:9px 12px;font-size:14px}
+.gv{background:#16161b;border-radius:10px;padding:8px 10px;margin-top:10px;font-size:13px}.gl{color:#999;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:8px 0 4px}.gl:first-child{margin-top:0}
+.gr,.gs{display:grid;grid-template-columns:minmax(60px,32%) minmax(0,1fr) 54px;gap:8px;align-items:center;margin:4px 0}.gr span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#ccc}.gr.t span{color:#fff;font-weight:700}.gr b{text-align:right}
+.tk{position:relative;height:9px;border-radius:5px;background:#24242b}.tk i{position:absolute;top:0;bottom:0;border-radius:5px;background:#8a8f99}.gr.t .tk i{background:#f7941d}
+.gs{grid-template-columns:40px minmax(0,1fr) 40px}.bb{height:10px;border-radius:5px;background:#24242b;overflow:hidden}.bb i{display:block;height:100%;background:#5b606b}.gs.on .bb i{background:#f7941d}.gs span{text-align:right;color:#aaa}
+.gp{color:#ccc;line-height:1.5}.pp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;text-align:center}.pp>div{background:#101014;border:1px solid #26262c;border-radius:9px;padding:6px 2px}.pp b{display:block;font-size:16px;color:#fff}.pp span{font-size:10.5px;color:#999}
+.dt{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;align-items:end;height:88px;margin-top:10px}.dt>div{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;min-width:0}.dt i{display:block;flex:0 0 auto;width:100%;background:#f7941d;opacity:.85;border-radius:4px 4px 0 0}.dt span{font-size:10px;color:#999;margin-bottom:2px}.dt b{font-size:11px;margin-top:3px}
+.es{padding:7px 0;border-bottom:1px solid #24242b}.eh{display:flex;justify-content:space-between;gap:8px;margin-bottom:4px}.es .bb i{background:#f7941d}.mu{color:#888}.h{position:absolute;left:-9999px;top:0;height:1px;width:1px}
+.top{position:fixed;right:12px;bottom:16px;z-index:7;background:#2a2a30;color:#eee;border:1px solid #444;border-radius:999px;padding:10px 14px;font-size:14px}</style></head>
+<body><div class="bar"><div class="r1"><button id="b">📋 Copiar todo</button><button id="ib" aria-expanded="false">☰ Índice</button></div>
+<div class="r2"><button class="p" data-t="t1">Parte 1</button></div><div id="ok"></div></div>
+<nav id="ix"><input id="iq" type="text" placeholder="🔎 Buscar equipo o liga…" aria-label="Buscar partido"><div class="il">⚽ Premier League</div><a href="#m-ARS-EVE" data-q="Arsenal – Everton ⚽ Premier League"><span>08:00</span>Arsenal – Everton 🟢</a><div class="il">⚽ Bundesliga</div><a href="#m-BVB-SGE" data-q="Borussia Dortmund – Eintracht Frankfurt ⚽ Bundesliga"><span>10:30</span>Borussia Dortmund – Eintracht Frankfurt</a></nav>
+<main class="wrap"><p class="nota">2 partidos · texto completo ≈9 KB. «Copiar todo» = paquete completo. Si ChatGPT lo corta, usa «Parte 1…1» (cada parte lleva las instrucciones) en mensajes seguidos. «📋 Copiar» en cada partido = instrucciones cortas + solo ese partido (sirve igual para Claude).</p>
+<details class="in"><summary>Ver instrucciones completas y encabezado</summary><pre>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
+
+Abajo va el análisis completo de los 100 partidos de fútbol del PRUEBA LOCAL (2 partidos) (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo:
+1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
+2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
+3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (goles esperados y base → contexto, más probable + 5 alternativas, P(3+)/P(4+)/P(5+), distribución del total y los 3 escenarios; si no viene «por contexto»: rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
+4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
+5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+
+Reglas obligatorias (no se negocian):
+- Todo en español llano.
+- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
+- Nunca uses el Más de 1.5 goles del partido como pick.
+- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
+- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
+- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
+- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
+- Desconfía de rachas con muestras pequeñas.
+- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
+- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
+- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
+- ⚽ Goles por contexto (si el partido trae «⚽ Goles (por contexto)»): presenta goles esperados (total y por equipo) y «base → con contexto» (o «contexto: sin ajuste con evidencia»); el marcador más probable + sus 5 alternativas con %; P(3+), P(4+), P(5+) y ambos anotan; la distribución del total (0…7+); el más probable por resultado; y los 3 escenarios (Partido cerrado / Se abre antes del descanso / favorito obligado a arriesgar) con su %, goles esperados, P(3+), P(4+) y marcador. No hay techo de marcador: no lo bajes a 1-1/2-1 por costumbre. El marcador más probable NO es la expectativa total: si P(3+) o P(4+) es alta, dilo aunque el más probable sea corto. Solo cuenta un factor de contexto si viene con ✅, su magnitud y su fuente; lo de 🧩 (descanso, rotación, bajas ya en precio) ya está en la línea: no lo sumes otra vez.
+- El contexto aplica SOLO a goles: córners, tiros y tarjetas se quedan 100% respaldados por la estadística del análisis (no los muevas por contexto).
+- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
+- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
+- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
+- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+
+# Análisis FUT · 2026-10-24 (PRUEBA LOCAL · 2 partidos) · hora CDMX
+
+2 partidos · 1 🟢 Sólidos · 2 con el motor (v5 + goles por contexto) · 0 por estimación (Super League suiza, sin datos en ESPN) · 0 ya en juego/terminados al generar.
+Etiquetas: [observado] · [reportado] · [estimado]
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.</pre></details>
+<article class="m" id="m-ARS-EVE"><div class="mh"><div class="mt"><span class="hr">08:00</span> <b>Arsenal – Everton</b><div class="lg">⚽ Premier League · #1 · parte 1 · 🟢</div></div><button class="c">📋 Copiar</button></div><div class="gv"><div class="gl">⚽ Goles esperados · rango · 1T 1.0–1.3</div><div class="gr t"><span>Total</span><div class="tk"><i style="left:44.0%;width:14.0%"></i></div><b>2.2–2.9</b></div><div class="gr "><span>Arsenal</span><div class="tk"><i style="left:30.0%;width:12.0%"></i></div><b>1.5–2.1</b></div><div class="gr "><span>Everton</span><div class="tk"><i style="left:12.0%;width:6.0%"></i></div><b>0.6–0.9</b></div><div class="gl">Marcador más probable y 5 alternativas</div><div class="gs on"><b>1-0</b><div class="bb"><i style="width:100%"></i></div><span>13%</span></div><div class="gs"><b>2-0</b><div class="bb"><i style="width:94%"></i></div><span>12%</span></div><div class="gs"><b>1-1</b><div class="bb"><i style="width:86%"></i></div><span>11%</span></div><div class="gs"><b>2-1</b><div class="bb"><i style="width:79%"></i></div><span>10%</span></div><div class="gs"><b>3-0</b><div class="bb"><i style="width:62%"></i></div><span>8%</span></div><div class="gs"><b>0-0</b><div class="bb"><i style="width:57%"></i></div><span>7%</span></div><div class="gl">Más probable por resultado</div><div class="gp">Gana Arsenal (65%): <b>1-0</b> · Empate (23%): <b>1-1</b> · Gana Everton (13%): <b>0-1</b></div><div class="gl">Expectativa total</div><div class="pp"><div><b>51%</b><span>3+ goles</span></div><div><b>29%</b><span>4+</span></div><div><b>14%</b><span>5+</span></div><div><b>48%</b><span>ambos anotan</span></div></div><div class="dt"><div><span>7%</span><i style="height:18px"></i><b>0</b></div><div><span>17%</span><i style="height:41px"></i><b>1</b></div><div><span>25%</span><i style="height:60px"></i><b>2</b></div><div><span>22%</span><i style="height:53px"></i><b>3</b></div><div><span>15%</span><i style="height:36px"></i><b>4</b></div><div><span>8%</span><i style="height:20px"></i><b>5</b></div><div><span>4%</span><i style="height:9px"></i><b>6</b></div><div><span>2%</span><i style="height:5px"></i><b>7+</b></div></div><div class="mu" style="text-align:center;font-size:11px">distribución del total de goles</div><div class="gl">Escenarios</div><div class="es"><div class="eh"><b>Partido cerrado</b><span>29%</span></div><div class="bb"><i style="width:29%"></i></div><div class="mu" style="font-size:11.5px">0-0 al descanso</div><div class="gp">1.5 goles esperados · 3+ 19% · 4+ 6% → <b>0-0</b> <span class="mu">(o 1-0, 2-0)</span></div></div><div class="es"><div class="eh"><b>Se abre antes del descanso</b><span>57%</span></div><div class="bb"><i style="width:57%"></i></div><div class="mu" style="font-size:11.5px">hay gol en el 1T y Arsenal no va perdiendo</div><div class="gp">3.3 goles esperados · 3+ 65% · 4+ 39% → <b>2-0</b> <span class="mu">(o 2-1, 3-0)</span></div></div><div class="es"><div class="eh"><b>Arsenal obligado a arriesgar</b><span>14%</span></div><div class="bb"><i style="width:14%"></i></div><div class="mu" style="font-size:11.5px">Arsenal se va al descanso perdiendo</div><div class="gp">3.1 goles esperados · 3+ 59% · 4+ 34% → <b>1-1</b> <span class="mu">(o 0-1, 1-2)</span></div></div><div class="gp mu" style="margin-top:6px;font-size:12px">Base (mezcla con la línea) 2.72 goles · contexto: sin ajuste con evidencia</div></div><pre data-h="### 08:00 · Arsenal – Everton · Emirates Stadium, London" data-l="## ⚽ Premier League" data-n="">- 1X2: 65% / 23% / 13% · Alineación probable
+- 📋 Arsenal sin Saka, Saliba ni Tzolis; Hincapié disponible. [Premier: 2º, 18 pts en 7 (GF 11, DG +6)] | Everton sin bajas confirmadas; Branthwaite preocupa y Nørgaard no está para jugar. [Premier: 8º, 10 pts en 7 (GF 8, DG +1)]
+- Bajas: Arsenal: Bukayo Saka (cuádriceps), William Saliba (espalda), Christos Tzolis (isquiotibial) · Everton: Jarrad Branthwaite (molestia (duda)), Christian Nørgaard (sin ritmo (no apto))
+- ⚔️ Arsenal (2º) sin Saka, Saliba ni Tzolis recibe a un Everton 8º que llega completo salvo la duda de Branthwaite. Arsenal es claro favorito (64%), pero sin Saka el volumen es moderado (≈14 tiros contra ≈11) y la forma de ganar es por poco. El marcador modal es 2-0: Everton va a defender bajo y Arsenal necesita a Eze y Madueke para abrir el bloque.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 2.72 (Arsenal 1.94 · Everton 0.77) · rango modelo↔casino 2.2–2.9
+    base (mezcla con la línea) 2.72 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 1-0 (13%) · alternativas: 2-0 (12%) · 1-1 (11%) · 2-1 (10%) · 3-0 (8%) · 0-0 (7%)
+  - P(3+ goles) 51% · P(4+) 29% · P(5+) 14% · ambos anotan 48%
+  - Distribución del total: 0: 7% · 1: 17% · 2: 25% · 3: 22% · 4: 15% · 5: 8% · 6: 4% · 7+: 2%
+  - Más probable por resultado: si gana Arsenal 1-0 · si empatan 1-1 · si gana Everton 0-1
+  - Escenarios:
+    – Partido cerrado (29%; 0-0 al descanso): 1.5 goles esperados, P(3+) 19%, P(4+) 6% → 0-0 (o 1-0, 2-0)
+    – Se abre antes del descanso (57%; hay gol en el 1T y Arsenal no va perdiendo): 3.3 goles esperados, P(3+) 65%, P(4+) 39% → 2-0 (o 2-1, 3-0)
+    – Arsenal obligado a arriesgar (14%; Arsenal se va al descanso perdiendo): 3.1 goles esperados, P(3+) 59%, P(4+) 34% → 1-1 (o 0-1, 1-2)
+    🧠 Lectura:
+    Arsenal genera ≈14 tiros y 1.5–2.2 goles esperados; Everton, ≈11 tiros y 0.6–0.9.
+    Sin Saka Arsenal genera menos por la derecha; Everton defiende bajo y casi no llega. El casino espera ≈2.8 goles y el modelo ≈2.2; ~44% del gol cae en el 1T.
+    📊 Arsenal: 1.57 goles a favor y 0.71 en contra por partido, xG 1.81 / xGA 1.06, 12.4 tiros (4.4 a puerta), PPDA 9.9; últimos 5: 1.4 a favor / 1.0 en contra (xG 1.85 / 1.31); ajustado por rival: xG 1.88 / xGA 1.13.
+    📊 Everton: 1.14 goles a favor y 1.0 en contra por partido, xG 1.67 / xGA 1.48, 14.4 tiros (5.0 a puerta), PPDA 15.1; últimos 5: 1.0 a favor / 1.2 en contra (xG 1.72 / 1.17); ajustado por rival: xG 1.5 / xGA 1.61.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Arsenal: 2.8 días de descanso (último: Arsenal at Bayern Munich), 4 partidos en 14 días; Arsenal viene de jugar vs Bayern Munich (2026-10-21), partido fuera de la liga; Everton: 7.1 días de descanso (último: Chelsea at Everton), 2 partidos en 14 días; Everton anota 1.14 por partido con 1.67 de xG (-0.53).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Bukayo Saka (Arsenal), William Saliba (Arsenal), Christos Tzolis (Arsenal), Jarrad Branthwaite (Everton), Christian Nørgaard (Everton).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔗 Combinada: Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 📏 Arsenal a 1.5: el casino espera ~2.0 goles de Arsenal; el modelo 1.5 porque muestra chica (7 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a baja
+- 📏 Goles 2.5 alta · ARS 1.5 alta · EVE 0.5 justa · AA alta
+- Picks: 🟢 Córners Arsenal menos de 6.5 (71%) · 🔗 Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 🔥 Córners Everton más de 3.5 (60%) · 🔗 1T córners Arsenal menos de 4.5 + Córners menos de 11.5 (69%) · ❌ Evitar: Más de 2.5 goles (51%)
+- Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN</pre></article><article class="m" id="m-BVB-SGE"><div class="mh"><div class="mt"><span class="hr">10:30</span> <b>Borussia Dortmund – Eintracht Frankfurt</b><div class="lg">⚽ Bundesliga · #2 · parte 1</div></div><button class="c">📋 Copiar</button></div><div class="gv"><div class="gl">⚽ Goles esperados · rango · 1T 1.4–1.7</div><div class="gr t"><span>Total</span><div class="tk"><i style="left:64.0%;width:12.0%"></i></div><b>3.2–3.8</b></div><div class="gr "><span>Dortmund</span><div class="tk"><i style="left:42.0%;width:10.0%"></i></div><b>2.1–2.6</b></div><div class="gr "><span>Eintracht Frankfurt</span><div class="tk"><i style="left:20.0%;width:8.0%"></i></div><b>1.0–1.4</b></div><div class="gl">Marcador más probable y 5 alternativas</div><div class="gs on"><b>2-1</b><div class="bb"><i style="width:100%"></i></div><span>10%</span></div><div class="gs"><b>1-1</b><div class="bb"><i style="width:86%"></i></div><span>9%</span></div><div class="gs"><b>2-0</b><div class="bb"><i style="width:77%"></i></div><span>8%</span></div><div class="gs"><b>3-1</b><div class="bb"><i style="width:75%"></i></div><span>8%</span></div><div class="gs"><b>1-0</b><div class="bb"><i style="width:63%"></i></div><span>6%</span></div><div class="gs"><b>2-2</b><div class="bb"><i style="width:59%"></i></div><span>6%</span></div><div class="gl">Más probable por resultado</div><div class="gp">Gana Dortmund (64%): <b>2-1</b> · Empate (20%): <b>1-1</b> · Gana Eintracht Frankfurt (16%): <b>1-2</b></div><div class="gl">Expectativa total</div><div class="pp"><div><b>70%</b><span>3+ goles</span></div><div><b>49%</b><span>4+</span></div><div><b>30%</b><span>5+</span></div><div><b>66%</b><span>ambos anotan</span></div></div><div class="dt"><div><span>3%</span><i style="height:9px"></i><b>0</b></div><div><span>9%</span><i style="height:25px"></i><b>1</b></div><div><span>18%</span><i style="height:53px"></i><b>2</b></div><div><span>21%</span><i style="height:60px"></i><b>3</b></div><div><span>19%</span><i style="height:55px"></i><b>4</b></div><div><span>14%</span><i style="height:41px"></i><b>5</b></div><div><span>9%</span><i style="height:26px"></i><b>6</b></div><div><span>7%</span><i style="height:21px"></i><b>7+</b></div></div><div class="mu" style="text-align:center;font-size:11px">distribución del total de goles</div><div class="gl">Escenarios</div><div class="es"><div class="eh"><b>Partido cerrado</b><span>19%</span></div><div class="bb"><i style="width:19%"></i></div><div class="mu" style="font-size:11.5px">0-0 al descanso</div><div class="gp">2.0 goles esperados · 3+ 31% · 4+ 14% → <b>1-0</b> <span class="mu">(o 0-0, 1-1)</span></div></div><div class="es"><div class="eh"><b>Se abre antes del descanso</b><span>63%</span></div><div class="bb"><i style="width:63%"></i></div><div class="mu" style="font-size:11.5px">hay gol en el 1T y Borussia Dortmund no va perdiendo</div><div class="gp">4.1 goles esperados · 3+ 80% · 4+ 58% → <b>2-1</b> <span class="mu">(o 3-1, 2-0)</span></div></div><div class="es"><div class="eh"><b>Borussia Dortmund obligado a arriesgar</b><span>18%</span></div><div class="bb"><i style="width:18%"></i></div><div class="mu" style="font-size:11.5px">Borussia Dortmund se va al descanso perdiendo</div><div class="gp">3.9 goles esperados · 3+ 75% · 4+ 56% → <b>1-1</b> <span class="mu">(o 2-2, 1-2)</span></div></div><div class="gp mu" style="margin-top:6px;font-size:12px">Base (mezcla con la línea) 3.64 goles · contexto: sin ajuste con evidencia</div></div><pre data-h="### 10:30 · Borussia Dortmund – Eintracht Frankfurt · Signal Iduna Park, Aue" data-l="## ⚽ Bundesliga" data-n="">- 1X2: 64% / 20% / 16% · Alineación probable
+- 📋 Dortmund sin Emre Can; Guirassy titular. [Bundesliga: 2º, 14 pts en 6 (GF 11, DG +7)] | Frankfurt solo con Oscar Højlund en duda. [Bundesliga: 11º, 8 pts en 6 (GF 10, DG -6)]
+- Bajas: Dortmund: Emre Can (rodilla (larga)) · Eintracht Frankfurt: Oscar Højlund (molestia (duda))
+- ⚔️ Dortmund (2º) solo sin Emre Can; Frankfurt (11º, DG −6) con Højlund en duda. El modelo le da a Dortmund 64% y un partido con goles (71% de más de 2.5); los córners salen parejos (≈4.5 contra ≈4.4). Frankfurt concede mucho: Dortmund en casa tiene el partido de cara, el modal es 2-1.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 3.64 (Borussia Dortmund 2.41 · Eintracht Frankfurt 1.23) · rango modelo↔casino 3.2–3.8
+    base (mezcla con la línea) 3.64 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 2-1 (10%) · alternativas: 1-1 (9%) · 2-0 (8%) · 3-1 (8%) · 1-0 (6%) · 2-2 (6%)
+  - P(3+ goles) 70% · P(4+) 49% · P(5+) 30% · ambos anotan 66%
+  - Distribución del total: 0: 3% · 1: 9% · 2: 18% · 3: 21% · 4: 19% · 5: 14% · 6: 9% · 7+: 7%
+  - Más probable por resultado: si gana Borussia Dortmund 2-1 · si empatan 1-1 · si gana Eintracht Frankfurt 1-2
+  - Escenarios:
+    – Partido cerrado (19%; 0-0 al descanso): 2.0 goles esperados, P(3+) 31%, P(4+) 14% → 1-0 (o 0-0, 1-1)
+    – Se abre antes del descanso (63%; hay gol en el 1T y Borussia Dortmund no va perdiendo): 4.1 goles esperados, P(3+) 80%, P(4+) 58% → 2-1 (o 3-1, 2-0)
+    – Borussia Dortmund obligado a arriesgar (18%; Borussia Dortmund se va al descanso perdiendo): 3.9 goles esperados, P(3+) 75%, P(4+) 56% → 1-1 (o 2-2, 1-2)
+    🧠 Lectura:
+    Borussia Dortmund genera ≈16 tiros y 2.1–2.7 goles esperados; Eintracht Frankfurt, ≈12 tiros y 1.0–1.4.
+    Frankfurt concede mucho; Dortmund casi completo. El casino espera ≈3.7 goles y el modelo ≈3.2; ~44% del gol cae en el 1T.
+    📊 Borussia Dortmund: 1.83 goles a favor y 0.67 en contra por partido, xG 2.03 / xGA 1.01, 14.8 tiros (5.2 a puerta), PPDA 10.4; últimos 5: 1.8 a favor / 0.8 en contra (xG 2.18 / 0.99); ajustado por rival: xG 1.98 / xGA 1.42.
+    📊 Eintracht Frankfurt: 1.67 goles a favor y 2.67 en contra por partido, xG 2.02 / xGA 2.44, 14.7 tiros (5.8 a puerta), PPDA 12.9; últimos 5: 1.4 a favor / 2.6 en contra (xG 2.0 / 2.48); ajustado por rival: xG 1.92 / xGA 2.2.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Borussia Dortmund: 4.0 días de descanso (último: Borussia Dortmund at Sabah FK), 4 partidos en 14 días; Borussia Dortmund viene de jugar vs Sabah FK (2026-10-20), partido fuera de la liga; Eintracht Frankfurt: 7.9 días de descanso (último: FC Cologne at Eintracht Frankfurt), 2 partidos en 14 días; Eintracht Frankfurt anota 1.67 por partido con 2.02 de xG (-0.35).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Emre Can (Borussia Dortmund), Oscar Højlund (Eintracht Frankfurt).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔥 Agresivo: Borussia Dortmund menos de 2.5 goles (57%) · 📏 Borussia Dortmund a 2.5: el casino espera ~2.4 goles de Borussia Dortmund; el modelo 2.1 porque muestra chica (6 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 2–5 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a justa
+- 📏 Goles 3.5 alta · BVB 2.5 alta · SGE 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 Borussia Dortmund menos de 2.5 goles (57%) · 🔗 Eintracht Frankfurt +2.5 (hándicap) + Borussia Dortmund menos de 1.5 goles en el 1T (62%) · ❌ Evitar: Más de 3.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 54 de 55 partidos con córners/tarjetas/tiros de FD; el resto de ESPN</pre></article></main><button class="top" onclick="scrollTo(0,0)">↑ Arriba</button>
+<textarea id="t" class="h" readonly># Análisis FUT · 2026-10-24 (PRUEBA LOCAL · 2 partidos) · hora CDMX
+
+2 partidos · 1 🟢 Sólidos · 2 con el motor (v5 + goles por contexto) · 0 por estimación (Super League suiza, sin datos en ESPN) · 0 ya en juego/terminados al generar.
+Etiquetas: [observado] · [reportado] · [estimado]
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+## ⚽ Premier League
+
+### 08:00 · Arsenal – Everton · Emirates Stadium, London
+- 1X2: 65% / 23% / 13% · Alineación probable
+- 📋 Arsenal sin Saka, Saliba ni Tzolis; Hincapié disponible. [Premier: 2º, 18 pts en 7 (GF 11, DG +6)] | Everton sin bajas confirmadas; Branthwaite preocupa y Nørgaard no está para jugar. [Premier: 8º, 10 pts en 7 (GF 8, DG +1)]
+- Bajas: Arsenal: Bukayo Saka (cuádriceps), William Saliba (espalda), Christos Tzolis (isquiotibial) · Everton: Jarrad Branthwaite (molestia (duda)), Christian Nørgaard (sin ritmo (no apto))
+- ⚔️ Arsenal (2º) sin Saka, Saliba ni Tzolis recibe a un Everton 8º que llega completo salvo la duda de Branthwaite. Arsenal es claro favorito (64%), pero sin Saka el volumen es moderado (≈14 tiros contra ≈11) y la forma de ganar es por poco. El marcador modal es 2-0: Everton va a defender bajo y Arsenal necesita a Eze y Madueke para abrir el bloque.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 2.72 (Arsenal 1.94 · Everton 0.77) · rango modelo↔casino 2.2–2.9
+    base (mezcla con la línea) 2.72 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 1-0 (13%) · alternativas: 2-0 (12%) · 1-1 (11%) · 2-1 (10%) · 3-0 (8%) · 0-0 (7%)
+  - P(3+ goles) 51% · P(4+) 29% · P(5+) 14% · ambos anotan 48%
+  - Distribución del total: 0: 7% · 1: 17% · 2: 25% · 3: 22% · 4: 15% · 5: 8% · 6: 4% · 7+: 2%
+  - Más probable por resultado: si gana Arsenal 1-0 · si empatan 1-1 · si gana Everton 0-1
+  - Escenarios:
+    – Partido cerrado (29%; 0-0 al descanso): 1.5 goles esperados, P(3+) 19%, P(4+) 6% → 0-0 (o 1-0, 2-0)
+    – Se abre antes del descanso (57%; hay gol en el 1T y Arsenal no va perdiendo): 3.3 goles esperados, P(3+) 65%, P(4+) 39% → 2-0 (o 2-1, 3-0)
+    – Arsenal obligado a arriesgar (14%; Arsenal se va al descanso perdiendo): 3.1 goles esperados, P(3+) 59%, P(4+) 34% → 1-1 (o 0-1, 1-2)
+    🧠 Lectura:
+    Arsenal genera ≈14 tiros y 1.5–2.2 goles esperados; Everton, ≈11 tiros y 0.6–0.9.
+    Sin Saka Arsenal genera menos por la derecha; Everton defiende bajo y casi no llega. El casino espera ≈2.8 goles y el modelo ≈2.2; ~44% del gol cae en el 1T.
+    📊 Arsenal: 1.57 goles a favor y 0.71 en contra por partido, xG 1.81 / xGA 1.06, 12.4 tiros (4.4 a puerta), PPDA 9.9; últimos 5: 1.4 a favor / 1.0 en contra (xG 1.85 / 1.31); ajustado por rival: xG 1.88 / xGA 1.13.
+    📊 Everton: 1.14 goles a favor y 1.0 en contra por partido, xG 1.67 / xGA 1.48, 14.4 tiros (5.0 a puerta), PPDA 15.1; últimos 5: 1.0 a favor / 1.2 en contra (xG 1.72 / 1.17); ajustado por rival: xG 1.5 / xGA 1.61.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Arsenal: 2.8 días de descanso (último: Arsenal at Bayern Munich), 4 partidos en 14 días; Arsenal viene de jugar vs Bayern Munich (2026-10-21), partido fuera de la liga; Everton: 7.1 días de descanso (último: Chelsea at Everton), 2 partidos en 14 días; Everton anota 1.14 por partido con 1.67 de xG (-0.53).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Bukayo Saka (Arsenal), William Saliba (Arsenal), Christos Tzolis (Arsenal), Jarrad Branthwaite (Everton), Christian Nørgaard (Everton).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔗 Combinada: Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 📏 Arsenal a 1.5: el casino espera ~2.0 goles de Arsenal; el modelo 1.5 porque muestra chica (7 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a baja
+- 📏 Goles 2.5 alta · ARS 1.5 alta · EVE 0.5 justa · AA alta
+- Picks: 🟢 Córners Arsenal menos de 6.5 (71%) · 🔗 Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 🔥 Córners Everton más de 3.5 (60%) · 🔗 1T córners Arsenal menos de 4.5 + Córners menos de 11.5 (69%) · ❌ Evitar: Más de 2.5 goles (51%)
+- Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+
+## ⚽ Bundesliga
+
+### 10:30 · Borussia Dortmund – Eintracht Frankfurt · Signal Iduna Park, Aue
+- 1X2: 64% / 20% / 16% · Alineación probable
+- 📋 Dortmund sin Emre Can; Guirassy titular. [Bundesliga: 2º, 14 pts en 6 (GF 11, DG +7)] | Frankfurt solo con Oscar Højlund en duda. [Bundesliga: 11º, 8 pts en 6 (GF 10, DG -6)]
+- Bajas: Dortmund: Emre Can (rodilla (larga)) · Eintracht Frankfurt: Oscar Højlund (molestia (duda))
+- ⚔️ Dortmund (2º) solo sin Emre Can; Frankfurt (11º, DG −6) con Højlund en duda. El modelo le da a Dortmund 64% y un partido con goles (71% de más de 2.5); los córners salen parejos (≈4.5 contra ≈4.4). Frankfurt concede mucho: Dortmund en casa tiene el partido de cara, el modal es 2-1.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 3.64 (Borussia Dortmund 2.41 · Eintracht Frankfurt 1.23) · rango modelo↔casino 3.2–3.8
+    base (mezcla con la línea) 3.64 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 2-1 (10%) · alternativas: 1-1 (9%) · 2-0 (8%) · 3-1 (8%) · 1-0 (6%) · 2-2 (6%)
+  - P(3+ goles) 70% · P(4+) 49% · P(5+) 30% · ambos anotan 66%
+  - Distribución del total: 0: 3% · 1: 9% · 2: 18% · 3: 21% · 4: 19% · 5: 14% · 6: 9% · 7+: 7%
+  - Más probable por resultado: si gana Borussia Dortmund 2-1 · si empatan 1-1 · si gana Eintracht Frankfurt 1-2
+  - Escenarios:
+    – Partido cerrado (19%; 0-0 al descanso): 2.0 goles esperados, P(3+) 31%, P(4+) 14% → 1-0 (o 0-0, 1-1)
+    – Se abre antes del descanso (63%; hay gol en el 1T y Borussia Dortmund no va perdiendo): 4.1 goles esperados, P(3+) 80%, P(4+) 58% → 2-1 (o 3-1, 2-0)
+    – Borussia Dortmund obligado a arriesgar (18%; Borussia Dortmund se va al descanso perdiendo): 3.9 goles esperados, P(3+) 75%, P(4+) 56% → 1-1 (o 2-2, 1-2)
+    🧠 Lectura:
+    Borussia Dortmund genera ≈16 tiros y 2.1–2.7 goles esperados; Eintracht Frankfurt, ≈12 tiros y 1.0–1.4.
+    Frankfurt concede mucho; Dortmund casi completo. El casino espera ≈3.7 goles y el modelo ≈3.2; ~44% del gol cae en el 1T.
+    📊 Borussia Dortmund: 1.83 goles a favor y 0.67 en contra por partido, xG 2.03 / xGA 1.01, 14.8 tiros (5.2 a puerta), PPDA 10.4; últimos 5: 1.8 a favor / 0.8 en contra (xG 2.18 / 0.99); ajustado por rival: xG 1.98 / xGA 1.42.
+    📊 Eintracht Frankfurt: 1.67 goles a favor y 2.67 en contra por partido, xG 2.02 / xGA 2.44, 14.7 tiros (5.8 a puerta), PPDA 12.9; últimos 5: 1.4 a favor / 2.6 en contra (xG 2.0 / 2.48); ajustado por rival: xG 1.92 / xGA 2.2.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Borussia Dortmund: 4.0 días de descanso (último: Borussia Dortmund at Sabah FK), 4 partidos en 14 días; Borussia Dortmund viene de jugar vs Sabah FK (2026-10-20), partido fuera de la liga; Eintracht Frankfurt: 7.9 días de descanso (último: FC Cologne at Eintracht Frankfurt), 2 partidos en 14 días; Eintracht Frankfurt anota 1.67 por partido con 2.02 de xG (-0.35).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Emre Can (Borussia Dortmund), Oscar Højlund (Eintracht Frankfurt).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔥 Agresivo: Borussia Dortmund menos de 2.5 goles (57%) · 📏 Borussia Dortmund a 2.5: el casino espera ~2.4 goles de Borussia Dortmund; el modelo 2.1 porque muestra chica (6 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 2–5 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a justa
+- 📏 Goles 3.5 alta · BVB 2.5 alta · SGE 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 Borussia Dortmund menos de 2.5 goles (57%) · 🔗 Eintracht Frankfurt +2.5 (hándicap) + Borussia Dortmund menos de 1.5 goles en el 1T (62%) · ❌ Evitar: Más de 3.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 54 de 55 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+</textarea><textarea id="ic" class="h" readonly>INSTRUCCIONES CORTAS PARA CHATGPT (un solo partido, copiado y pegado por el usuario)
+
+Abajo va UN partido de fútbol del PRUEBA LOCAL (2 partidos) (hora CDMX/Monterrey) con el análisis de mi modelo propio (Monte Carlo v5, 10,000 simulaciones; o estimación Poisson si así lo dice). No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo: revisa el partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos); quédate con los picks más sólidos y coherentes con la lectura; preséntalo limpio para iPhone (🔥 encabezado, 📋 contexto y bajas con su fuente, ⚔️ lectura, ⚽ goles, 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners y el cierre: 🟢 Sólido o &quot;Sin Sólido&quot;, 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada uno con su % y una línea de contexto). Si no estás de acuerdo con algún pick, dilo y explica por qué con estos datos. Cierra con: (a) picks con los que estás de acuerdo y (b) con los que no, con el motivo en una línea.
+
+Reglas obligatorias: todo en español llano · nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot; · nunca &quot;No hay empate&quot; como pick · nunca el Más de 1.5 goles del partido como pick · no te inclines por el favorito · sin hándicaps +2.5 inflados · los % son del modelo, no seguridad · respeta [observado] / [reportado] / [estimado] · desconfía de rachas con muestras pequeñas · alineaciones probables y árbitro no verificado salvo que diga otra cosa.
+
+Goles por contexto (si el partido lo trae):
+⚽ presenta goles esperados (total y por equipo) y «base → con contexto» (o «contexto: sin ajuste con evidencia»); el marcador más probable + sus 5 alternativas con %; P(3+), P(4+), P(5+) y ambos anotan; la distribución del total (0…7+); el más probable por resultado; y los 3 escenarios (Partido cerrado / Se abre antes del descanso / favorito obligado a arriesgar) con su %, goles esperados, P(3+), P(4+) y marcador. No hay techo de marcador: no lo bajes a 1-1/2-1 por costumbre. El marcador más probable NO es la expectativa total: si P(3+) o P(4+) es alta, dilo aunque el más probable sea corto. Solo cuenta un factor de contexto si viene con ✅, su magnitud y su fuente; lo de 🧩 (descanso, rotación, bajas ya en precio) ya está en la línea: no lo sumes otra vez.
+El contexto aplica SOLO a goles: córners, tiros y tarjetas se quedan 100% respaldados por la estadística del análisis (no los muevas por contexto).</textarea><textarea id="t1" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
+
+Abajo va el análisis completo de los 100 partidos de fútbol del PRUEBA LOCAL (2 partidos) (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo:
+1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
+2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
+3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (goles esperados y base → contexto, más probable + 5 alternativas, P(3+)/P(4+)/P(5+), distribución del total y los 3 escenarios; si no viene «por contexto»: rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
+4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
+5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+
+Reglas obligatorias (no se negocian):
+- Todo en español llano.
+- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
+- Nunca uses el Más de 1.5 goles del partido como pick.
+- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
+- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
+- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
+- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
+- Desconfía de rachas con muestras pequeñas.
+- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
+- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
+- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
+- ⚽ Goles por contexto (si el partido trae «⚽ Goles (por contexto)»): presenta goles esperados (total y por equipo) y «base → con contexto» (o «contexto: sin ajuste con evidencia»); el marcador más probable + sus 5 alternativas con %; P(3+), P(4+), P(5+) y ambos anotan; la distribución del total (0…7+); el más probable por resultado; y los 3 escenarios (Partido cerrado / Se abre antes del descanso / favorito obligado a arriesgar) con su %, goles esperados, P(3+), P(4+) y marcador. No hay techo de marcador: no lo bajes a 1-1/2-1 por costumbre. El marcador más probable NO es la expectativa total: si P(3+) o P(4+) es alta, dilo aunque el más probable sea corto. Solo cuenta un factor de contexto si viene con ✅, su magnitud y su fuente; lo de 🧩 (descanso, rotación, bajas ya en precio) ya está en la línea: no lo sumes otra vez.
+- El contexto aplica SOLO a goles: córners, tiros y tarjetas se quedan 100% respaldados por la estadística del análisis (no los muevas por contexto).
+- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
+- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
+- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
+- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+
+PARTE 1 DE 1 · partidos 1–2 de 2 (hora CDMX 08:00–10:30). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
+
+===================== ANÁLISIS =====================
+# Análisis FUT · 2026-10-24 (PRUEBA LOCAL · 2 partidos) · hora CDMX
+
+2 partidos · 1 🟢 Sólidos · 2 con el motor (v5 + goles por contexto) · 0 por estimación (Super League suiza, sin datos en ESPN) · 0 ya en juego/terminados al generar.
+Etiquetas: [observado] · [reportado] · [estimado]
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+PARTE 1 DE 1 · partidos 1–2 de 2 (hora CDMX 08:00–10:30). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
+
+## ⚽ Premier League
+
+### 08:00 · Arsenal – Everton · Emirates Stadium, London
+- 1X2: 65% / 23% / 13% · Alineación probable
+- 📋 Arsenal sin Saka, Saliba ni Tzolis; Hincapié disponible. [Premier: 2º, 18 pts en 7 (GF 11, DG +6)] | Everton sin bajas confirmadas; Branthwaite preocupa y Nørgaard no está para jugar. [Premier: 8º, 10 pts en 7 (GF 8, DG +1)]
+- Bajas: Arsenal: Bukayo Saka (cuádriceps), William Saliba (espalda), Christos Tzolis (isquiotibial) · Everton: Jarrad Branthwaite (molestia (duda)), Christian Nørgaard (sin ritmo (no apto))
+- ⚔️ Arsenal (2º) sin Saka, Saliba ni Tzolis recibe a un Everton 8º que llega completo salvo la duda de Branthwaite. Arsenal es claro favorito (64%), pero sin Saka el volumen es moderado (≈14 tiros contra ≈11) y la forma de ganar es por poco. El marcador modal es 2-0: Everton va a defender bajo y Arsenal necesita a Eze y Madueke para abrir el bloque.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 2.72 (Arsenal 1.94 · Everton 0.77) · rango modelo↔casino 2.2–2.9
+    base (mezcla con la línea) 2.72 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 1-0 (13%) · alternativas: 2-0 (12%) · 1-1 (11%) · 2-1 (10%) · 3-0 (8%) · 0-0 (7%)
+  - P(3+ goles) 51% · P(4+) 29% · P(5+) 14% · ambos anotan 48%
+  - Distribución del total: 0: 7% · 1: 17% · 2: 25% · 3: 22% · 4: 15% · 5: 8% · 6: 4% · 7+: 2%
+  - Más probable por resultado: si gana Arsenal 1-0 · si empatan 1-1 · si gana Everton 0-1
+  - Escenarios:
+    – Partido cerrado (29%; 0-0 al descanso): 1.5 goles esperados, P(3+) 19%, P(4+) 6% → 0-0 (o 1-0, 2-0)
+    – Se abre antes del descanso (57%; hay gol en el 1T y Arsenal no va perdiendo): 3.3 goles esperados, P(3+) 65%, P(4+) 39% → 2-0 (o 2-1, 3-0)
+    – Arsenal obligado a arriesgar (14%; Arsenal se va al descanso perdiendo): 3.1 goles esperados, P(3+) 59%, P(4+) 34% → 1-1 (o 0-1, 1-2)
+    🧠 Lectura:
+    Arsenal genera ≈14 tiros y 1.5–2.2 goles esperados; Everton, ≈11 tiros y 0.6–0.9.
+    Sin Saka Arsenal genera menos por la derecha; Everton defiende bajo y casi no llega. El casino espera ≈2.8 goles y el modelo ≈2.2; ~44% del gol cae en el 1T.
+    📊 Arsenal: 1.57 goles a favor y 0.71 en contra por partido, xG 1.81 / xGA 1.06, 12.4 tiros (4.4 a puerta), PPDA 9.9; últimos 5: 1.4 a favor / 1.0 en contra (xG 1.85 / 1.31); ajustado por rival: xG 1.88 / xGA 1.13.
+    📊 Everton: 1.14 goles a favor y 1.0 en contra por partido, xG 1.67 / xGA 1.48, 14.4 tiros (5.0 a puerta), PPDA 15.1; últimos 5: 1.0 a favor / 1.2 en contra (xG 1.72 / 1.17); ajustado por rival: xG 1.5 / xGA 1.61.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Arsenal: 2.8 días de descanso (último: Arsenal at Bayern Munich), 4 partidos en 14 días; Arsenal viene de jugar vs Bayern Munich (2026-10-21), partido fuera de la liga; Everton: 7.1 días de descanso (último: Chelsea at Everton), 2 partidos en 14 días; Everton anota 1.14 por partido con 1.67 de xG (-0.53).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Bukayo Saka (Arsenal), William Saliba (Arsenal), Christos Tzolis (Arsenal), Jarrad Branthwaite (Everton), Christian Nørgaard (Everton).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔗 Combinada: Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 📏 Arsenal a 1.5: el casino espera ~2.0 goles de Arsenal; el modelo 1.5 porque muestra chica (7 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a baja
+- 📏 Goles 2.5 alta · ARS 1.5 alta · EVE 0.5 justa · AA alta
+- Picks: 🟢 Córners Arsenal menos de 6.5 (71%) · 🔗 Arsenal menos de 2.5 goles + Everton +1.5 (hándicap) (57%) · 🔥 Córners Everton más de 3.5 (60%) · 🔗 1T córners Arsenal menos de 4.5 + Córners menos de 11.5 (69%) · ❌ Evitar: Más de 2.5 goles (51%)
+- Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+
+## ⚽ Bundesliga
+
+### 10:30 · Borussia Dortmund – Eintracht Frankfurt · Signal Iduna Park, Aue
+- 1X2: 64% / 20% / 16% · Alineación probable
+- 📋 Dortmund sin Emre Can; Guirassy titular. [Bundesliga: 2º, 14 pts en 6 (GF 11, DG +7)] | Frankfurt solo con Oscar Højlund en duda. [Bundesliga: 11º, 8 pts en 6 (GF 10, DG -6)]
+- Bajas: Dortmund: Emre Can (rodilla (larga)) · Eintracht Frankfurt: Oscar Højlund (molestia (duda))
+- ⚔️ Dortmund (2º) solo sin Emre Can; Frankfurt (11º, DG −6) con Højlund en duda. El modelo le da a Dortmund 64% y un partido con goles (71% de más de 2.5); los córners salen parejos (≈4.5 contra ≈4.4). Frankfurt concede mucho: Dortmund en casa tiene el partido de cara, el modal es 2-1.
+- ⚽ Goles (por contexto):
+  - Goles esperados: 3.64 (Borussia Dortmund 2.41 · Eintracht Frankfurt 1.23) · rango modelo↔casino 3.2–3.8
+    base (mezcla con la línea) 3.64 · contexto: sin ajuste con evidencia (0)
+  - Marcador más probable: 2-1 (10%) · alternativas: 1-1 (9%) · 2-0 (8%) · 3-1 (8%) · 1-0 (6%) · 2-2 (6%)
+  - P(3+ goles) 70% · P(4+) 49% · P(5+) 30% · ambos anotan 66%
+  - Distribución del total: 0: 3% · 1: 9% · 2: 18% · 3: 21% · 4: 19% · 5: 14% · 6: 9% · 7+: 7%
+  - Más probable por resultado: si gana Borussia Dortmund 2-1 · si empatan 1-1 · si gana Eintracht Frankfurt 1-2
+  - Escenarios:
+    – Partido cerrado (19%; 0-0 al descanso): 2.0 goles esperados, P(3+) 31%, P(4+) 14% → 1-0 (o 0-0, 1-1)
+    – Se abre antes del descanso (63%; hay gol en el 1T y Borussia Dortmund no va perdiendo): 4.1 goles esperados, P(3+) 80%, P(4+) 58% → 2-1 (o 3-1, 2-0)
+    – Borussia Dortmund obligado a arriesgar (18%; Borussia Dortmund se va al descanso perdiendo): 3.9 goles esperados, P(3+) 75%, P(4+) 56% → 1-1 (o 2-2, 1-2)
+    🧠 Lectura:
+    Borussia Dortmund genera ≈16 tiros y 2.1–2.7 goles esperados; Eintracht Frankfurt, ≈12 tiros y 1.0–1.4.
+    Frankfurt concede mucho; Dortmund casi completo. El casino espera ≈3.7 goles y el modelo ≈3.2; ~44% del gol cae en el 1T.
+    📊 Borussia Dortmund: 1.83 goles a favor y 0.67 en contra por partido, xG 2.03 / xGA 1.01, 14.8 tiros (5.2 a puerta), PPDA 10.4; últimos 5: 1.8 a favor / 0.8 en contra (xG 2.18 / 0.99); ajustado por rival: xG 1.98 / xGA 1.42.
+    📊 Eintracht Frankfurt: 1.67 goles a favor y 2.67 en contra por partido, xG 2.02 / xGA 2.44, 14.7 tiros (5.8 a puerta), PPDA 12.9; últimos 5: 1.4 a favor / 2.6 en contra (xG 2.0 / 2.48); ajustado por rival: xG 1.92 / xGA 2.2.
+    🧩 Medido y sin ajuste (la línea ya lo descuenta; descanso/rotación/necesidad no mejoran fuera de muestra): Borussia Dortmund: 4.0 días de descanso (último: Borussia Dortmund at Sabah FK), 4 partidos en 14 días; Borussia Dortmund viene de jugar vs Sabah FK (2026-10-20), partido fuera de la liga; Eintracht Frankfurt: 7.9 días de descanso (último: FC Cologne at Eintracht Frankfurt), 2 partidos en 14 días; Eintracht Frankfurt anota 1.67 por partido con 2.02 de xG (-0.35).
+    🧩 Bajas conocidas antes de la línea (ya en precio): Emre Can (Borussia Dortmund), Oscar Højlund (Eintracht Frankfurt).
+    Contexto que mueve goles con evidencia: ninguno hoy → goles esperados = base (mezcla con la línea).
+- 🎯 🔥 Agresivo: Borussia Dortmund menos de 2.5 goles (57%) · 📏 Borussia Dortmund a 2.5: el casino espera ~2.4 goles de Borussia Dortmund; el modelo 2.1 porque muestra chica (6 PJ en la temporada); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 2–5 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h alta · eq_a baja · eq1t_a justa
+- 📏 Goles 3.5 alta · BVB 2.5 alta · SGE 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 Borussia Dortmund menos de 2.5 goles (57%) · 🔗 Eintracht Frankfurt +2.5 (hándicap) + Borussia Dortmund menos de 1.5 goles en el 1T (62%) · ❌ Evitar: Más de 3.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 54 de 55 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+</textarea>
+<script>function fb(v){const t=document.createElement('textarea');t.value=v;t.style.position='fixed';t.style.top='0';t.style.opacity='0';document.body.appendChild(t);t.focus();t.select();t.setSelectionRange(0,v.length);let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}
+async function cp(id,msg,val){const v=val!==undefined?val:document.getElementById(id).value;let ok=true;try{await navigator.clipboard.writeText(v)}catch(e){ok=fb(v)}const o=document.getElementById('ok');o.textContent=ok?msg:'No se pudo copiar: mantén presionado el texto y copia a mano';clearTimeout(window._ok);window._ok=setTimeout(()=>o.textContent='',4000)}
+document.getElementById('b').onclick=()=>cp('t','¡Copiado todo! (2 partidos)');
+document.querySelectorAll('button.p').forEach(b=>b.onclick=()=>cp(b.dataset.t,'¡Copiada la '+b.textContent.toLowerCase()+'!'));
+function one(m){const p=m.querySelector('pre'),n=p.dataset.n;return document.getElementById('ic').value+'\n'+(n?'\nNota de la liga: '+n+'\n':'')+'\n===================== ANÁLISIS =====================\n'+p.dataset.l+'\n\n'+p.dataset.h+'\n'+p.textContent+'\n'}
+document.querySelectorAll('button.c').forEach(b=>b.onclick=()=>{cp(null,'¡Copiado: '+b.closest('.m').querySelector('.mt b').textContent+'!',one(b.closest('.m')));b.textContent='✅ Copiado';setTimeout(()=>b.textContent='📋 Copiar',2500)});
+const ix=document.getElementById('ix'),ib=document.getElementById('ib');function tg(v){ix.classList.toggle('on',v);ib.setAttribute('aria-expanded',v);ib.textContent=v?'✕ Cerrar':'☰ Índice'}
+ib.onclick=()=>tg(!ix.classList.contains('on'));ix.querySelectorAll('a').forEach(a=>a.onclick=()=>tg(false));
+const nz=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');document.getElementById('iq').oninput=e=>{const q=nz(e.target.value.trim());ix.querySelectorAll('a').forEach(a=>a.hidden=!!q&&nz(a.dataset.q).indexOf(q)<0);
+ix.querySelectorAll('.il').forEach(h=>{let n=h.nextElementSibling,v=false;while(n&&n.tagName==='A'){if(!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v})};
+const bar=document.querySelector('.bar');function fit(){const h=bar.offsetHeight;ix.style.top=h+'px';document.documentElement.style.scrollPaddingTop=(h+8)+'px';document.querySelector('.wrap').style.paddingTop=(h+10)+'px'}fit();addEventListener('resize',fit);</script></body></html>
