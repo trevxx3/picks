@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:47:25-06:00",
+ "updated": "2026-10-23T23:47:47-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2542,6 +2542,27 @@
    "published": "2026-10-22T21:01:43-06:00",
    "kickoff": "07:30",
    "updated": "2026-10-22T21:01:43-06:00"
+  },
+  {
+   "id": "nfl/2026-10-25/sf-atl",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "sf-atl",
+   "dir": "nfl/2026-10-25/sf-atl",
+   "kind": "game",
+   "title": "San Francisco 49ers @ Atlanta Falcons",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/sf-atl/reporte/index.html",
+   "pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:47:47-06:00",
+   "pick": "🟢 Principal: Bijan Robinson over 18.5 acarreos",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:47:47-06:00",
+   "page": "nfl/2026-10-25/sf-atl/index.html"
   }
  ],
  "sources": {
@@ -2715,7 +2736,9 @@
   "nfl_analisis/2026-10-22/partidos/NE-CHI/NE-CHI.pdf": "nfl/2026-10-22/ne-chi/ne-chi.pdf",
   "nfl_analisis/2026-10-25/semana7_ganadores/cartelera_semana7.html": "nfl/2026-10-25/semana7-ganadores/index.html",
   "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.html": "nfl/2026-10-25/pit-no/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.pdf": "nfl/2026-10-25/pit-no/pit-no.pdf"
+  "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.pdf": "nfl/2026-10-25/pit-no/pit-no.pdf",
+  "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.html": "nfl/2026-10-25/sf-atl/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
