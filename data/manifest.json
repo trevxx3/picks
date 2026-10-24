@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:47:47-06:00",
+ "updated": "2026-10-23T23:48:04-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2544,6 +2544,27 @@
    "updated": "2026-10-22T21:01:43-06:00"
   },
   {
+   "id": "nfl/2026-10-25/cle-ten",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "cle-ten",
+   "dir": "nfl/2026-10-25/cle-ten",
+   "kind": "game",
+   "title": "Cleveland Browns @ Tennessee Titans",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/cle-ten/reporte/index.html",
+   "pdf": "nfl/2026-10-25/cle-ten/cle-ten.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:48:04-06:00",
+   "pick": "🟢 Principal: Quinshon Judkins under 14.5 acarreos",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:48:04-06:00",
+   "page": "nfl/2026-10-25/cle-ten/index.html"
+  },
+  {
    "id": "nfl/2026-10-25/sf-atl",
    "section": "nfl",
    "date": "2026-10-25",
@@ -2738,7 +2759,9 @@
   "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.html": "nfl/2026-10-25/pit-no/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.pdf": "nfl/2026-10-25/pit-no/pit-no.pdf",
   "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.html": "nfl/2026-10-25/sf-atl/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf"
+  "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf",
+  "nfl_analisis/2026-10-25/partidos/CLE-TEN/CLE-TEN.html": "nfl/2026-10-25/cle-ten/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/CLE-TEN/CLE-TEN.pdf": "nfl/2026-10-25/cle-ten/cle-ten.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
