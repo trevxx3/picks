@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-22T21:01:43-06:00",
+ "updated": "2026-10-23T23:47:25-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2504,6 +2504,28 @@
    "page": "nfl/2026-10-22/ne-chi/index.html"
   },
   {
+   "id": "nfl/2026-10-25/pit-no",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "pit-no",
+   "dir": "nfl/2026-10-25/pit-no",
+   "kind": "game",
+   "title": "Pittsburgh Steelers vs New Orleans Saints",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/pit-no/reporte/index.html",
+   "pdf": "nfl/2026-10-25/pit-no/pit-no.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:47:25-06:00",
+   "pick": "🟢 Principal: Jaylen Warren over 26.5 yardas recibidas",
+   "kickoff": "07:30",
+   "league": "NFL · Semana 7",
+   "note": "Sede neutral: Stade de France, París",
+   "updated": "2026-10-23T23:47:25-06:00",
+   "page": "nfl/2026-10-25/pit-no/index.html"
+  },
+  {
    "id": "nfl/2026-10-25/semana7-ganadores",
    "section": "nfl",
    "date": "2026-10-25",
@@ -2691,7 +2713,9 @@
   "futbol_analisis/2026-10-22/racha/cartelera/index.html": "fut/2026-10-22/cartelera/index.html",
   "nfl_analisis/2026-10-22/partidos/NE-CHI/NE-CHI.html": "nfl/2026-10-22/ne-chi/reporte/index.html",
   "nfl_analisis/2026-10-22/partidos/NE-CHI/NE-CHI.pdf": "nfl/2026-10-22/ne-chi/ne-chi.pdf",
-  "nfl_analisis/2026-10-25/semana7_ganadores/cartelera_semana7.html": "nfl/2026-10-25/semana7-ganadores/index.html"
+  "nfl_analisis/2026-10-25/semana7_ganadores/cartelera_semana7.html": "nfl/2026-10-25/semana7-ganadores/index.html",
+  "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.html": "nfl/2026-10-25/pit-no/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/PIT-NO/PIT-NO.pdf": "nfl/2026-10-25/pit-no/pit-no.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
