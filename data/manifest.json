@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:48:04-06:00",
+ "updated": "2026-10-23T23:48:24-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2565,6 +2565,27 @@
    "page": "nfl/2026-10-25/cle-ten/index.html"
   },
   {
+   "id": "nfl/2026-10-25/ind-min",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "ind-min",
+   "dir": "nfl/2026-10-25/ind-min",
+   "kind": "game",
+   "title": "Indianapolis Colts @ Minnesota Vikings",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/ind-min/reporte/index.html",
+   "pdf": "nfl/2026-10-25/ind-min/ind-min.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:48:24-06:00",
+   "pick": "🟢 Principal: Aaron Jones Sr. over 10.5 acarreos",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:48:24-06:00",
+   "page": "nfl/2026-10-25/ind-min/index.html"
+  },
+  {
    "id": "nfl/2026-10-25/sf-atl",
    "section": "nfl",
    "date": "2026-10-25",
@@ -2761,7 +2782,9 @@
   "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.html": "nfl/2026-10-25/sf-atl/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/SF-ATL/SF-ATL.pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf",
   "nfl_analisis/2026-10-25/partidos/CLE-TEN/CLE-TEN.html": "nfl/2026-10-25/cle-ten/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/CLE-TEN/CLE-TEN.pdf": "nfl/2026-10-25/cle-ten/cle-ten.pdf"
+  "nfl_analisis/2026-10-25/partidos/CLE-TEN/CLE-TEN.pdf": "nfl/2026-10-25/cle-ten/cle-ten.pdf",
+  "nfl_analisis/2026-10-25/partidos/IND-MIN/IND-MIN.html": "nfl/2026-10-25/ind-min/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/IND-MIN/IND-MIN.pdf": "nfl/2026-10-25/ind-min/ind-min.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
