@@ -9,12 +9,12 @@ button.p{flex:1;background:#2a2a30;color:#f7941d;border:1px solid #f7941d}
 .nota{color:#999;font-size:12px;padding:0 12px}
 textarea{width:100%;box-sizing:border-box;background:#060607;color:#ddd;border:0;padding:12px;font-size:13px;font-family:ui-monospace,monospace}
 #t{height:calc(100vh - 175px)} .h{position:absolute;left:-9999px;top:0;height:1px;width:1px}</style></head>
-<body><div class="bar"><button id="b">📋 Copiar todo</button><button class="p" data-t="t1">Copiar parte 1</button><button class="p" data-t="t2">Copiar parte 2</button><button class="p" data-t="t3">Copiar parte 3</button><span id="ok"></span></div>
+<body><div class="bar"><button id="b">📋 Copiar todo</button><button class="p" data-t="t1">Copiar parte 1</button><button class="p" data-t="t2">Copiar parte 2</button><button class="p" data-t="t3">Copiar parte 3</button><button class="p" data-t="t4">Copiar parte 4</button><span id="ok"></span></div>
 <div style="height:150px"></div>
-<p class="nota">Texto completo ≈195 KB. Si ChatGPT lo corta, usa «Copiar parte 1…3» (cada parte lleva las instrucciones) y pégalas en mensajes seguidos.</p>
+<p class="nota">Texto completo ≈260 KB. Si ChatGPT lo corta, usa «Copiar parte 1…4» (cada parte lleva las instrucciones) y pégalas en mensajes seguidos.</p>
 <textarea id="t" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
 
-Abajo va el análisis completo de 76 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey), hecho con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+Abajo va el análisis completo de los 100 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
 
 Tu trabajo:
 1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
@@ -38,14 +38,43 @@ Reglas obligatorias (no se negocian):
 - Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
 - Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
 - Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
 - Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
 
 ===================== ANÁLISIS =====================
+
 # Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
 
-76 partidos · 16 🟢 Sólidos · v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts).
+100 partidos · 17 🟢 Sólidos · 95 con el motor (v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts)) · 3 por estimación (Super League suiza, sin datos en ESPN) · 2 ya en juego/terminados al generar.
+Etiquetas: [observado] = dato medido (tabla, resultados, forma) · [reportado] = de una fuente externa (bajas, promedios de Forebet/prensa) · [estimado] = salida de modelo (motor v5 o Poisson). Forebet solo como referencia secundaria.
 Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
 Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+## ⚽ A-League
+
+### 22:00 (23-oct) · Newcastle Jets – Macarthur FC · McDonald Jones Stadium, Newcastle
+- ⏱️ TERMINADO: 1-1 · Terminado al generar el paquete (1-1; ESPN). Sin picks prepartido.
+
+### 00:00 · Western Sydney Wanderers – Auckland FC · CommBank Stadium, Sídney
+- ⏱️ EN JUEGO: 0-1 · En juego al generar el paquete (0-1, 24&#x27;; ESPN). Sin picks prepartido.
+
+### 02:40 · Melbourne Victory – Melbourne City FC · Melbourne Rectangular Stadium, Melbourne
+- 1X2: 41% / 26% / 33% · Sin confirmación suficiente
+- 📋 Melbourne Victory perdió la jornada 1 (2-1 en Wellington); sin D&#x27;Arrigo. Derbi de Melbourne. [A-League: 5º, 40 pts en 28 (GF 45, DG +9)] | Melbourne City perdió la jornada 1 (3-1 en Auckland); sin Rossetto, Mazzeo, Lopane ni Kalms; Marcondes y Cascante disponibles. [A-League: 6º, 39 pts en 28 (GF 35, DG -2)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · A-League con 1–2 jornadas: base mayormente temporada 2025-26 (estimado)
+- Bajas: Melbourne Victory: Louis D&#x27;Arrigo (lesión) · Melbourne City FC: Rossetto (gemelo), Mazzeo (tobillo), Lopane (isquiotibial), Kalms (rodilla)
+- ⚔️ Derbi de Melbourne entre dos equipos que perdieron en la jornada 1: Victory sin D&#x27;Arrigo; City sin Rossetto, Mazzeo, Lopane ni Kalms. El modelo le da a Victory 41% contra 33% de City y más volumen (≈16 tiros contra ≈11, ≈6.9 córners contra ≈5.2). La base es casi toda de la temporada pasada (5º contra 6º, separados por un punto): derbi parejo, sin favorito claro.
+- ⚽ Goles: total 2.7–3.1 · Melbourne Victory 1.4–1.7 · Melbourne City FC 1.2–1.5 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 1-2, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Melbourne Victory genera ≈16 tiros y 1.4–1.7 goles esperados; Melbourne City FC, ≈11 tiros y 1.2–1.5. Victory llega con más volumen; City sin Mazzeo ni Kalms pierde llegada. El casino espera ≈2.8 goles y el modelo ≈2.8; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Melbourne Victory o empate + Melbourne Victory más de 0.5 goles (59%)
+- 🚩 Córners FT 9–14 (línea 10.5) · 1T 4–7 (línea 4.5) · total baja · 1t baja · eq_h baja · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · MBV 1.5 justa · MBC 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Melbourne Victory o empate + Melbourne Victory más de 0.5 goles (59%) · 🔗 Melbourne City FC +1.5 (hándicap) + Menos de 3.5 goles (58%) · ❌ Evitar: Melbourne Victory menos de 0.5 goles en el 1T (52%)
+- Huecos: sin 🟢 Sólido · A-League 2026-27 recién empezó (jornada 2): la base estadística es mayormente la temporada 2025-26 + 1 partido → estimación con muestra de temporada previa · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · A-League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · A-League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 ## ⚽ Süper Lig
 
@@ -188,6 +217,36 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 2.5 baja · COR 1.5 justa · EIB 1.5 baja · AA baja
 - Picks: 🟢 Córners Eibar menos de 3.5 (69%) · 🔗 Más de 2.5 goles + Eibar más de 0.5 goles (53%) · 🔥 Córners Córdoba más de 5.5 (69%) · 🔗 Eibar +1.5 (hándicap) + Eibar más de 0.5 goles (61%) · ❌ Evitar: Córdoba más de 1.5 goles (51%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 110 de 111 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Segunda División: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## ⚽ Allsvenskan
+
+### 07:00 · BK Häcken – Degerfors IF · Bravida Arena, Gothenburg
+- 1X2: 67% / 20% / 13% · Sin confirmación suficiente
+- 📋 Häcken 4º con tres victorias seguidas; sin Öhman ni Engdahl. [Allsvenskan: 4º, 42 pts en 24 (GF 43, DG +13)] | Degerfors 14º (zona baja); sin Pikkarainen (cruzado) ni K. Karlsson. [Allsvenskan: 14º, 20 pts en 24 (GF 21, DG -16)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: BK Häcken: Filip Öhman (hombro), Ben Engdahl (lesión) · Degerfors IF: Juhani Pikkarainen (ligamento cruzado), Kazper Karlsson (lesión)
+- ⚔️ Häcken (4º, tres victorias seguidas) recibe a Degerfors (14º, DG −16); Häcken sin Öhman ni Engdahl atrás, Degerfors sin Pikkarainen ni K. Karlsson. El modelo le da a Häcken 67% y ≈17 tiros contra ≈9, aunque los córners salen parejos (≈6.6 contra ≈6.0). Favorito claro por tabla y por volumen, pero el modelo espera menos goles que el casino.
+- ⚽ Goles: total 2.7–3.4 · BK Häcken 1.9–2.5 · Degerfors IF 0.7–1.0 · 1T 1.2–1.5 · modal 2-0 (alt. 1-1, 2-1, 1-0) · por resultado: local 2-0 · empate 1-1 · visita 1-2
+- 🧠 BK Häcken genera ≈17 tiros y 1.9–2.5 goles esperados; Degerfors IF, ≈9 tiros y 0.7–1.0. Degerfors anotó solo 21 en 24: casi todo el gol esperado es de Häcken. El casino espera ≈3.2 goles y el modelo ≈2.7; ~45% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Menos de 3.5 goles + Degerfors IF menos de 1.5 goles (55%) · 📏 La línea 3.5 dice que el casino espera ~3.2 goles; el modelo 2.7 porque XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–8 (línea 5.5) · total baja · 1t baja · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 alta · BKH 2.5 alta · DEG 0.5 justa · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Menos de 3.5 goles + Degerfors IF menos de 1.5 goles (55%) · 🔗 Degerfors IF menos de 1.5 goles + Degerfors IF menos de 0.5 goles en el 1T (61%) · ❌ Evitar: AA No (48%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 07:00 · IK Sirius – AIK · Studenternas IP, Uppsala
+- 1X2: 60% / 21% / 19% · Alineación probable
+- 📋 Sirius líder (55 pts en 24, 4V-1E en sus últimos 5); sin Uneken (conmoción); Persson apunta a titular. [Allsvenskan: 1º, 55 pts en 24 (GF 55, DG +25)] | AIK 9º, 6 partidos de liga sin ganar; sin Helm, Redkin, Beširović, Cissé, Filling ni Papagiannopoulos. [Allsvenskan: 9º, 34 pts en 24 (GF 38, DG -4)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: IK Sirius: Jesper Uneken (conmoción) · AIK: Adrian Helm (rodilla), Andreas Redkin (rodilla), Dino Beširović (muslo), Ibrahim Cissé (tobillo), Kevin Filling (rodilla), Sotirios Papagiannopoulos (rodilla)
+- ⚔️ Sirius, líder con el mejor ataque (55 goles en 24), recibe a un AIK 9º que suma seis partidos de liga sin ganar y tiene seis bajas (Beširović, Cissé, Papagiannopoulos, Filling, Helm, Redkin). El modelo le da a Sirius 60% y ≈2.3 goles esperados contra ≈1.2; AIK saca algo más de córners (≈5.7 contra ≈5.3). Sirius sin Uneken sigue siendo favorito, pero AIK anota con frecuencia: partido de goles más que de portería en cero.
+- ⚽ Goles: total 3.3–3.9 · IK Sirius 2.1–2.6 · AIK 1.1–1.4 · 1T 1.4–1.7 · modal 1-1 (alt. 2-1, 2-0, 3-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 IK Sirius genera ≈17 tiros y 2.1–2.6 goles esperados; AIK, ≈14 tiros y 1.1–1.4. Sirius es el mejor ataque de la liga (55) y AIK concede 1.75 por partido. El casino espera ≈3.4 goles y el modelo ≈3.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Gana IK Sirius + IK Sirius más de 1.5 goles (54%) · 📏 IK Sirius a 2.5: el casino espera ~2.2 goles de IK Sirius; el modelo 2.6 porque goleadas recibidas inflan lo que concede AIK (1.75/PJ; 1.54 sin goleadas); ataque de IK Sirius inflado por rivales débiles.
+- 🚩 Córners FT 8–13 (línea 10.5) · 1T 3–7 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 baja · SIR 2.5 baja · AIK 1.5 justa · AA justa
+- Picks: 🟢 Córners AIK más de 4.5 (65%) · 🔗 Gana IK Sirius + IK Sirius más de 1.5 goles (54%) · 🔥 Córners IK Sirius menos de 6.5 (71%) · 🔗 Córners más de 8.5 + 1T córners más de 3.5 (64%) · ❌ Evitar: Córners más de 10.5 (54%)
+- Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 ## ⚽ Serie A
 
@@ -405,6 +464,22 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Córners Watford menos de 3.5 (67%) · 🔗 Gana Wolverhampton Wanderers + Watford menos de 1.5 goles (63%) · 🔥 Córners menos de 10.5 (60%) · 🔗 Watford +2.5 (hándicap) + Wolverhampton Wanderers menos de 1.5 goles en el 1T (61%) · ❌ Evitar: AA No (52%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-20) → estadísticas de ESPN · Football-Data.co.uk: 132 de 133 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Championship: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Portsmouth-Queens Park Rangers 2026-08-15 · Córners HT TotalCorner sin dato: Queens Park Rangers-Bolton Wanderers 2026-08-22 · Córners HT TotalCorner sin dato: Blackburn Rovers-Queens Park Rangers 2026-08-29 · Córners HT TotalCorner sin dato: Queens Park Rangers-Cardiff City 2026-09-02 · Córners HT TotalCorner sin dato: Queens Park Rangers-Middlesbrough 2026-09-05 · Córners HT TotalCorner sin dato: Charlton Athletic-Queens Park Rangers 2026-09-09 · Córners HT TotalCorner sin dato: West Bromwich Albion-Queens Park Rangers 2026-09-12
 
+## ⚽ Eliteserien
+
+### 08:00 · Bodo/Glimt – Vålerenga · Aspmyra Stadion, Bodø/Glimt
+- 1X2: 82% / 11% / 7% · Sin confirmación suficiente
+- 📋 Bodø/Glimt líder (56 pts en 23); jugó Champions a media semana (perdió 4-3 en Nápoles) → posible rotación; sin Mikkelsen, Evjen, Sjong ni Riisnaes. [NOR: 1º, 56 pts en 23 (GF 58, DG +38)] | Vålerenga en la mitad baja; Sjåtil sancionado; Finnsson, Rashani y Tshiembe en duda. [NOR: 14º, 18 pts en 21 (GF 32, DG -13)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Bodø/Glimt: A. Mikkelsen (ingle), H. Evjen (rodilla), I. Sjong (lesión), M. Riisnaes (rodilla) · Vålerenga: Sjåtil (sanción), Finnsson (lesión (duda)), Rashani (molestia (duda)), Tshiembe (molestia (duda))
+- ⚔️ Bodø/Glimt, líder (56 pts, DG +38), recibe a Vålerenga tras jugar Champions a media semana (4-3 en Nápoles); sin Mikkelsen, Evjen, Sjong ni Riisnaes. El modelo le da a Glimt 82%, ≈22 tiros contra ≈10 y ≈8.6 córners contra ≈3.1. Vålerenga, sin Sjåtil (sancionado) y con tres dudas, suele marcar (≈1.0 goles esperados): la duda real es cuánto rota Glimt, no quién domina.
+- ⚽ Goles: total 4.2–4.8 · Bodø/Glimt 3.2–3.8 · Vålerenga 0.9–1.2 · 1T 1.8–2.1 · modal 3-1 (alt. 3-0, 4-0, 4-1) · por resultado: local 3-1 · empate 1-1 · visita 1-2
+- 🧠 Bodø/Glimt genera ≈22 tiros y 3.2–3.8 goles esperados; Vålerenga, ≈10 tiros y 0.9–1.2. Glimt marca ≈2.5 por partido en liga; la rotación tras la Champions es el riesgo para el total. El casino espera ≈4.5 goles y el modelo ≈4.2; ~43% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Vålerenga menos de 1.5 goles + Bodo/Glimt −1.5 (gana por 2+) (57%)
+- 🚩 Córners FT 9–14 (línea 11.5) · 1T 4–7 (línea 5.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 4.5 alta · BODO 3.5 alta · VAL 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Vålerenga menos de 1.5 goles + Bodo/Glimt −1.5 (gana por 2+) (57%) · 🔗 1T córners menos de 7.5 + Córners menos de 13.5 (64%) · ❌ Evitar: Córners más de 11.5 (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Aalesund-Hamarkameratene 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data: marcador distinto Vålerenga-Kristiansund BK 2026-05-29 (ESPN 0-0, FD 3-1) → se deja ESPN · Football-Data &#x27;extra&#x27; (NOR): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Eliteserien: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
 ## ⚽ Premier League
 
 ### 08:00 · Arsenal – Everton · Emirates Stadium, London
@@ -432,6 +507,38 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 2.5 alta · COV 1.5 justa · FUL 1.5 alta · AA alta
 - Picks: 🟢 Sin Sólido · 🔗 Fulham menos de 2.5 goles + Coventry City más de 0.5 goles (57%) · 🔥 Córners Coventry City menos de 4.5 (62%) · 🔗 1T córners Coventry City menos de 3.5 + 1T córners menos de 5.5 (68%) · ❌ Evitar: Fulham más de 0.5 goles en el 1T (50%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+
+## ⚽ Pro League belga
+
+### 08:00 · Antwerp – Royal Charleroi SC · Bosuilstadion, Antwerp
+- 1X2: 24% / 24% / 52% · Alineación probable
+- 📋 Antwerp 13º, 5 derrotas de liga seguidas; Benítez sancionado, Hamdaoui en duda. [Pro League: 13º, 7 pts en 8 (GF 12, DG -8)] | Charleroi 3º, 7 victorias en 8; sin Sow ni Bernier; vuelve Ousou. [Pro League: 3º, 21 pts en 8 (GF 16, DG +9)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Antwerp: Benítez (sanción), Hamdaoui (lesión (duda)) · Royal Charleroi SC: Sow (rodilla), Bernier (metatarso)
+- ⚔️ Antwerp llega con cinco derrotas de liga seguidas, sin Benítez (sancionado) y con Hamdaoui en duda; Charleroi, 3º, viene en racha y recupera a Ousou. El modelo le da a Charleroi 52% fuera de casa y ≈1.9 goles esperados contra ≈1.2. Antwerp en casa tiene volumen parecido (≈14 tiros contra ≈16): el visitante es favorito, pero no por tanto.
+- ⚽ Goles: total 2.9–3.3 · Antwerp 1.0–1.3 · Royal Charleroi SC 1.7–2.0 · 1T 1.3–1.5 · modal 1-1 (alt. 1-2, 0-1, 0-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Antwerp genera ≈14 tiros y 1.0–1.3 goles esperados; Royal Charleroi SC, ≈16 tiros y 1.7–2.0. Antwerp solo anotó 12 en 8; Charleroi, 16. El casino espera ≈3.0 goles y el modelo ≈3.0; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (59%)
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · ANT 1.5 justa · CHA 1.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (59%) · 🔗 1T córners menos de 6.5 + Córners menos de 11.5 (66%) · ❌ Evitar: Córners más de 9.5 (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
+
+## 🇸🇦 Saudi Pro League
+
+### 08:00 · Neom SC – Abha · King Khalid Sport City Stadium, Tabuk
+- 1X2: 59% / 24% / 17% · Sin confirmación suficiente
+- 📋 Neom 6º (entrena Galtier); sin Al Hejji ni Amadou Koné. [Saudi Pro League: 6º, 16 pts en 10 (GF 14, DG +5)] | Abha último (2 pts en 8) y recién ascendido; sin Diallo ni Al-Siyali. [Saudi Pro League: 18º, 2 pts en 8 (GF 6, DG -9)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Neom SC: Alaa Al Hejji (rodilla), Amadou Koné (baja) · Abha: Abdo Diallo (lesión), Basil Al-Siyali (cirugía de pelvis)
+- ⚔️ Neom (6º, de Galtier) recibe a Abha, último con 2 puntos en 8 y recién ascendido; Neom sin Al Hejji ni Amadou Koné, Abha sin Diallo ni Al-Siyali. El modelo le da a Neom 59%, pero espera un partido de pocos goles (≈1.9 contra ≈0.9 esperados). Abha casi no genera (≈8 tiros, 6 goles en 8): Neom favorito, aunque no se espera goleada.
+- ⚽ Goles: total 2.1–3.0 · Neom SC 1.3–2.1 · Abha 0.8–1.1 · 1T 0.9–1.3 · modal 1-1 (alt. 1-0, 2-0, 2-1) · por resultado: local 1-0 · empate 1-1 · visita 1-2
+- 🧠 Neom SC genera ≈11 tiros y 1.3–2.1 goles esperados; Abha, ≈8 tiros y 0.8–1.1. Abha anotó 6 en 8: casi todo el gol esperado es de Neom. El casino espera ≈2.9 goles y el modelo ≈2.1; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Abha +1.5 (hándicap) + Neom SC menos de 2.5 goles (59%) · 📏 Neom SC a 1.5: el casino espera ~2.0 goles de Neom SC; el modelo 1.3 porque Neom SC sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 4–8 (línea 9.5) · 1T 2–4 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · NEOM 1.5 alta · ABH 0.5 justa · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Abha +1.5 (hándicap) + Neom SC menos de 2.5 goles (59%) · 🔗 Abha +2.5 (hándicap) + Menos de 3.5 goles (62%) · ❌ Evitar: Ambos anotan (AA) (51%)
+- Huecos: sin 🟢 Sólido · Abha recién ascendido: muestra corta en la Saudi Pro League · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 ## ⚽ Scottish Premiership
 
@@ -517,6 +624,22 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Sin Sólido · 🔗 Mallorca o empate + Leganés menos de 1.5 goles (62%) · 🔥 Córners Leganés menos de 4.5 (62%) · 🔗 Mallorca o empate + Mallorca más de 0.5 goles (60%) · ❌ Evitar: Ambos anotan (AA) (48%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 110 de 111 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Segunda División: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
+## 🇳🇱 Eerste Divisie
+
+### 08:30 · FC Dordrecht – VVV-Venlo · M-Scores Stadion, Dordrecht
+- 1X2: 36% / 24% / 40% · Alineación probable
+- 📋 Dordrecht último (11 pts en 11); sin Raatsie, Venema, Bischof, Artic ni Van Osch. [Eerste Divisie: 18º, 11 pts en 11 (GF 14, DG -13)] | VVV 4º; sin Schalk ni Zuliani. [Eerste Divisie: 4º, 22 pts en 11 (GF 30, DG +12)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: FC Dordrecht: Calvin Raatsie (mano), Nick Venema (ingle), Noah Bischof (tobillo), Thomas Artic (lesión), Yanick van Osch (lesión) · VVV-Venlo: Alex Schalk (lesión), Edhy Zuliani (lesión)
+- ⚔️ Dordrecht, último (11 pts en 11, DG −13), recibe a VVV, 4º con 30 goles; Dordrecht sin cinco jugadores, entre ellos los porteros Raatsie y Van Osch. El modelo lo ve casi parejo (36% contra 40%) porque Dordrecht en casa tira algo más (≈15 contra ≈13). VVV, sin Schalk ni Zuliani, marca en casi todos los escenarios: partido abierto, con los dos anotando como lo más probable.
+- ⚽ Goles: total 3.3–3.7 · FC Dordrecht 1.5–1.9 · VVV-Venlo 1.7–2.0 · 1T 1.5–1.6 · modal 1-1 (alt. 1-2, 2-1, 2-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 FC Dordrecht genera ≈15 tiros y 1.5–1.9 goles esperados; VVV-Venlo, ≈13 tiros y 1.7–2.0. Dordrecht concede mucho (DG −13) y VVV es de los mejores ataques (30 en 11). El casino espera ≈3.4 goles y el modelo ≈3.5; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: VVV-Venlo más de 0.5 goles + FC Dordrecht menos de 2.5 goles (62%) · 📏 VVV-Venlo a 1.5: el casino espera ~1.8 goles de VVV-Venlo; el modelo 2.0 porque goleadas recibidas inflan lo que concede FC Dordrecht (2.45/PJ; 1.91 sin goleadas); ataque de VVV-Venlo inflado por rivales débiles.
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 3–6 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 3.5 justa · DOR 1.5 justa · VVV 1.5 baja · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 VVV-Venlo más de 0.5 goles + FC Dordrecht menos de 2.5 goles (62%) · 🔗 VVV-Venlo o empate + VVV-Venlo más de 0.5 goles (60%) · ❌ Evitar: FC Dordrecht menos de 1.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Eerste Divisie: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Eerste Divisie: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: FC Dordrecht-Jong Ajax 2026-08-07 · Córners HT TotalCorner sin dato: Jong AZ-FC Eindhoven 2026-08-10 · Córners HT TotalCorner sin dato: Jong PSV-FC Volendam 2026-08-10 · Córners HT TotalCorner sin dato: Almere City-Jong PSV 2026-08-14 · Córners HT TotalCorner sin dato: De Graafschap-Jong AZ 2026-08-17 · Córners HT TotalCorner sin dato: Jong Ajax-FC Emmen 2026-08-17 · Córners HT TotalCorner sin dato: FC Emmen-Jong AZ 2026-08-21 · Córners HT TotalCorner sin dato: NAC Breda-Jong Ajax 2026-08-22
+
 ## ⚽ Eredivisie
 
 ### 08:30 · FC Utrecht – PEC Zwolle · Stadion Galgenwaard, Utrecht
@@ -547,6 +670,98 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Sin Sólido · 🔗 Casa Pia más de 0.5 goles + Estrela más de 0.5 goles (51%) · 🔗 Casa Pia +1.5 (hándicap) + Estrela menos de 2.5 goles (65%) · ❌ Evitar: Estrela menos de 1.5 goles (49%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Primeira Liga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
+## ⚽ Bundesliga austriaca
+
+### 09:00 · TSV Hartberg – Wolfsberger · Profertil Arena, Hartberg
+- 1X2: 52% / 24% / 24% · Sin confirmación suficiente
+- 📋 Hartberg 7º; sin Pazourek, Wilfinger ni Fridrikas. [Bundesliga austriaca: 7º, 11 pts en 9 (GF 15, DG -4)] | Wolfsberger 12º (último, 5 pts); sin Wimmer ni Mamageishvili; Vrioni en duda. [Bundesliga austriaca: 12º, 5 pts en 9 (GF 7, DG -11)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: TSV Hartberg: Luca Pazourek (lesión), Fabian Wilfinger (rodilla), Lukas Fridrikas (ligamento cruzado) · Wolfsberger: Nicolas Wimmer (rodilla), Otar Mamageishvili (muscular), Giacomo Vrioni (molestia (duda))
+- ⚔️ Hartberg (7º) recibe al último, Wolfsberger (5 pts en 9, 7 goles a favor); Hartberg sin Pazourek, Wilfinger ni Fridrikas; WAC sin Wimmer ni Mamageishvili y con Vrioni en duda. El modelo le da a Hartberg 51% y ≈1.9 goles esperados contra ≈1.2. Las estadísticas de córners y tiros de esta liga vienen incompletas en ESPN: la lectura se apoya solo en goles.
+- ⚽ Goles: total 2.9–3.3 · TSV Hartberg 1.7–2.0 · Wolfsberger 0.9–1.4 · 1T 1.3–1.5 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 TSV Hartberg: 1.7–2.0 goles esperados; Wolfsberger: 0.9–1.4 (sin datos fiables de tiros en esta liga). Wolfsberger es el peor ataque de la liga (7 en 9). El casino espera ≈3.1 goles y el modelo ≈2.9; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: TSV Hartberg más de 1.5 goles (55%)
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 2.5 alta · HAR 1.5 justa · WOL 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 TSV Hartberg más de 1.5 goles (55%) · 🔗 TSV Hartberg o empate + Wolfsberger menos de 1.5 goles (62%) · ❌ Evitar: Gana TSV Hartberg (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 09:00 · WSG Swarovski Tirol – Grazer AK · Tivoli Stadion Tirol, Innsbruck
+- 1X2: 39% / 27% / 33% · Sin confirmación suficiente
+- 📋 WSG Tirol 6º, busca su primera victoria en casa en seis meses; solo falta Butler. [Bundesliga austriaca: 6º, 11 pts en 9 (GF 12, DG -2)] | GAK 9º (DG −15); sin Meierhofer ni Guerti; Owusu en duda. [Bundesliga austriaca: 9º, 9 pts en 9 (GF 7, DG -15)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: WSG Swarovski Tirol: Quincy Butler (lesión) · Grazer AK: Jakob Meierhofer (hombro), Ismaël Guerti (lesión larga), Beres Owusu (molestia (duda))
+- ⚔️ WSG Tirol (6º) busca su primera victoria en casa en seis meses ante un GAK 9º con DG −15; Tirol solo sin Butler, GAK sin Meierhofer ni Guerti y con Owusu en duda. El modelo lo ve parejo: 39% Tirol, 27% empate, 33% GAK. GAK solo anotó 7 en 9; sin datos fiables de córners ni tiros en esta liga, el empate es un resultado muy vivo.
+- ⚽ Goles: total 2.6–3.0 · WSG Swarovski Tirol 1.3–1.7 · Grazer AK 1.1–1.5 · 1T 1.2–1.3 · modal 1-1 (alt. 1-0, 2-1, 0-0) · por resultado: local 1-0 · empate 1-1 · visita 1-2
+- 🧠 WSG Swarovski Tirol: 1.3–1.7 goles esperados; Grazer AK: 1.1–1.5 (sin datos fiables de tiros en esta liga). GAK anotó 7 en 9 y concede mucho (DG −15). El casino espera ≈2.8 goles y el modelo ≈2.7; ~45% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Grazer AK menos de 1.5 goles + WSG Swarovski Tirol o empate (55%) · 📏 Grazer AK a 1.5: el casino espera ~1.3 goles de Grazer AK; el modelo 1.1 porque pocos goles de Grazer AK en muestra corta (0.78/PJ); Grazer AK sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)).
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 2.5 justa · WST 1.5 baja · GRA 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Grazer AK menos de 1.5 goles + WSG Swarovski Tirol o empate (55%) · 🔗 WSG Swarovski Tirol o empate + WSG Swarovski Tirol más de 0.5 goles (59%) · ❌ Evitar: Más de 2.5 goles (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## 🇸🇦 Saudi Pro League
+
+### 09:05 · Al Kholood – Al Ettifaq · Al-Hazm Club Stadium, Al-Rass
+- 1X2: 37% / 26% / 37% · Sin confirmación suficiente
+- 📋 Al Kholood 9º; sin Utkus (tobillo); vuelve Al-Shanqity. [Saudi Pro League: 9º, 12 pts en 9 (GF 14, DG -4)] | Al Ettifaq 7º; sin Rayane Messi ni Medrán. [Saudi Pro League: 7º, 15 pts en 10 (GF 14, DG -2)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Al Kholood: Edgaras Utkus (tobillo) · Al Ettifaq: Rayane Messi (falta de forma), Álvaro Medrán (muscular)
+- ⚔️ Al Kholood (9º) recibe a Al Ettifaq (7º), separados por 3 puntos; Kholood sin Utkus, Ettifaq sin Rayane Messi ni Medrán. El modelo da 37% para cada uno y ≈1.5 goles esperados por lado. Partido parejo y abierto: el modelo espera más goles que el casino.
+- ⚽ Goles: total 2.8–3.4 · Al Kholood 1.4–1.7 · Al Ettifaq 1.4–1.7 · 1T 1.3–1.5 · modal 1-1 (alt. 1-2, 2-1, 0-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Al Kholood genera ≈15 tiros y 1.4–1.7 goles esperados; Al Ettifaq, ≈14 tiros y 1.4–1.7. Los dos anotaron 14: reparto parejo del gol. El casino espera ≈2.9 goles y el modelo ≈3.4; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (58%) · 📏 La línea 2.5 dice que el casino espera ~2.9 goles; el modelo 3.4 porque goleadas recibidas inflan lo que concede Al Kholood (2.00/PJ; 1.78 sin goleadas); ataque de Al Kholood inflado por rivales débiles.
+- 🚩 Córners FT 8–13 (línea 9.5) · 1T 3–7 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 baja · KHO 1.5 baja · ETT 1.5 baja · AA baja
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (58%) · 🔗 Al Kholood o empate + Al Ettifaq menos de 2.5 goles (61%) · ❌ Evitar: Al Kholood menos de 0.5 goles en el 1T (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## ⚽ Allsvenskan
+
+### 09:30 · Djurgården – Örgryte IS · Tele2 Arena, Stockholm
+- 1X2: 79% / 14% / 7% · Sin confirmación suficiente
+- 📋 Djurgården 2º, plantel completo (vuelve Tenho de sanción); el DT abre la puerta a rotar. [Allsvenskan: 2º, 47 pts en 24 (GF 50, DG +29)] | Örgryte 15º (DG −25); sin Svensson, Abukar ni Alm; crisis de delanteros. [Allsvenskan: 15º, 18 pts en 24 (GF 27, DG -25)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Djurgården: sin bajas reportadas en las fuentes revisadas · Örgryte IS: William Svensson (lesión), Aydarus Abukar (lesión), Rasmus Alm (lesión)
+- ⚔️ Djurgården (2º, DG +29) recibe a Örgryte (15º, DG −25) con plantel completo; Örgryte sin Svensson, Abukar ni Alm, en crisis de delanteros. El modelo le da a Djurgården 79% y ≈3.0 goles esperados contra ≈0.8. El DT de Djurgården abre la puerta a rotar: favorito claro, con la rotación como único freno.
+- ⚽ Goles: total 3.3–3.9 · Djurgården 2.5–3.1 · Örgryte IS 0.6–0.9 · 1T 1.4–1.7 · modal 3-0 (alt. 2-0, 2-1, 4-0) · por resultado: local 3-0 · empate 1-1 · visita 1-2
+- 🧠 Djurgården genera ≈17 tiros y 2.5–3.1 goles esperados; Örgryte IS, ≈9 tiros y 0.6–0.9. Örgryte sin Abukar ni Alm y con DG −25: casi todo el gol esperado es de Djurgården. El casino espera ≈3.7 goles y el modelo ≈3.3; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Gana Djurgården + Örgryte IS menos de 1.5 goles (71%)
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 3–6 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 3.5 alta · DJU None alta · ORG None justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Gana Djurgården + Örgryte IS menos de 1.5 goles (71%) · 🔥 Córners menos de 10.5 (69%) · 🔗 Córners menos de 12.5 + 1T córners menos de 6.5 (77%) · ❌ Evitar: Ambos anotan (AA) (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 09:30 · Kalmar FF – IF Brommapojkarna · Guldfageln Arena, Kalmar
+- 1X2: 49% / 26% / 26% · Sin confirmación suficiente
+- 📋 Kalmar 13º; sin Imeri, Keita, Nnamani ni Paananen. [Allsvenskan: 13º, 22 pts en 24 (GF 23, DG -15)] | Brommapojkarna 11º; Sever en duda. [Allsvenskan: 11º, 30 pts en 24 (GF 36, DG -7)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Kalmar FF: Elion Imeri (hombro (fin de temporada)), Aboubacar Keita (muslo), Emeka Nnamani (ingle), Kasper Paananen (muslo) · IF Brommapojkarna: Kamilcan Sever (lesión (duda))
+- ⚔️ Kalmar (13º, DG −15) recibe a Brommapojkarna (11º); Kalmar sin Imeri, Keita, Nnamani ni Paananen; BP con Sever en duda. El modelo le da a Kalmar 49% por jugar en casa y tirar más (≈16 contra ≈11). BP tiene mejor ataque (36 goles contra 23), así que la ventaja local es frágil.
+- ⚽ Goles: total 2.6–3.1 · Kalmar FF 1.4–1.9 · IF Brommapojkarna 1.0–1.3 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 1-0, 2-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Kalmar FF genera ≈16 tiros y 1.4–1.9 goles esperados; IF Brommapojkarna, ≈11 tiros y 1.0–1.3. Kalmar anotó 23 en 24 y sin Imeri ni Nnamani pierde llegada. El casino espera ≈3.0 goles y el modelo ≈2.6; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: IF Brommapojkarna más de 0.5 goles + Kalmar FF menos de 2.5 goles (52%) · 📏 Kalmar FF a 1.5: el casino espera ~1.8 goles de Kalmar FF; el modelo 1.4 porque Kalmar FF sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 8–13 (línea 10.5) · 1T 3–7 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · KFF 1.5 alta · BRO 1.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 IF Brommapojkarna más de 0.5 goles + Kalmar FF menos de 2.5 goles (52%) · 🔥 Córners IF Brommapojkarna más de 4.5 (59%) · 🔗 IF Brommapojkarna +1.5 (hándicap) + Kalmar FF menos de 2.5 goles (67%) · ❌ Evitar: Kalmar FF más de 1.5 goles (51%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## ⚽ Eliteserien
+
+### 10:00 · Hamarkameratene – Rosenborg · Briskeby Stadion, Hamar
+- 1X2: 19% / 21% / 60% · Sin confirmación suficiente
+- 📋 HamKam 13º; sin Johnsgård; Isufi en duda. [NOR: 13º, 23 pts en 22 (GF 29, DG -16)] | Rosenborg 4º; sin Bakke ni Bolkan Nordli. [NOR: 4º, 37 pts en 21 (GF 43, DG +16)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Hamarkameratene: Markus Johnsgård (ligamento cruzado), B. Isufi (codo (duda)) · Rosenborg: Johan Bakke (cirugía), Simen Bolkan Nordli (muslo)
+- ⚔️ HamKam (13º, DG −16) recibe a Rosenborg (4º); HamKam sin Johnsgård y con Isufi en duda; Rosenborg sin Bakke ni Bolkan Nordli. El modelo le da a Rosenborg 60% y ≈2.3 goles esperados contra ≈1.2. Los dos suelen marcar: Rosenborg favorito, pero en un partido de ida y vuelta.
+- ⚽ Goles: total 3.3–3.9 · Hamarkameratene 1.0–1.5 · Rosenborg 2.1–2.5 · 1T 1.5–1.7 · modal 1-1 (alt. 1-2, 0-2, 1-3) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Hamarkameratene genera ≈12 tiros y 1.0–1.5 goles esperados; Rosenborg, ≈17 tiros y 2.1–2.5. HamKam concede mucho (DG −16) y Rosenborg anotó 43 en 21. El casino espera ≈3.4 goles y el modelo ≈3.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Rosenborg más de 1.5 goles + Rosenborg o empate (61%) · 📏 Rosenborg a 2.5: el casino espera ~2.2 goles de Rosenborg; el modelo 2.5 porque goleadas inflan el ataque de Rosenborg (2.05 goles/PJ; 1.86 sin goleadas); goleadas recibidas inflan lo que concede Hamarkameratene (2.05/PJ; 1.73 sin goleadas).
+- 🚩 Córners FT 7–12 (línea 10.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a alta · eq1t_a sin_linea
+- 📏 Goles 3.5 baja · HAM 0.5 baja · ROS 2.5 baja · AA baja
+- Picks: 🟢 Sin Sólido · 🔗 Rosenborg más de 1.5 goles + Rosenborg o empate (61%) · 🔗 Hamarkameratene +2.5 (hándicap) + Hamarkameratene más de 0.5 goles (59%) · ❌ Evitar: Más de 3.5 goles (46%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Aalesund-Hamarkameratene 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data: marcador distinto Vålerenga-Kristiansund BK 2026-05-29 (ESPN 0-0, FD 3-1) → se deja ESPN · Football-Data &#x27;extra&#x27; (NOR): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Eliteserien: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
 ## ⚽ Serie A
 
 ### 10:00 · Napoli – AS Roma · Stadio Diego Armando Maradona, Napoli
@@ -562,6 +777,38 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Sin Sólido · 🔗 Napoli o empate + AS Roma menos de 1.5 goles (53%) · 🔥 Córners menos de 9.5 (66%) · 🔗 1T córners Napoli menos de 3.5 + Córners menos de 10.5 (70%) · ❌ Evitar: Menos de 2.5 goles (48%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
 
+## ⚽ Super League suiza
+
+### 10:00 · Servette – FC Vaduz · Stade de Genève, Ginebra
+- 1X2: 45% / 21% / 34% · Sin XI confirmado (estimación)
+- 📋 Servette 6º, 13 pts en 10 (GF 14, GC 13) [reportado: tabla Forebet] | FC Vaduz 10º, 9 pts en 10 (GF 21, GC 21) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: Servette: Timothé Cognat (tobillo), Jérémy Frick (baja), Dylan Fofana (baja), Miroslav Stevanović (baja), Bradley Sida (baja) · FC Vaduz: Sandro Seiler (cirugía de rodilla), Levan Akhalaia (hombro), R. Neelakandan (cirugía de rodilla), Tim Oehri (baja), Dejan Sorgić (muscular), M. Eberhard (lesión), D. Simani (sanción (amarillas))
+- ⚔️ Servette (6º, 13 pts, la mejor defensa después de Lugano: 13 goles en contra en 10) recibe a Vaduz (10º), que perdió sus últimos 5 partidos de visita en liga. La estimación da a Servette ≈1.8 goles contra ≈1.5 de Vaduz; Servette juega sin Cognat y con varias bajas en ataque. Vaduz marca bastante (21 goles en 10) pero concede lo mismo: favorito local sin margen amplio.
+- ⚽ Goles: total 3.1–3.6 · Servette 1.7–2.0 · FC Vaduz 1.4–1.7 · 1T 1.4–1.6 · modal 1-1 (alt. 2-1, 1-0, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Servette: 1.7–2.0 goles estimados; FC Vaduz: 1.4–1.7 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). Vaduz anotó 21 en 10 pero concede 21; Servette solo 14 a favor y 13 en contra. Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈3.1 goles y la estimación ≈3.3; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): FC Vaduz más de 0.5 goles (76%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Servette 5.1 · Vaduz 4.2 (Forebet espera ~10.25 en total) · tiros Servette 13.7 · Vaduz 13.6 · amarillas Servette 2.2 · Vaduz 2.2 (~4.14 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 51/20/30 · marcador 2-1 · ~3.06 goles · Más de 2.5 61% · AA 76%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 63% · Menos de 3.5 goles 58% · Más de 3.5 goles 42% · Ambos anotan (AA) 62% · Servette más de 0.5 goles 81% · FC Vaduz más de 0.5 goles 76% · Servette más de 1.5 goles 52% · FC Vaduz menos de 1.5 goles 56% · Servette o empate 66% · FC Vaduz o empate 55%
+- Picks: 🟢 Sin Sólido · 🔥 FC Vaduz más de 0.5 goles (76%) · 🔥 Servette o empate (66%) · 🔥 Más de 2.5 goles (63%) · ❌ Evitar: Gana Servette (45%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+
+### 10:00 · FC Zürich – FC Luzern · Letzigrund, Zúrich
+- 1X2: 44% / 20% / 36% · Sin XI confirmado (estimación)
+- 📋 FC Zürich 5º, 14 pts en 10 (GF 18, GC 22) [reportado: tabla Forebet] | FC Luzern 8º, 12 pts en 10 (GF 17, GC 22) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: FC Zürich: Ilan Sauter (fractura de metatarso), Selmin Hodža (desgarro muscular), Chris Kablan (ligamento cruzado), Sebastian Walker (lesión), Damienus Reverson (lesión) · FC Luzern: Leonardo Bertone (sanción (amarillas)), Sandro Wyss (lesión (duda))
+- ⚔️ Zürich (5º, 14 pts) recibe a Luzern (8º, 12), dos equipos que conceden más de lo que anotan (22 en contra cada uno). Zürich llega con cuatro defensas fuera (Sauter, Hodža, Kablan, Walker); Luzern sin Bertone (sancionado) y con Wyss en duda. La estimación lo ve parejo (≈2.1 contra ≈1.9) con ligera ventaja local; Luzern tira más por partido (≈15 contra ≈12, reportado).
+- ⚽ Goles: total 3.7–4.3 · FC Zürich 2.0–2.3 · FC Luzern 1.7–2.0 · 1T 1.6–1.9 · modal 1-1 (alt. 2-1, 2-2, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 FC Zürich: 2.0–2.3 goles estimados; FC Luzern: 1.7–2.0 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). Los dos conceden 2.2 por partido y Zürich no ha dejado su portería en cero esta temporada. Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈3.6 goles y la estimación ≈4.0; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): Más de 2.5 goles (75%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Zürich 4.5 · Luzern 5.7 (Forebet espera ~10.62 en total) · tiros Zürich 11.9 · Luzern 15.2 · amarillas Zürich 2.2 · Luzern 2.7 (~5.7 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 40/32/28 · marcador 3-1 · ~3.61 goles · Más de 2.5 72% · AA 79%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 75% · Menos de 3.5 goles 43% · Más de 3.5 goles 57% · Ambos anotan (AA) 71% · FC Zürich más de 0.5 goles 86% · FC Luzern más de 0.5 goles 83% · FC Zürich más de 1.5 goles 61% · FC Luzern menos de 1.5 goles 45% · FC Zürich o empate 64% · FC Luzern o empate 56%
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (75%) · 🔥 Ambos anotan (AA) (71%) · 🔥 FC Zürich o empate (64%) · ❌ Evitar: Gana FC Zürich (44%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+
 ## ⚽ Süper Lig
 
 ### 10:00 · Samsunspor – Amed SFK · Samsun 19 Mayis Stadium, Samsun
@@ -576,6 +823,22 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 
 - Picks: 🟢 Sin Sólido · 🔗 Amed SFK o empate y Samsunspor menos de 1.5 (59%)
 - Huecos: sin 🟢 Sólido · 📏 lectura de línea (no corrió en este partido) · Amed SFK recién ascendido: muestra corta en Süper Lig · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Süper Lig: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## ⚽ Pro League belga
+
+### 10:15 · OH Leuven – Lommel SK · King Power at Den Dreef Stadion, Leuven
+- 1X2: 48% / 25% / 27% · Alineación probable
+- 📋 OH Leuven sin Verlinden, Teklab, Traoré ni Dussenne; Verstraete sancionado. | Lommel (recién ascendido) 10º; sin Banguera, De Grand, Lama, Seuntjens ni Wouters. [Pro League: 10º, 11 pts en 8 (GF 9, DG +0)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: OH Leuven: Verlinden (lesión), Teklab (lesión), Traoré (lesión), Dussenne (lesión), Verstraete (sanción) · Lommel SK: Banguera (lesión), De Grand (lesión), Lama (lesión), Seuntjens (lesión), Wouters (lesión)
+- ⚔️ OH Leuven (15º, 6 goles en 8) recibe al recién ascendido Lommel (10º); OHL sin Verlinden, Teklab, Traoré ni Dussenne y con Verstraete sancionado; Lommel sin cinco jugadores. El modelo le da a OHL 48% en casa y más tiros (≈17 contra ≈11), aunque Lommel saca más córners (≈6.5 contra ≈5.9). Dos ataques flojos: el modelo espera bastantes menos goles que el casino.
+- ⚽ Goles: total 2.1–3.2 · OH Leuven 1.1–1.9 · Lommel SK 1.1–1.4 · 1T 0.9–1.4 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 OH Leuven genera ≈17 tiros y 1.1–1.9 goles esperados; Lommel SK, ≈11 tiros y 1.1–1.4. OHL anotó 6 en 8 y Lommel 9: dos de los ataques más flojos. El casino espera ≈3.1 goles y el modelo ≈2.1; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Lommel SK menos de 1.5 goles + OH Leuven o empate (60%) · 📏 Lommel SK a 1.5: el casino espera ~1.3 goles de Lommel SK; el modelo 1.1 porque Lommel SK sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–7 (línea 4.5) · total baja · 1t baja · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · OHL 1.5 alta · LOM 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Lommel SK menos de 1.5 goles + OH Leuven o empate (60%) · 🔗 Lommel SK +1.5 (hándicap) + OH Leuven menos de 2.5 goles (67%) · ❌ Evitar: OH Leuven menos de 1.5 goles (49%)
+- Huecos: sin 🟢 Sólido · Lommel recién ascendido: muestra corta en Pro League · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
 
 ## ⚽ Bundesliga
 
@@ -680,6 +943,22 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Sin Sólido · 🔗 Arouca más de 0.5 goles + Alverca más de 0.5 goles (55%) · 🔗 Alverca o empate + Arouca menos de 1.5 goles (60%) · ❌ Evitar: Alverca más de 0.5 goles en el 1T (50%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Primeira Liga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
+## ⚽ Bundesliga austriaca
+
+### 11:30 · Rapid Vienna – Austria Lustenau · Allianz Stadion, Wien
+- 1X2: 77% / 14% / 9% · Alineación probable
+- 📋 Rapid líder (24 pts en 9), 6 victorias seguidas en casa; sin Ndzie, Nunoo, Schöller, Marcelin ni Vincze. [Bundesliga austriaca: 1º, 24 pts en 9 (GF 26, DG +18)] | Austria Lustenau (recién ascendido) 10º; sin Delaye. [Bundesliga austriaca: 10º, 8 pts en 9 (GF 11, DG -8)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: Rapid Vienna: Ndzie (lesión), Nunoo (lesión), Schöller (lesión), Marcelin (lesión), Vincze (lesión) · Austria Lustenau: Sacha Delaye (lesión)
+- ⚔️ Rapid, líder (24 pts en 9) con seis victorias seguidas en casa, recibe al recién ascendido Austria Lustenau (10º); Rapid sin Ndzie, Nunoo, Schöller, Marcelin ni Vincze; Lustenau sin Delaye. El modelo le da a Rapid 77% y ≈3.0 goles esperados contra ≈0.9. Favorito claro por tabla y por modelo; sin datos fiables de córners ni tiros en esta liga, todo se lee por goles.
+- ⚽ Goles: total 3.7–4.1 · Rapid Vienna 2.7–3.2 · Austria Lustenau 0.8–1.1 · 1T 1.7–1.8 · modal 2-0 (alt. 3-0, 2-1, 3-1) · por resultado: local 2-0 · empate 1-1 · visita 1-2
+- 🧠 Rapid Vienna: 2.7–3.2 goles esperados; Austria Lustenau: 0.8–1.1 (sin datos fiables de tiros en esta liga). Rapid anotó 26 en 9; Lustenau concede (DG −8). El casino espera ≈3.8 goles y el modelo ≈3.7; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Ambos anotan (AA) (56%)
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 3.5 justa · RAP 2.5 justa · ALU 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Ambos anotan (AA) (56%) · 🔗 Gana Rapid Vienna + Austria Lustenau menos de 0.5 goles en el 1T (56%) · ❌ Evitar: 1T más de 1.5 goles (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
 ## ⚽ MLS
 
 ### 11:30 · CF Montréal – Nashville SC · Stade Saputo, Montreal
@@ -694,6 +973,22 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 2.5 alta · MTL 0.5 justa · NSH 1.5 alta · AA alta
 - Picks: 🟢 Sin Sólido · 🔗 Nashville SC o empate + CF Montréal menos de 1.5 goles (67%) · 🔗 Córners menos de 11.5 + 1T córners menos de 5.5 (69%) · ❌ Evitar: Córners Nashville SC más de 4.5 (46%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (USA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · MLS: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: MLS All-Stars-Liga MX All-Stars 2026-07-30
+
+## 🇸🇦 Saudi Pro League
+
+### 12:00 · Al Riyadh – Al Taawoun · Al-Shabab Club Stadium, King Fahd International Stadium
+- 1X2: 35% / 28% / 38% · Sin confirmación suficiente
+- 📋 Al Riyadh 13º; sin Antunes, Al-Khaibari, Sylla ni el portero Al-Fadda. [Saudi Pro League: 13º, 9 pts en 9 (GF 9, DG -9)] | Al Taawoun 17º (4 pts en 10, solo 4 goles a favor); sin Al-Oraini. [Saudi Pro League: 17º, 4 pts en 10 (GF 4, DG -13)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Al Riyadh: Leandro Antunes (talón), Mohammed Al-Khaibari (pelvis), Mamadou Sylla (no inscrito), Imad Al-Fadda (desgarro de muslo) · Al Taawoun: Bassem Al-Oraini (ligamento cruzado)
+- ⚔️ Al Riyadh (13º) recibe a Al Taawoun (17º, solo 4 goles en 10); Riyadh sin Antunes, Al-Khaibari, Sylla ni el portero Al-Fadda; Taawoun sin Al-Oraini. El modelo lo ve muy parejo (35% / 28% / 38%) y Taawoun saca más córners (≈6.5 contra ≈4.2). Dos equipos de la zona baja con poco gol: el modelo espera menos goles que el casino.
+- ⚽ Goles: total 2.3–2.9 · Al Riyadh 1.2–1.5 · Al Taawoun 1.0–1.5 · 1T 1.0–1.3 · modal 1-1 (alt. 0-0, 2-1, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Al Riyadh genera ≈11 tiros y 1.2–1.5 goles esperados; Al Taawoun, ≈12 tiros y 1.0–1.5. Taawoun anotó 4 en 10 y Riyadh 9 en 9. El casino espera ≈2.8 goles y el modelo ≈2.3; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Al Taawoun menos de 1.5 goles (60%) · 📏 Al Taawoun a 1.5: el casino espera ~1.5 goles de Al Taawoun; el modelo 1.0 porque pocos goles de Al Taawoun en muestra corta (0.40/PJ); Al Taawoun sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)).
+- 🚩 Córners FT 8–13 (línea 9.5) · 1T 3–7 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · RIY 1.5 justa · TAA 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 Al Taawoun menos de 1.5 goles (60%) · 🔗 Al Taawoun o empate + Al Taawoun más de 0.5 goles (57%) · ❌ Evitar: Más de 2.5 goles (51%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 ## ⚽ 2. Bundesliga
 
@@ -710,6 +1005,23 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - Picks: 🟢 Sin Sólido · 🔗 1. FC Nürnberg menos de 2.5 goles + Menos de 3.5 goles (56%) · 🔗 Kaiserslautern +1.5 (hándicap) + 1. FC Nürnberg menos de 2.5 goles (66%) · ❌ Evitar: Córners 1. FC Nürnberg menos de 5.5 (51%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 72 de 74 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · 2. Bundesliga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
+## ⚽ Super League suiza
+
+### 12:30 · Young Boys – St. Gallen · Stadion Wankdorf, Berna
+- 1X2: 63% / 15% / 22% · Sin XI confirmado (estimación)
+- 📋 Young Boys 2º, 22 pts en 10 (GF 33, GC 18) [reportado: tabla Forebet] | St. Gallen 4º, 16 pts en 10 (GF 17, GC 19) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: Young Boys: Loris Benito (cirugía de ingle), Gregory Wüthrich (lesión), R. Andrews (ligamento cruzado), Ludovic Blum (sanción (amarillas)), Kabeya (lesión), Virginius (duda) · St. Gallen: Stephan Kofi Ambrosius (ligamento cruzado), Nicolas Weibel (ligamento cruzado), Daniel Besio (lesión), Y. Bujard (baja), C. Kleine-Bekel (lesión)
+- ⚔️ Young Boys (2º, 22 pts, 33 goles en 10; invicto en 13 de liga según Forebet) recibe a St. Gallen (4º, 16 pts), que llega con 17 a favor y 19 en contra. YB juega sin su capitán Benito, Wüthrich ni Andrews y con Blum sancionado: la defensa es su punto débil (18 en contra). La estimación da a YB ≈2.9 goles contra ≈1.6: favorito local claro, pero St. Gallen tiene con qué marcarle.
+- ⚽ Goles: total 4.2–5.0 · Young Boys 2.7–3.2 · St. Gallen 1.5–1.8 · 1T 1.9–2.2 · modal 3-1 (alt. 2-1, 2-2, 3-2) · por resultado: local 3-1 · empate 2-2 · visita 1-2
+- 🧠 Young Boys: 2.7–3.2 goles estimados; St. Gallen: 1.5–1.8 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). YB es el mejor ataque de la liga (3.3 por partido) y lleva 13 partidos de liga marcando 2 o más (reportado por Forebet). Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈4.0 goles y la estimación ≈4.6; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): Ambos anotan (AA) (73%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Young Boys 5.1 · St. Gallen 6.2 (Forebet espera ~11.54 en total) · tiros Young Boys 17.0 · St. Gallen 18.5 · amarillas Young Boys 1.8 · St. Gallen 2.0 (~3.96 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 42/27/31 · marcador 3-1 · ~4.03 goles · Más de 2.5 81% · AA 85%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 81% · Menos de 3.5 goles 34% · Más de 3.5 goles 66% · Ambos anotan (AA) 73% · Young Boys más de 0.5 goles 93% · St. Gallen más de 0.5 goles 79% · Young Boys más de 1.5 goles 76% · St. Gallen menos de 1.5 goles 52% · Young Boys o empate 78% · St. Gallen o empate 38%
+- Picks: 🟢 Sin Sólido · 🔥 Ambos anotan (AA) (73%) · 🔥 St. Gallen más de 0.5 goles (79%) · 🔥 Young Boys o empate (78%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+
 ## ⚽ Ligue 1
 
 ### 12:45 · Lens – Paris FC · Stade Bollaert-Delelis, Lens
@@ -724,6 +1036,36 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 2.5 justa · RCL 1.5 justa · PFC 1.5 justa · AA justa
 - Picks: 🟢 Sin Sólido · 🔥 Paris FC menos de 1.5 goles (56%) · 🔗 Lens o empate + Paris FC menos de 2.5 goles (61%) · ❌ Evitar: Lens menos de 0.5 goles en el 1T (49%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 63 de 64 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · xG sin emparejar: Stade Rennais-Paris Saint-Germain 2026-08-23 · Córners HT TotalCorner sin dato: Stade Rennais-Paris Saint-Germain 2026-08-23 · Córners HT TotalCorner sin dato: Lille-Paris Saint-Germain 2026-08-28 · Córners HT TotalCorner sin dato: Paris Saint-Germain-AS Monaco 2026-09-04 · Córners HT TotalCorner sin dato: Brest-Paris Saint-Germain 2026-09-13 · Córners HT TotalCorner sin dato: Marseille-Paris Saint-Germain 2026-09-20 · Córners HT TotalCorner sin dato: Paris Saint-Germain-Le Mans 2026-10-10 · Córners HT TotalCorner sin dato: Strasbourg-Paris Saint-Germain 2026-10-17
+
+## ⚽ Pro League belga
+
+### 12:45 · RAAL La Louvière – Zulte-Waregem · Easi Arena, La Louvière
+- 1X2: 32% / 28% / 41% · Alineación probable
+- 📋 La Louvière 16º (4 pts en 8); sin Belkheir ni Soumaré. [Pro League: 16º, 4 pts en 8 (GF 8, DG -10)] | Zulte Waregem 8º; sin Diakité, Paugain ni Asare; Mbaye sancionado. [Pro League: 8º, 11 pts en 8 (GF 10, DG +1)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: RAAL La Louvière: Belkheir (lesión), Soumaré (lesión) · Zulte-Waregem: Diakité (lesión), Paugain (lesión), Asare (lesión), Mbaye (sanción)
+- ⚔️ La Louvière (16º, 4 pts en 8) recibe a Zulte Waregem (8º); La Louvière sin Belkheir ni Soumaré; Zulte sin Diakité, Paugain ni Asare y con Mbaye sancionado. El modelo le da a Zulte 41% contra 32% del local. Tiros y córners salen parejos (≈12 contra ≈14 tiros, ≈4.7 córners cada uno): visitante ligeramente favorito, sin dominio claro.
+- ⚽ Goles: total 2.5–2.9 · RAAL La Louvière 1.1–1.4 · Zulte-Waregem 1.3–1.7 · 1T 1.1–1.3 · modal 1-1 (alt. 0-0, 0-1, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 0-1
+- 🧠 RAAL La Louvière genera ≈12 tiros y 1.1–1.4 goles esperados; Zulte-Waregem, ≈14 tiros y 1.3–1.7. La Louvière anotó 8 en 8 y concede mucho (DG −10). El casino espera ≈2.7 goles y el modelo ≈2.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Zulte-Waregem más de 0.5 goles + Zulte-Waregem o empate (60%) · 📏 Zulte-Waregem a 1.5: el casino espera ~1.4 goles de Zulte-Waregem; el modelo 1.7 porque goleadas inflan el ataque de Zulte-Waregem (1.25 goles/PJ; 1.12 sin goleadas); goleadas recibidas inflan lo que concede RAAL La Louvière (2.25/PJ; 2.00 sin goleadas).
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 baja · RLL 1.5 justa · ZUL 1.5 baja · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Zulte-Waregem más de 0.5 goles + Zulte-Waregem o empate (60%) · 🔗 Córners menos de 11.5 + 1T córners menos de 5.5 (63%) · ❌ Evitar: Menos de 2.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
+
+### 12:45 · KVC Westerlo – Waasland-Beveren · Het Kuipje, Westerlo
+- 1X2: 48% / 24% / 29% · Alineación probable
+- 📋 Westerlo 6º (20 goles en 8); sin Congreve, Haspolat ni Storm. [Pro League: 6º, 13 pts en 8 (GF 20, DG +3)] | Beveren 11º (recién ascendido); sin Kuavita, Najim ni Abrahams. [Pro League: 11º, 9 pts en 8 (GF 8, DG -6)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: KVC Westerlo: Congreve (lesión), Haspolat (lesión), Storm (lesión) · Waasland-Beveren: Kuavita (lesión), Najim (lesión), Abrahams (lesión)
+- ⚔️ Westerlo (6º, 20 goles en 8) recibe al recién ascendido Beveren (11º, 8 goles); Westerlo sin Congreve, Haspolat ni Storm; Beveren sin Kuavita, Najim ni Abrahams. El modelo le da a Westerlo 48% y casi el doble de tiros (≈19 contra ≈10), aunque Beveren saca más córners (≈5.4 contra ≈4.2). El ataque local es lo más fiable del partido; Beveren genera poco.
+- ⚽ Goles: total 3.2–3.6 · KVC Westerlo 1.8–2.3 · Waasland-Beveren 1.1–1.6 · 1T 1.4–1.6 · modal 1-1 (alt. 2-1, 1-2, 2-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 KVC Westerlo genera ≈19 tiros y 1.8–2.3 goles esperados; Waasland-Beveren, ≈10 tiros y 1.1–1.6. Westerlo anotó 20 en 8; Beveren solo 8. El casino espera ≈3.4 goles y el modelo ≈3.4; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Waasland-Beveren menos de 1.5 goles (57%) · 📏 Waasland-Beveren a 1.5: el casino espera ~1.5 goles de Waasland-Beveren; el modelo 1.1 porque Waasland-Beveren sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 justa · WES 1.5 baja · WAA 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Waasland-Beveren menos de 1.5 goles (57%) · 🔥 Córners más de 7.5 (71%) · 🔥 Córners KVC Westerlo menos de 4.5 (59%) · 🔗 Waasland-Beveren +1.5 (hándicap) + KVC Westerlo menos de 2.5 goles (63%) · ❌ Evitar: Waasland-Beveren menos de 0.5 goles en el 1T (52%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
 
 ## ⚽ Serie A
 
@@ -1081,6 +1423,24 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 3.5 justa · RSL 1.5 justa · STL 1.5 justa · AA justa
 - Picks: 🟢 Sin Sólido · 🔗 St. Louis CITY SC menos de 2.5 goles + Real Salt Lake más de 0.5 goles (65%) · 🔗 1T córners menos de 6.5 + Córners menos de 12.5 (62%) · ❌ Evitar: St. Louis CITY SC menos de 0.5 goles en el 1T (50%)
 - Huecos: sin 🟢 Sólido · Hora: DataGaffer la lista 1 h más tarde que ESPN; se usa la de ESPN · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (USA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · MLS: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: MLS All-Stars-Liga MX All-Stars 2026-07-30
+
+## ⚽ A-League
+
+### 20:00 · Wellington Phoenix – Central Coast Mariners FC · Sky Stadium, Wellington
+- 1X2: 52% / 24% / 24% · Sin confirmación suficiente
+- 📋 Wellington ganó la jornada 1 (2-1 a Melbourne Victory); sin Roa Conchie, Hughes ni J. Smith; Rufer y Durán en duda. [A-League: 8º, 36 pts en 27 (GF 38, DG -11)] | Central Coast sin Sainsbury; Hisamatsu espera visado. [A-League: 9º, 33 pts en 27 (GF 37, DG -7)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · A-League con 1–2 jornadas: base mayormente temporada 2025-26 (estimado)
+- Bajas: Wellington Phoenix: Fin Roa Conchie (lesión), Isaac Hughes (lesión), Jayden Smith (lesión), Alex Rufer (enfermedad (duda)), Rafael Durán (tobillo (duda)) · Central Coast Mariners FC: Trent Sainsbury (lesión), Taiyo Hisamatsu (sin visado)
+- ⚔️ Wellington ganó la jornada 1 (2-1 a Melbourne Victory) y recibe a Central Coast; Phoenix sin Roa Conchie, Hughes ni J. Smith, con Rufer y Durán en duda; Mariners sin Sainsbury. El modelo le da a Wellington 52% y ≈18 tiros contra ≈9. La base es casi toda de la temporada pasada (8º contra 9º): ventaja local, pero sin margen para darla por hecha.
+- ⚽ Goles: total 2.8–3.2 · Wellington Phoenix 1.7–2.0 · Central Coast Mariners FC 1.0–1.3 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Wellington Phoenix genera ≈18 tiros y 1.7–2.0 goles esperados; Central Coast Mariners FC, ≈9 tiros y 1.0–1.3. La base es la temporada pasada: los dos promediaron ≈1.4 goles por partido. El casino espera ≈3.0 goles y el modelo ≈3.0; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (58%)
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–8 (línea 4.5) · total baja · 1t baja · eq_h baja · eq1t_h sin_linea · eq_a alta · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · WEL 1.5 justa · CCM 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (58%) · 🔗 Central Coast Mariners FC +1.5 (hándicap) + Wellington Phoenix menos de 2.5 goles (64%) · ❌ Evitar: Gana Wellington Phoenix (52%)
+- Huecos: sin 🟢 Sólido · A-League 2026-27 recién empezó (jornada 2): la base estadística es mayormente la temporada 2025-26 + 1 partido → estimación con muestra de temporada previa · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · A-League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · A-League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+## ⚽ MLS
 
 ### 20:30 · Portland Timbers – Charlotte FC · Providence Park, Portland, Oregon
 - 1X2: 47% / 21% / 31% · Sin confirmación suficiente
@@ -1122,10 +1482,9 @@ Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del part
 - 📏 Goles 2.5 alta · PUM 1.5 justa · TIG 1.5 alta · AA justa
 - Picks: 🟢 Córners Tigres UANL más de 4.5 (69%) · 🔗 Tigres UANL menos de 2.5 goles + Pumas UNAM o empate (62%) · 🔥 Córners más de 9.5 (63%) · 🔗 Córners más de 8.5 + 1T córners más de 3.5 (63%) · ❌ Evitar: Pumas UNAM menos de 0.5 goles en el 1T (52%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (MEX): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · Liga MX: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
-
 </textarea><textarea id="t1" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
 
-Abajo va el análisis completo de 76 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey), hecho con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+Abajo va el análisis completo de los 100 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
 
 Tu trabajo:
 1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
@@ -1149,18 +1508,47 @@ Reglas obligatorias (no se negocian):
 - Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
 - Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
 - Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
 - Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
 
-PARTE 1 DE 3 · partidos 1–26 de 76 (hora CDMX 04:30–08:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+PARTE 1 DE 4 · partidos 1–28 de 100 (hora CDMX 22:00 (23-oct)–08:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
 
 ===================== ANÁLISIS =====================
 # Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
 
-76 partidos · 16 🟢 Sólidos · v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts).
+100 partidos · 17 🟢 Sólidos · 95 con el motor (v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts)) · 3 por estimación (Super League suiza, sin datos en ESPN) · 2 ya en juego/terminados al generar.
+Etiquetas: [observado] = dato medido (tabla, resultados, forma) · [reportado] = de una fuente externa (bajas, promedios de Forebet/prensa) · [estimado] = salida de modelo (motor v5 o Poisson). Forebet solo como referencia secundaria.
 Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
 Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
 
-PARTE 1 DE 3 · partidos 1–26 de 76 (hora CDMX 04:30–08:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+PARTE 1 DE 4 · partidos 1–28 de 100 (hora CDMX 22:00 (23-oct)–08:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+
+## ⚽ A-League
+
+### 22:00 (23-oct) · Newcastle Jets – Macarthur FC · McDonald Jones Stadium, Newcastle
+- ⏱️ TERMINADO: 1-1 · Terminado al generar el paquete (1-1; ESPN). Sin picks prepartido.
+
+### 00:00 · Western Sydney Wanderers – Auckland FC · CommBank Stadium, Sídney
+- ⏱️ EN JUEGO: 0-1 · En juego al generar el paquete (0-1, 24&#x27;; ESPN). Sin picks prepartido.
+
+### 02:40 · Melbourne Victory – Melbourne City FC · Melbourne Rectangular Stadium, Melbourne
+- 1X2: 41% / 26% / 33% · Sin confirmación suficiente
+- 📋 Melbourne Victory perdió la jornada 1 (2-1 en Wellington); sin D&#x27;Arrigo. Derbi de Melbourne. [A-League: 5º, 40 pts en 28 (GF 45, DG +9)] | Melbourne City perdió la jornada 1 (3-1 en Auckland); sin Rossetto, Mazzeo, Lopane ni Kalms; Marcondes y Cascante disponibles. [A-League: 6º, 39 pts en 28 (GF 35, DG -2)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · A-League con 1–2 jornadas: base mayormente temporada 2025-26 (estimado)
+- Bajas: Melbourne Victory: Louis D&#x27;Arrigo (lesión) · Melbourne City FC: Rossetto (gemelo), Mazzeo (tobillo), Lopane (isquiotibial), Kalms (rodilla)
+- ⚔️ Derbi de Melbourne entre dos equipos que perdieron en la jornada 1: Victory sin D&#x27;Arrigo; City sin Rossetto, Mazzeo, Lopane ni Kalms. El modelo le da a Victory 41% contra 33% de City y más volumen (≈16 tiros contra ≈11, ≈6.9 córners contra ≈5.2). La base es casi toda de la temporada pasada (5º contra 6º, separados por un punto): derbi parejo, sin favorito claro.
+- ⚽ Goles: total 2.7–3.1 · Melbourne Victory 1.4–1.7 · Melbourne City FC 1.2–1.5 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 1-2, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Melbourne Victory genera ≈16 tiros y 1.4–1.7 goles esperados; Melbourne City FC, ≈11 tiros y 1.2–1.5. Victory llega con más volumen; City sin Mazzeo ni Kalms pierde llegada. El casino espera ≈2.8 goles y el modelo ≈2.8; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Melbourne Victory o empate + Melbourne Victory más de 0.5 goles (59%)
+- 🚩 Córners FT 9–14 (línea 10.5) · 1T 4–7 (línea 4.5) · total baja · 1t baja · eq_h baja · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · MBV 1.5 justa · MBC 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Melbourne Victory o empate + Melbourne Victory más de 0.5 goles (59%) · 🔗 Melbourne City FC +1.5 (hándicap) + Menos de 3.5 goles (58%) · ❌ Evitar: Melbourne Victory menos de 0.5 goles en el 1T (52%)
+- Huecos: sin 🟢 Sólido · A-League 2026-27 recién empezó (jornada 2): la base estadística es mayormente la temporada 2025-26 + 1 partido → estimación con muestra de temporada previa · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · A-League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · A-League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
 
 ## ⚽ Süper Lig
 
@@ -1308,6 +1696,37 @@ PARTE 1 DE 3 · partidos 1–26 de 76 (hora CDMX 04:30–08:00). Revisa estos pa
 - 📏 Goles 2.5 baja · COR 1.5 justa · EIB 1.5 baja · AA baja
 - Picks: 🟢 Córners Eibar menos de 3.5 (69%) · 🔗 Más de 2.5 goles + Eibar más de 0.5 goles (53%) · 🔥 Córners Córdoba más de 5.5 (69%) · 🔗 Eibar +1.5 (hándicap) + Eibar más de 0.5 goles (61%) · ❌ Evitar: Córdoba más de 1.5 goles (51%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 110 de 111 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Segunda División: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## ⚽ Allsvenskan
+
+### 07:00 · BK Häcken – Degerfors IF · Bravida Arena, Gothenburg
+- 1X2: 67% / 20% / 13% · Sin confirmación suficiente
+- 📋 Häcken 4º con tres victorias seguidas; sin Öhman ni Engdahl. [Allsvenskan: 4º, 42 pts en 24 (GF 43, DG +13)] | Degerfors 14º (zona baja); sin Pikkarainen (cruzado) ni K. Karlsson. [Allsvenskan: 14º, 20 pts en 24 (GF 21, DG -16)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: BK Häcken: Filip Öhman (hombro), Ben Engdahl (lesión) · Degerfors IF: Juhani Pikkarainen (ligamento cruzado), Kazper Karlsson (lesión)
+- ⚔️ Häcken (4º, tres victorias seguidas) recibe a Degerfors (14º, DG −16); Häcken sin Öhman ni Engdahl atrás, Degerfors sin Pikkarainen ni K. Karlsson. El modelo le da a Häcken 67% y ≈17 tiros contra ≈9, aunque los córners salen parejos (≈6.6 contra ≈6.0). Favorito claro por tabla y por volumen, pero el modelo espera menos goles que el casino.
+- ⚽ Goles: total 2.7–3.4 · BK Häcken 1.9–2.5 · Degerfors IF 0.7–1.0 · 1T 1.2–1.5 · modal 2-0 (alt. 1-1, 2-1, 1-0) · por resultado: local 2-0 · empate 1-1 · visita 1-2
+- 🧠 BK Häcken genera ≈17 tiros y 1.9–2.5 goles esperados; Degerfors IF, ≈9 tiros y 0.7–1.0. Degerfors anotó solo 21 en 24: casi todo el gol esperado es de Häcken. El casino espera ≈3.2 goles y el modelo ≈2.7; ~45% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Menos de 3.5 goles + Degerfors IF menos de 1.5 goles (55%) · 📏 La línea 3.5 dice que el casino espera ~3.2 goles; el modelo 2.7 porque XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–8 (línea 5.5) · total baja · 1t baja · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 alta · BKH 2.5 alta · DEG 0.5 justa · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Menos de 3.5 goles + Degerfors IF menos de 1.5 goles (55%) · 🔗 Degerfors IF menos de 1.5 goles + Degerfors IF menos de 0.5 goles en el 1T (61%) · ❌ Evitar: AA No (48%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 07:00 · IK Sirius – AIK · Studenternas IP, Uppsala
+- 1X2: 60% / 21% / 19% · Alineación probable
+- 📋 Sirius líder (55 pts en 24, 4V-1E en sus últimos 5); sin Uneken (conmoción); Persson apunta a titular. [Allsvenskan: 1º, 55 pts en 24 (GF 55, DG +25)] | AIK 9º, 6 partidos de liga sin ganar; sin Helm, Redkin, Beširović, Cissé, Filling ni Papagiannopoulos. [Allsvenskan: 9º, 34 pts en 24 (GF 38, DG -4)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: IK Sirius: Jesper Uneken (conmoción) · AIK: Adrian Helm (rodilla), Andreas Redkin (rodilla), Dino Beširović (muslo), Ibrahim Cissé (tobillo), Kevin Filling (rodilla), Sotirios Papagiannopoulos (rodilla)
+- ⚔️ Sirius, líder con el mejor ataque (55 goles en 24), recibe a un AIK 9º que suma seis partidos de liga sin ganar y tiene seis bajas (Beširović, Cissé, Papagiannopoulos, Filling, Helm, Redkin). El modelo le da a Sirius 60% y ≈2.3 goles esperados contra ≈1.2; AIK saca algo más de córners (≈5.7 contra ≈5.3). Sirius sin Uneken sigue siendo favorito, pero AIK anota con frecuencia: partido de goles más que de portería en cero.
+- ⚽ Goles: total 3.3–3.9 · IK Sirius 2.1–2.6 · AIK 1.1–1.4 · 1T 1.4–1.7 · modal 1-1 (alt. 2-1, 2-0, 3-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 IK Sirius genera ≈17 tiros y 2.1–2.6 goles esperados; AIK, ≈14 tiros y 1.1–1.4. Sirius es el mejor ataque de la liga (55) y AIK concede 1.75 por partido. El casino espera ≈3.4 goles y el modelo ≈3.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Gana IK Sirius + IK Sirius más de 1.5 goles (54%) · 📏 IK Sirius a 2.5: el casino espera ~2.2 goles de IK Sirius; el modelo 2.6 porque goleadas recibidas inflan lo que concede AIK (1.75/PJ; 1.54 sin goleadas); ataque de IK Sirius inflado por rivales débiles.
+- 🚩 Córners FT 8–13 (línea 10.5) · 1T 3–7 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 baja · SIR 2.5 baja · AIK 1.5 justa · AA justa
+- Picks: 🟢 Córners AIK más de 4.5 (65%) · 🔗 Gana IK Sirius + IK Sirius más de 1.5 goles (54%) · 🔥 Córners IK Sirius menos de 6.5 (71%) · 🔗 Córners más de 8.5 + 1T córners más de 3.5 (64%) · ❌ Evitar: Córners más de 10.5 (54%)
+- Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
 ## ⚽ Serie A
@@ -1489,6 +1908,52 @@ PARTE 1 DE 3 · partidos 1–26 de 76 (hora CDMX 04:30–08:00). Revisa estos pa
 - 📏 Goles 2.5 justa · QPR 1.5 justa · SWA 1.5 justa · AA justa
 - Picks: 🟢 Sin Sólido · 🔗 Swansea City o empate + Queens Park Rangers menos de 1.5 goles (52%) · 🔗 Queens Park Rangers o empate + Queens Park Rangers más de 0.5 goles (57%) · ❌ Evitar: Más de 2.5 goles (49%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-20) → estadísticas de ESPN · Football-Data.co.uk: 132 de 133 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Championship: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Portsmouth-Queens Park Rangers 2026-08-15 · Córners HT TotalCorner sin dato: Queens Park Rangers-Bolton Wanderers 2026-08-22 · Córners HT TotalCorner sin dato: Blackburn Rovers-Queens Park Rangers 2026-08-29 · Córners HT TotalCorner sin dato: Queens Park Rangers-Cardiff City 2026-09-02 · Córners HT TotalCorner sin dato: Queens Park Rangers-Middlesbrough 2026-09-05 · Córners HT TotalCorner sin dato: Charlton Athletic-Queens Park Rangers 2026-09-09 · Córners HT TotalCorner sin dato: West Bromwich Albion-Queens Park Rangers 2026-09-12
+</textarea><textarea id="t2" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
+
+Abajo va el análisis completo de los 100 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo:
+1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
+2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
+3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
+4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
+5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+
+Reglas obligatorias (no se negocian):
+- Todo en español llano.
+- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
+- Nunca uses el Más de 1.5 goles del partido como pick.
+- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
+- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
+- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
+- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
+- Desconfía de rachas con muestras pequeñas.
+- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
+- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
+- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
+- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
+- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
+- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
+- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+
+PARTE 2 DE 4 · partidos 29–53 de 100 (hora CDMX 08:00–10:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+
+===================== ANÁLISIS =====================
+# Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
+
+100 partidos · 17 🟢 Sólidos · 95 con el motor (v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts)) · 3 por estimación (Super League suiza, sin datos en ESPN) · 2 ya en juego/terminados al generar.
+Etiquetas: [observado] = dato medido (tabla, resultados, forma) · [reportado] = de una fuente externa (bajas, promedios de Forebet/prensa) · [estimado] = salida de modelo (motor v5 o Poisson). Forebet solo como referencia secundaria.
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+PARTE 2 DE 4 · partidos 29–53 de 100 (hora CDMX 08:00–10:00). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+
+## 🏴 Championship
 
 ### 08:00 · Stoke City – Bristol City · bet365 Stadium, Stoke-on-Trent
 - 1X2: 39% / 28% / 33% · Alineación probable
@@ -1528,44 +1993,24 @@ PARTE 1 DE 3 · partidos 1–26 de 76 (hora CDMX 04:30–08:00). Revisa estos pa
 - 📏 Goles 2.5 justa · WOL 2.5 justa · WAT 0.5 justa · AA justa
 - Picks: 🟢 Córners Watford menos de 3.5 (67%) · 🔗 Gana Wolverhampton Wanderers + Watford menos de 1.5 goles (63%) · 🔥 Córners menos de 10.5 (60%) · 🔗 Watford +2.5 (hándicap) + Wolverhampton Wanderers menos de 1.5 goles en el 1T (61%) · ❌ Evitar: AA No (52%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-20) → estadísticas de ESPN · Football-Data.co.uk: 132 de 133 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Championship: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Portsmouth-Queens Park Rangers 2026-08-15 · Córners HT TotalCorner sin dato: Queens Park Rangers-Bolton Wanderers 2026-08-22 · Córners HT TotalCorner sin dato: Blackburn Rovers-Queens Park Rangers 2026-08-29 · Córners HT TotalCorner sin dato: Queens Park Rangers-Cardiff City 2026-09-02 · Córners HT TotalCorner sin dato: Queens Park Rangers-Middlesbrough 2026-09-05 · Córners HT TotalCorner sin dato: Charlton Athletic-Queens Park Rangers 2026-09-09 · Córners HT TotalCorner sin dato: West Bromwich Albion-Queens Park Rangers 2026-09-12
-</textarea><textarea id="t2" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
 
-Abajo va el análisis completo de 76 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey), hecho con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
 
-Tu trabajo:
-1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
-2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
-3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
-4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
-5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+## ⚽ Eliteserien
 
-Reglas obligatorias (no se negocian):
-- Todo en español llano.
-- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
-- Nunca uses el Más de 1.5 goles del partido como pick.
-- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
-- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
-- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
-- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
-- Desconfía de rachas con muestras pequeñas.
-- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
-- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
-- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
-- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
-- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
-- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
-- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+### 08:00 · Bodo/Glimt – Vålerenga · Aspmyra Stadion, Bodø/Glimt
+- 1X2: 82% / 11% / 7% · Sin confirmación suficiente
+- 📋 Bodø/Glimt líder (56 pts en 23); jugó Champions a media semana (perdió 4-3 en Nápoles) → posible rotación; sin Mikkelsen, Evjen, Sjong ni Riisnaes. [NOR: 1º, 56 pts en 23 (GF 58, DG +38)] | Vålerenga en la mitad baja; Sjåtil sancionado; Finnsson, Rashani y Tshiembe en duda. [NOR: 14º, 18 pts en 21 (GF 32, DG -13)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Bodø/Glimt: A. Mikkelsen (ingle), H. Evjen (rodilla), I. Sjong (lesión), M. Riisnaes (rodilla) · Vålerenga: Sjåtil (sanción), Finnsson (lesión (duda)), Rashani (molestia (duda)), Tshiembe (molestia (duda))
+- ⚔️ Bodø/Glimt, líder (56 pts, DG +38), recibe a Vålerenga tras jugar Champions a media semana (4-3 en Nápoles); sin Mikkelsen, Evjen, Sjong ni Riisnaes. El modelo le da a Glimt 82%, ≈22 tiros contra ≈10 y ≈8.6 córners contra ≈3.1. Vålerenga, sin Sjåtil (sancionado) y con tres dudas, suele marcar (≈1.0 goles esperados): la duda real es cuánto rota Glimt, no quién domina.
+- ⚽ Goles: total 4.2–4.8 · Bodø/Glimt 3.2–3.8 · Vålerenga 0.9–1.2 · 1T 1.8–2.1 · modal 3-1 (alt. 3-0, 4-0, 4-1) · por resultado: local 3-1 · empate 1-1 · visita 1-2
+- 🧠 Bodø/Glimt genera ≈22 tiros y 3.2–3.8 goles esperados; Vålerenga, ≈10 tiros y 0.9–1.2. Glimt marca ≈2.5 por partido en liga; la rotación tras la Champions es el riesgo para el total. El casino espera ≈4.5 goles y el modelo ≈4.2; ~43% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Vålerenga menos de 1.5 goles + Bodo/Glimt −1.5 (gana por 2+) (57%)
+- 🚩 Córners FT 9–14 (línea 11.5) · 1T 4–7 (línea 5.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 4.5 alta · BODO 3.5 alta · VAL 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Vålerenga menos de 1.5 goles + Bodo/Glimt −1.5 (gana por 2+) (57%) · 🔗 1T córners menos de 7.5 + Córners menos de 13.5 (64%) · ❌ Evitar: Córners más de 11.5 (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Aalesund-Hamarkameratene 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data: marcador distinto Vålerenga-Kristiansund BK 2026-05-29 (ESPN 0-0, FD 3-1) → se deja ESPN · Football-Data &#x27;extra&#x27; (NOR): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Eliteserien: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
-PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
-
-===================== ANÁLISIS =====================
-# Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
-
-76 partidos · 16 🟢 Sólidos · v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts).
-Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
-Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
-
-PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
 
 ## ⚽ Premier League
 
@@ -1594,6 +2039,40 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - 📏 Goles 2.5 alta · COV 1.5 justa · FUL 1.5 alta · AA alta
 - Picks: 🟢 Sin Sólido · 🔗 Fulham menos de 2.5 goles + Coventry City más de 0.5 goles (57%) · 🔥 Córners Coventry City menos de 4.5 (62%) · 🔗 1T córners Coventry City menos de 3.5 + 1T córners menos de 5.5 (68%) · ❌ Evitar: Fulham más de 0.5 goles en el 1T (50%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
+
+
+## ⚽ Pro League belga
+
+### 08:00 · Antwerp – Royal Charleroi SC · Bosuilstadion, Antwerp
+- 1X2: 24% / 24% / 52% · Alineación probable
+- 📋 Antwerp 13º, 5 derrotas de liga seguidas; Benítez sancionado, Hamdaoui en duda. [Pro League: 13º, 7 pts en 8 (GF 12, DG -8)] | Charleroi 3º, 7 victorias en 8; sin Sow ni Bernier; vuelve Ousou. [Pro League: 3º, 21 pts en 8 (GF 16, DG +9)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Antwerp: Benítez (sanción), Hamdaoui (lesión (duda)) · Royal Charleroi SC: Sow (rodilla), Bernier (metatarso)
+- ⚔️ Antwerp llega con cinco derrotas de liga seguidas, sin Benítez (sancionado) y con Hamdaoui en duda; Charleroi, 3º, viene en racha y recupera a Ousou. El modelo le da a Charleroi 52% fuera de casa y ≈1.9 goles esperados contra ≈1.2. Antwerp en casa tiene volumen parecido (≈14 tiros contra ≈16): el visitante es favorito, pero no por tanto.
+- ⚽ Goles: total 2.9–3.3 · Antwerp 1.0–1.3 · Royal Charleroi SC 1.7–2.0 · 1T 1.3–1.5 · modal 1-1 (alt. 1-2, 0-1, 0-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Antwerp genera ≈14 tiros y 1.0–1.3 goles esperados; Royal Charleroi SC, ≈16 tiros y 1.7–2.0. Antwerp solo anotó 12 en 8; Charleroi, 16. El casino espera ≈3.0 goles y el modelo ≈3.0; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (59%)
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · ANT 1.5 justa · CHA 1.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (59%) · 🔗 1T córners menos de 6.5 + Córners menos de 11.5 (66%) · ❌ Evitar: Córners más de 9.5 (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
+
+
+## 🇸🇦 Saudi Pro League
+
+### 08:00 · Neom SC – Abha · King Khalid Sport City Stadium, Tabuk
+- 1X2: 59% / 24% / 17% · Sin confirmación suficiente
+- 📋 Neom 6º (entrena Galtier); sin Al Hejji ni Amadou Koné. [Saudi Pro League: 6º, 16 pts en 10 (GF 14, DG +5)] | Abha último (2 pts en 8) y recién ascendido; sin Diallo ni Al-Siyali. [Saudi Pro League: 18º, 2 pts en 8 (GF 6, DG -9)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Neom SC: Alaa Al Hejji (rodilla), Amadou Koné (baja) · Abha: Abdo Diallo (lesión), Basil Al-Siyali (cirugía de pelvis)
+- ⚔️ Neom (6º, de Galtier) recibe a Abha, último con 2 puntos en 8 y recién ascendido; Neom sin Al Hejji ni Amadou Koné, Abha sin Diallo ni Al-Siyali. El modelo le da a Neom 59%, pero espera un partido de pocos goles (≈1.9 contra ≈0.9 esperados). Abha casi no genera (≈8 tiros, 6 goles en 8): Neom favorito, aunque no se espera goleada.
+- ⚽ Goles: total 2.1–3.0 · Neom SC 1.3–2.1 · Abha 0.8–1.1 · 1T 0.9–1.3 · modal 1-1 (alt. 1-0, 2-0, 2-1) · por resultado: local 1-0 · empate 1-1 · visita 1-2
+- 🧠 Neom SC genera ≈11 tiros y 1.3–2.1 goles esperados; Abha, ≈8 tiros y 0.8–1.1. Abha anotó 6 en 8: casi todo el gol esperado es de Neom. El casino espera ≈2.9 goles y el modelo ≈2.1; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Abha +1.5 (hándicap) + Neom SC menos de 2.5 goles (59%) · 📏 Neom SC a 1.5: el casino espera ~2.0 goles de Neom SC; el modelo 1.3 porque Neom SC sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 4–8 (línea 9.5) · 1T 2–4 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · NEOM 1.5 alta · ABH 0.5 justa · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Abha +1.5 (hándicap) + Neom SC menos de 2.5 goles (59%) · 🔗 Abha +2.5 (hándicap) + Menos de 3.5 goles (62%) · ❌ Evitar: Ambos anotan (AA) (51%)
+- Huecos: sin 🟢 Sólido · Abha recién ascendido: muestra corta en la Saudi Pro League · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
 ## ⚽ Scottish Premiership
@@ -1683,6 +2162,23 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 110 de 111 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Segunda División: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
+## 🇳🇱 Eerste Divisie
+
+### 08:30 · FC Dordrecht – VVV-Venlo · M-Scores Stadion, Dordrecht
+- 1X2: 36% / 24% / 40% · Alineación probable
+- 📋 Dordrecht último (11 pts en 11); sin Raatsie, Venema, Bischof, Artic ni Van Osch. [Eerste Divisie: 18º, 11 pts en 11 (GF 14, DG -13)] | VVV 4º; sin Schalk ni Zuliani. [Eerste Divisie: 4º, 22 pts en 11 (GF 30, DG +12)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: FC Dordrecht: Calvin Raatsie (mano), Nick Venema (ingle), Noah Bischof (tobillo), Thomas Artic (lesión), Yanick van Osch (lesión) · VVV-Venlo: Alex Schalk (lesión), Edhy Zuliani (lesión)
+- ⚔️ Dordrecht, último (11 pts en 11, DG −13), recibe a VVV, 4º con 30 goles; Dordrecht sin cinco jugadores, entre ellos los porteros Raatsie y Van Osch. El modelo lo ve casi parejo (36% contra 40%) porque Dordrecht en casa tira algo más (≈15 contra ≈13). VVV, sin Schalk ni Zuliani, marca en casi todos los escenarios: partido abierto, con los dos anotando como lo más probable.
+- ⚽ Goles: total 3.3–3.7 · FC Dordrecht 1.5–1.9 · VVV-Venlo 1.7–2.0 · 1T 1.5–1.6 · modal 1-1 (alt. 1-2, 2-1, 2-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 FC Dordrecht genera ≈15 tiros y 1.5–1.9 goles esperados; VVV-Venlo, ≈13 tiros y 1.7–2.0. Dordrecht concede mucho (DG −13) y VVV es de los mejores ataques (30 en 11). El casino espera ≈3.4 goles y el modelo ≈3.5; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: VVV-Venlo más de 0.5 goles + FC Dordrecht menos de 2.5 goles (62%) · 📏 VVV-Venlo a 1.5: el casino espera ~1.8 goles de VVV-Venlo; el modelo 2.0 porque goleadas recibidas inflan lo que concede FC Dordrecht (2.45/PJ; 1.91 sin goleadas); ataque de VVV-Venlo inflado por rivales débiles.
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 3–6 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 3.5 justa · DOR 1.5 justa · VVV 1.5 baja · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 VVV-Venlo más de 0.5 goles + FC Dordrecht menos de 2.5 goles (62%) · 🔗 VVV-Venlo o empate + VVV-Venlo más de 0.5 goles (60%) · ❌ Evitar: FC Dordrecht menos de 1.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Eerste Divisie: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Eerste Divisie: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: FC Dordrecht-Jong Ajax 2026-08-07 · Córners HT TotalCorner sin dato: Jong AZ-FC Eindhoven 2026-08-10 · Córners HT TotalCorner sin dato: Jong PSV-FC Volendam 2026-08-10 · Córners HT TotalCorner sin dato: Almere City-Jong PSV 2026-08-14 · Córners HT TotalCorner sin dato: De Graafschap-Jong AZ 2026-08-17 · Córners HT TotalCorner sin dato: Jong Ajax-FC Emmen 2026-08-17 · Córners HT TotalCorner sin dato: FC Emmen-Jong AZ 2026-08-21 · Córners HT TotalCorner sin dato: NAC Breda-Jong Ajax 2026-08-22
+
+
 ## ⚽ Eredivisie
 
 ### 08:30 · FC Utrecht – PEC Zwolle · Stadion Galgenwaard, Utrecht
@@ -1715,6 +2211,102 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Primeira Liga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
+## ⚽ Bundesliga austriaca
+
+### 09:00 · TSV Hartberg – Wolfsberger · Profertil Arena, Hartberg
+- 1X2: 52% / 24% / 24% · Sin confirmación suficiente
+- 📋 Hartberg 7º; sin Pazourek, Wilfinger ni Fridrikas. [Bundesliga austriaca: 7º, 11 pts en 9 (GF 15, DG -4)] | Wolfsberger 12º (último, 5 pts); sin Wimmer ni Mamageishvili; Vrioni en duda. [Bundesliga austriaca: 12º, 5 pts en 9 (GF 7, DG -11)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: TSV Hartberg: Luca Pazourek (lesión), Fabian Wilfinger (rodilla), Lukas Fridrikas (ligamento cruzado) · Wolfsberger: Nicolas Wimmer (rodilla), Otar Mamageishvili (muscular), Giacomo Vrioni (molestia (duda))
+- ⚔️ Hartberg (7º) recibe al último, Wolfsberger (5 pts en 9, 7 goles a favor); Hartberg sin Pazourek, Wilfinger ni Fridrikas; WAC sin Wimmer ni Mamageishvili y con Vrioni en duda. El modelo le da a Hartberg 51% y ≈1.9 goles esperados contra ≈1.2. Las estadísticas de córners y tiros de esta liga vienen incompletas en ESPN: la lectura se apoya solo en goles.
+- ⚽ Goles: total 2.9–3.3 · TSV Hartberg 1.7–2.0 · Wolfsberger 0.9–1.4 · 1T 1.3–1.5 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 TSV Hartberg: 1.7–2.0 goles esperados; Wolfsberger: 0.9–1.4 (sin datos fiables de tiros en esta liga). Wolfsberger es el peor ataque de la liga (7 en 9). El casino espera ≈3.1 goles y el modelo ≈2.9; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: TSV Hartberg más de 1.5 goles (55%)
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 2.5 alta · HAR 1.5 justa · WOL 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 TSV Hartberg más de 1.5 goles (55%) · 🔗 TSV Hartberg o empate + Wolfsberger menos de 1.5 goles (62%) · ❌ Evitar: Gana TSV Hartberg (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 09:00 · WSG Swarovski Tirol – Grazer AK · Tivoli Stadion Tirol, Innsbruck
+- 1X2: 39% / 27% / 33% · Sin confirmación suficiente
+- 📋 WSG Tirol 6º, busca su primera victoria en casa en seis meses; solo falta Butler. [Bundesliga austriaca: 6º, 11 pts en 9 (GF 12, DG -2)] | GAK 9º (DG −15); sin Meierhofer ni Guerti; Owusu en duda. [Bundesliga austriaca: 9º, 9 pts en 9 (GF 7, DG -15)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: WSG Swarovski Tirol: Quincy Butler (lesión) · Grazer AK: Jakob Meierhofer (hombro), Ismaël Guerti (lesión larga), Beres Owusu (molestia (duda))
+- ⚔️ WSG Tirol (6º) busca su primera victoria en casa en seis meses ante un GAK 9º con DG −15; Tirol solo sin Butler, GAK sin Meierhofer ni Guerti y con Owusu en duda. El modelo lo ve parejo: 39% Tirol, 27% empate, 33% GAK. GAK solo anotó 7 en 9; sin datos fiables de córners ni tiros en esta liga, el empate es un resultado muy vivo.
+- ⚽ Goles: total 2.6–3.0 · WSG Swarovski Tirol 1.3–1.7 · Grazer AK 1.1–1.5 · 1T 1.2–1.3 · modal 1-1 (alt. 1-0, 2-1, 0-0) · por resultado: local 1-0 · empate 1-1 · visita 1-2
+- 🧠 WSG Swarovski Tirol: 1.3–1.7 goles esperados; Grazer AK: 1.1–1.5 (sin datos fiables de tiros en esta liga). GAK anotó 7 en 9 y concede mucho (DG −15). El casino espera ≈2.8 goles y el modelo ≈2.7; ~45% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Grazer AK menos de 1.5 goles + WSG Swarovski Tirol o empate (55%) · 📏 Grazer AK a 1.5: el casino espera ~1.3 goles de Grazer AK; el modelo 1.1 porque pocos goles de Grazer AK en muestra corta (0.78/PJ); Grazer AK sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)).
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 2.5 justa · WST 1.5 baja · GRA 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Grazer AK menos de 1.5 goles + WSG Swarovski Tirol o empate (55%) · 🔗 WSG Swarovski Tirol o empate + WSG Swarovski Tirol más de 0.5 goles (59%) · ❌ Evitar: Más de 2.5 goles (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## 🇸🇦 Saudi Pro League
+
+### 09:05 · Al Kholood – Al Ettifaq · Al-Hazm Club Stadium, Al-Rass
+- 1X2: 37% / 26% / 37% · Sin confirmación suficiente
+- 📋 Al Kholood 9º; sin Utkus (tobillo); vuelve Al-Shanqity. [Saudi Pro League: 9º, 12 pts en 9 (GF 14, DG -4)] | Al Ettifaq 7º; sin Rayane Messi ni Medrán. [Saudi Pro League: 7º, 15 pts en 10 (GF 14, DG -2)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Al Kholood: Edgaras Utkus (tobillo) · Al Ettifaq: Rayane Messi (falta de forma), Álvaro Medrán (muscular)
+- ⚔️ Al Kholood (9º) recibe a Al Ettifaq (7º), separados por 3 puntos; Kholood sin Utkus, Ettifaq sin Rayane Messi ni Medrán. El modelo da 37% para cada uno y ≈1.5 goles esperados por lado. Partido parejo y abierto: el modelo espera más goles que el casino.
+- ⚽ Goles: total 2.8–3.4 · Al Kholood 1.4–1.7 · Al Ettifaq 1.4–1.7 · 1T 1.3–1.5 · modal 1-1 (alt. 1-2, 2-1, 0-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Al Kholood genera ≈15 tiros y 1.4–1.7 goles esperados; Al Ettifaq, ≈14 tiros y 1.4–1.7. Los dos anotaron 14: reparto parejo del gol. El casino espera ≈2.9 goles y el modelo ≈3.4; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (58%) · 📏 La línea 2.5 dice que el casino espera ~2.9 goles; el modelo 3.4 porque goleadas recibidas inflan lo que concede Al Kholood (2.00/PJ; 1.78 sin goleadas); ataque de Al Kholood inflado por rivales débiles.
+- 🚩 Córners FT 8–13 (línea 9.5) · 1T 3–7 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 baja · KHO 1.5 baja · ETT 1.5 baja · AA baja
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (58%) · 🔗 Al Kholood o empate + Al Ettifaq menos de 2.5 goles (61%) · ❌ Evitar: Al Kholood menos de 0.5 goles en el 1T (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## ⚽ Allsvenskan
+
+### 09:30 · Djurgården – Örgryte IS · Tele2 Arena, Stockholm
+- 1X2: 79% / 14% / 7% · Sin confirmación suficiente
+- 📋 Djurgården 2º, plantel completo (vuelve Tenho de sanción); el DT abre la puerta a rotar. [Allsvenskan: 2º, 47 pts en 24 (GF 50, DG +29)] | Örgryte 15º (DG −25); sin Svensson, Abukar ni Alm; crisis de delanteros. [Allsvenskan: 15º, 18 pts en 24 (GF 27, DG -25)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Djurgården: sin bajas reportadas en las fuentes revisadas · Örgryte IS: William Svensson (lesión), Aydarus Abukar (lesión), Rasmus Alm (lesión)
+- ⚔️ Djurgården (2º, DG +29) recibe a Örgryte (15º, DG −25) con plantel completo; Örgryte sin Svensson, Abukar ni Alm, en crisis de delanteros. El modelo le da a Djurgården 79% y ≈3.0 goles esperados contra ≈0.8. El DT de Djurgården abre la puerta a rotar: favorito claro, con la rotación como único freno.
+- ⚽ Goles: total 3.3–3.9 · Djurgården 2.5–3.1 · Örgryte IS 0.6–0.9 · 1T 1.4–1.7 · modal 3-0 (alt. 2-0, 2-1, 4-0) · por resultado: local 3-0 · empate 1-1 · visita 1-2
+- 🧠 Djurgården genera ≈17 tiros y 2.5–3.1 goles esperados; Örgryte IS, ≈9 tiros y 0.6–0.9. Örgryte sin Abukar ni Alm y con DG −25: casi todo el gol esperado es de Djurgården. El casino espera ≈3.7 goles y el modelo ≈3.3; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Gana Djurgården + Örgryte IS menos de 1.5 goles (71%)
+- 🚩 Córners FT 7–11 (línea 9.5) · 1T 3–6 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 3.5 alta · DJU None alta · ORG None justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Gana Djurgården + Örgryte IS menos de 1.5 goles (71%) · 🔥 Córners menos de 10.5 (69%) · 🔗 Córners menos de 12.5 + 1T córners menos de 6.5 (77%) · ❌ Evitar: Ambos anotan (AA) (50%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+### 09:30 · Kalmar FF – IF Brommapojkarna · Guldfageln Arena, Kalmar
+- 1X2: 49% / 26% / 26% · Sin confirmación suficiente
+- 📋 Kalmar 13º; sin Imeri, Keita, Nnamani ni Paananen. [Allsvenskan: 13º, 22 pts en 24 (GF 23, DG -15)] | Brommapojkarna 11º; Sever en duda. [Allsvenskan: 11º, 30 pts en 24 (GF 36, DG -7)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Kalmar FF: Elion Imeri (hombro (fin de temporada)), Aboubacar Keita (muslo), Emeka Nnamani (ingle), Kasper Paananen (muslo) · IF Brommapojkarna: Kamilcan Sever (lesión (duda))
+- ⚔️ Kalmar (13º, DG −15) recibe a Brommapojkarna (11º); Kalmar sin Imeri, Keita, Nnamani ni Paananen; BP con Sever en duda. El modelo le da a Kalmar 49% por jugar en casa y tirar más (≈16 contra ≈11). BP tiene mejor ataque (36 goles contra 23), así que la ventaja local es frágil.
+- ⚽ Goles: total 2.6–3.1 · Kalmar FF 1.4–1.9 · IF Brommapojkarna 1.0–1.3 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 1-0, 2-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Kalmar FF genera ≈16 tiros y 1.4–1.9 goles esperados; IF Brommapojkarna, ≈11 tiros y 1.0–1.3. Kalmar anotó 23 en 24 y sin Imeri ni Nnamani pierde llegada. El casino espera ≈3.0 goles y el modelo ≈2.6; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: IF Brommapojkarna más de 0.5 goles + Kalmar FF menos de 2.5 goles (52%) · 📏 Kalmar FF a 1.5: el casino espera ~1.8 goles de Kalmar FF; el modelo 1.4 porque Kalmar FF sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 8–13 (línea 10.5) · 1T 3–7 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · KFF 1.5 alta · BRO 1.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 IF Brommapojkarna más de 0.5 goles + Kalmar FF menos de 2.5 goles (52%) · 🔥 Córners IF Brommapojkarna más de 4.5 (59%) · 🔗 IF Brommapojkarna +1.5 (hándicap) + Kalmar FF menos de 2.5 goles (67%) · ❌ Evitar: Kalmar FF más de 1.5 goles (51%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Örgryte IS-IF Elfsborg 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data &#x27;extra&#x27; (SWE): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 3 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Allsvenskan: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## ⚽ Eliteserien
+
+### 10:00 · Hamarkameratene – Rosenborg · Briskeby Stadion, Hamar
+- 1X2: 19% / 21% / 60% · Sin confirmación suficiente
+- 📋 HamKam 13º; sin Johnsgård; Isufi en duda. [NOR: 13º, 23 pts en 22 (GF 29, DG -16)] | Rosenborg 4º; sin Bakke ni Bolkan Nordli. [NOR: 4º, 37 pts en 21 (GF 43, DG +16)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Hamarkameratene: Markus Johnsgård (ligamento cruzado), B. Isufi (codo (duda)) · Rosenborg: Johan Bakke (cirugía), Simen Bolkan Nordli (muslo)
+- ⚔️ HamKam (13º, DG −16) recibe a Rosenborg (4º); HamKam sin Johnsgård y con Isufi en duda; Rosenborg sin Bakke ni Bolkan Nordli. El modelo le da a Rosenborg 60% y ≈2.3 goles esperados contra ≈1.2. Los dos suelen marcar: Rosenborg favorito, pero en un partido de ida y vuelta.
+- ⚽ Goles: total 3.3–3.9 · Hamarkameratene 1.0–1.5 · Rosenborg 2.1–2.5 · 1T 1.5–1.7 · modal 1-1 (alt. 1-2, 0-2, 1-3) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Hamarkameratene genera ≈12 tiros y 1.0–1.5 goles esperados; Rosenborg, ≈17 tiros y 2.1–2.5. HamKam concede mucho (DG −16) y Rosenborg anotó 43 en 21. El casino espera ≈3.4 goles y el modelo ≈3.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Rosenborg más de 1.5 goles + Rosenborg o empate (61%) · 📏 Rosenborg a 2.5: el casino espera ~2.2 goles de Rosenborg; el modelo 2.5 porque goleadas inflan el ataque de Rosenborg (2.05 goles/PJ; 1.86 sin goleadas); goleadas recibidas inflan lo que concede Hamarkameratene (2.05/PJ; 1.73 sin goleadas).
+- 🚩 Córners FT 7–12 (línea 10.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a alta · eq1t_a sin_linea
+- 📏 Goles 3.5 baja · HAM 0.5 baja · ROS 2.5 baja · AA baja
+- Picks: 🟢 Sin Sólido · 🔗 Rosenborg más de 1.5 goles + Rosenborg o empate (61%) · 🔗 Hamarkameratene +2.5 (hándicap) + Hamarkameratene más de 0.5 goles (59%) · ❌ Evitar: Más de 3.5 goles (46%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: marcador distinto Aalesund-Hamarkameratene 2026-05-29 (ESPN 0-0, FD 2-2) → se deja ESPN · Football-Data: marcador distinto Vålerenga-Kristiansund BK 2026-05-29 (ESPN 0-0, FD 3-1) → se deja ESPN · Football-Data &#x27;extra&#x27; (NOR): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Eliteserien: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
 ## ⚽ Serie A
 
 ### 10:00 · Napoli – AS Roma · Stadio Diego Armando Maradona, Napoli
@@ -1731,6 +2323,85 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 70 de 71 partidos con córners/tarjetas/tiros de FD; el resto de ESPN
 
 
+## ⚽ Super League suiza
+
+### 10:00 · Servette – FC Vaduz · Stade de Genève, Ginebra
+- 1X2: 45% / 21% / 34% · Sin XI confirmado (estimación)
+- 📋 Servette 6º, 13 pts en 10 (GF 14, GC 13) [reportado: tabla Forebet] | FC Vaduz 10º, 9 pts en 10 (GF 21, GC 21) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: Servette: Timothé Cognat (tobillo), Jérémy Frick (baja), Dylan Fofana (baja), Miroslav Stevanović (baja), Bradley Sida (baja) · FC Vaduz: Sandro Seiler (cirugía de rodilla), Levan Akhalaia (hombro), R. Neelakandan (cirugía de rodilla), Tim Oehri (baja), Dejan Sorgić (muscular), M. Eberhard (lesión), D. Simani (sanción (amarillas))
+- ⚔️ Servette (6º, 13 pts, la mejor defensa después de Lugano: 13 goles en contra en 10) recibe a Vaduz (10º), que perdió sus últimos 5 partidos de visita en liga. La estimación da a Servette ≈1.8 goles contra ≈1.5 de Vaduz; Servette juega sin Cognat y con varias bajas en ataque. Vaduz marca bastante (21 goles en 10) pero concede lo mismo: favorito local sin margen amplio.
+- ⚽ Goles: total 3.1–3.6 · Servette 1.7–2.0 · FC Vaduz 1.4–1.7 · 1T 1.4–1.6 · modal 1-1 (alt. 2-1, 1-0, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Servette: 1.7–2.0 goles estimados; FC Vaduz: 1.4–1.7 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). Vaduz anotó 21 en 10 pero concede 21; Servette solo 14 a favor y 13 en contra. Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈3.1 goles y la estimación ≈3.3; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): FC Vaduz más de 0.5 goles (76%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Servette 5.1 · Vaduz 4.2 (Forebet espera ~10.25 en total) · tiros Servette 13.7 · Vaduz 13.6 · amarillas Servette 2.2 · Vaduz 2.2 (~4.14 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 51/20/30 · marcador 2-1 · ~3.06 goles · Más de 2.5 61% · AA 76%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 63% · Menos de 3.5 goles 58% · Más de 3.5 goles 42% · Ambos anotan (AA) 62% · Servette más de 0.5 goles 81% · FC Vaduz más de 0.5 goles 76% · Servette más de 1.5 goles 52% · FC Vaduz menos de 1.5 goles 56% · Servette o empate 66% · FC Vaduz o empate 55%
+- Picks: 🟢 Sin Sólido · 🔥 FC Vaduz más de 0.5 goles (76%) · 🔥 Servette o empate (66%) · 🔥 Más de 2.5 goles (63%) · ❌ Evitar: Gana Servette (45%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+</textarea><textarea id="t3" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
+
+Abajo va el análisis completo de los 100 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo:
+1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
+2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
+3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
+4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
+5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+
+Reglas obligatorias (no se negocian):
+- Todo en español llano.
+- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
+- Nunca uses el Más de 1.5 goles del partido como pick.
+- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
+- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
+- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
+- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
+- Desconfía de rachas con muestras pequeñas.
+- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
+- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
+- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
+- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
+- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
+- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
+- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+
+PARTE 3 DE 4 · partidos 54–79 de 100 (hora CDMX 10:00–13:30). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+
+===================== ANÁLISIS =====================
+# Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
+
+100 partidos · 17 🟢 Sólidos · 95 con el motor (v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts)) · 3 por estimación (Super League suiza, sin datos en ESPN) · 2 ya en juego/terminados al generar.
+Etiquetas: [observado] = dato medido (tabla, resultados, forma) · [reportado] = de una fuente externa (bajas, promedios de Forebet/prensa) · [estimado] = salida de modelo (motor v5 o Poisson). Forebet solo como referencia secundaria.
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+PARTE 3 DE 4 · partidos 54–79 de 100 (hora CDMX 10:00–13:30). Revisa estos partidos con las reglas de arriba. Te mando las demás partes en mensajes aparte.
+
+## ⚽ Super League suiza
+
+### 10:00 · FC Zürich – FC Luzern · Letzigrund, Zúrich
+- 1X2: 44% / 20% / 36% · Sin XI confirmado (estimación)
+- 📋 FC Zürich 5º, 14 pts en 10 (GF 18, GC 22) [reportado: tabla Forebet] | FC Luzern 8º, 12 pts en 10 (GF 17, GC 22) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: FC Zürich: Ilan Sauter (fractura de metatarso), Selmin Hodža (desgarro muscular), Chris Kablan (ligamento cruzado), Sebastian Walker (lesión), Damienus Reverson (lesión) · FC Luzern: Leonardo Bertone (sanción (amarillas)), Sandro Wyss (lesión (duda))
+- ⚔️ Zürich (5º, 14 pts) recibe a Luzern (8º, 12), dos equipos que conceden más de lo que anotan (22 en contra cada uno). Zürich llega con cuatro defensas fuera (Sauter, Hodža, Kablan, Walker); Luzern sin Bertone (sancionado) y con Wyss en duda. La estimación lo ve parejo (≈2.1 contra ≈1.9) con ligera ventaja local; Luzern tira más por partido (≈15 contra ≈12, reportado).
+- ⚽ Goles: total 3.7–4.3 · FC Zürich 2.0–2.3 · FC Luzern 1.7–2.0 · 1T 1.6–1.9 · modal 1-1 (alt. 2-1, 2-2, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 FC Zürich: 2.0–2.3 goles estimados; FC Luzern: 1.7–2.0 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). Los dos conceden 2.2 por partido y Zürich no ha dejado su portería en cero esta temporada. Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈3.6 goles y la estimación ≈4.0; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): Más de 2.5 goles (75%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Zürich 4.5 · Luzern 5.7 (Forebet espera ~10.62 en total) · tiros Zürich 11.9 · Luzern 15.2 · amarillas Zürich 2.2 · Luzern 2.7 (~5.7 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 40/32/28 · marcador 3-1 · ~3.61 goles · Más de 2.5 72% · AA 79%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 75% · Menos de 3.5 goles 43% · Más de 3.5 goles 57% · Ambos anotan (AA) 71% · FC Zürich más de 0.5 goles 86% · FC Luzern más de 0.5 goles 83% · FC Zürich más de 1.5 goles 61% · FC Luzern menos de 1.5 goles 45% · FC Zürich o empate 64% · FC Luzern o empate 56%
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (75%) · 🔥 Ambos anotan (AA) (71%) · 🔥 FC Zürich o empate (64%) · ❌ Evitar: Gana FC Zürich (44%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+
+
 ## ⚽ Süper Lig
 
 ### 10:00 · Samsunspor – Amed SFK · Samsun 19 Mayis Stadium, Samsun
@@ -1745,6 +2416,23 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - 📏 
 - Picks: 🟢 Sin Sólido · 🔗 Amed SFK o empate y Samsunspor menos de 1.5 (59%)
 - Huecos: sin 🟢 Sólido · 📏 lectura de línea (no corrió en este partido) · Amed SFK recién ascendido: muestra corta en Süper Lig · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Süper Lig: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## ⚽ Pro League belga
+
+### 10:15 · OH Leuven – Lommel SK · King Power at Den Dreef Stadion, Leuven
+- 1X2: 48% / 25% / 27% · Alineación probable
+- 📋 OH Leuven sin Verlinden, Teklab, Traoré ni Dussenne; Verstraete sancionado. | Lommel (recién ascendido) 10º; sin Banguera, De Grand, Lama, Seuntjens ni Wouters. [Pro League: 10º, 11 pts en 8 (GF 9, DG +0)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: OH Leuven: Verlinden (lesión), Teklab (lesión), Traoré (lesión), Dussenne (lesión), Verstraete (sanción) · Lommel SK: Banguera (lesión), De Grand (lesión), Lama (lesión), Seuntjens (lesión), Wouters (lesión)
+- ⚔️ OH Leuven (15º, 6 goles en 8) recibe al recién ascendido Lommel (10º); OHL sin Verlinden, Teklab, Traoré ni Dussenne y con Verstraete sancionado; Lommel sin cinco jugadores. El modelo le da a OHL 48% en casa y más tiros (≈17 contra ≈11), aunque Lommel saca más córners (≈6.5 contra ≈5.9). Dos ataques flojos: el modelo espera bastantes menos goles que el casino.
+- ⚽ Goles: total 2.1–3.2 · OH Leuven 1.1–1.9 · Lommel SK 1.1–1.4 · 1T 0.9–1.4 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 OH Leuven genera ≈17 tiros y 1.1–1.9 goles esperados; Lommel SK, ≈11 tiros y 1.1–1.4. OHL anotó 6 en 8 y Lommel 9: dos de los ataques más flojos. El casino espera ≈3.1 goles y el modelo ≈2.1; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Lommel SK menos de 1.5 goles + OH Leuven o empate (60%) · 📏 Lommel SK a 1.5: el casino espera ~1.3 goles de Lommel SK; el modelo 1.1 porque Lommel SK sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–7 (línea 4.5) · total baja · 1t baja · eq_h justa · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · OHL 1.5 alta · LOM 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔗 Lommel SK menos de 1.5 goles + OH Leuven o empate (60%) · 🔗 Lommel SK +1.5 (hándicap) + OH Leuven menos de 2.5 goles (67%) · ❌ Evitar: OH Leuven menos de 1.5 goles (49%)
+- Huecos: sin 🟢 Sólido · Lommel recién ascendido: muestra corta en Pro League · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
 
 
 ## ⚽ Bundesliga
@@ -1856,6 +2544,23 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-19) → estadísticas de ESPN · Football-Data.co.uk: 72 de 73 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Primeira Liga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
+## ⚽ Bundesliga austriaca
+
+### 11:30 · Rapid Vienna – Austria Lustenau · Allianz Stadion, Wien
+- 1X2: 77% / 14% / 9% · Alineación probable
+- 📋 Rapid líder (24 pts en 9), 6 victorias seguidas en casa; sin Ndzie, Nunoo, Schöller, Marcelin ni Vincze. [Bundesliga austriaca: 1º, 24 pts en 9 (GF 26, DG +18)] | Austria Lustenau (recién ascendido) 10º; sin Delaye. [Bundesliga austriaca: 10º, 8 pts en 9 (GF 11, DG -8)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · córners/tiros: sin datos
+- Bajas: Rapid Vienna: Ndzie (lesión), Nunoo (lesión), Schöller (lesión), Marcelin (lesión), Vincze (lesión) · Austria Lustenau: Sacha Delaye (lesión)
+- ⚔️ Rapid, líder (24 pts en 9) con seis victorias seguidas en casa, recibe al recién ascendido Austria Lustenau (10º); Rapid sin Ndzie, Nunoo, Schöller, Marcelin ni Vincze; Lustenau sin Delaye. El modelo le da a Rapid 77% y ≈3.0 goles esperados contra ≈0.9. Favorito claro por tabla y por modelo; sin datos fiables de córners ni tiros en esta liga, todo se lee por goles.
+- ⚽ Goles: total 3.7–4.1 · Rapid Vienna 2.7–3.2 · Austria Lustenau 0.8–1.1 · 1T 1.7–1.8 · modal 2-0 (alt. 3-0, 2-1, 3-1) · por resultado: local 2-0 · empate 1-1 · visita 1-2
+- 🧠 Rapid Vienna: 2.7–3.2 goles esperados; Austria Lustenau: 0.8–1.1 (sin datos fiables de tiros en esta liga). Rapid anotó 26 en 9; Lustenau concede (DG −8). El casino espera ≈3.8 goles y el modelo ≈3.7; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Ambos anotan (AA) (56%)
+- 🚩 Córners/tiros: sin datos fiables (estadística de ESPN incompleta en esta liga) → sin rangos ni picks
+- 📏 Goles 3.5 justa · RAP 2.5 justa · ALU 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Ambos anotan (AA) (56%) · 🔗 Gana Rapid Vienna + Austria Lustenau menos de 0.5 goles en el 1T (56%) · ❌ Evitar: 1T más de 1.5 goles (52%)
+- Huecos: sin 🟢 Sólido · Sin datos fiables de córners/tiros (la estadística de ESPN de la Bundesliga austriaca viene incompleta): no se dan rangos ni picks de córners/tiros · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Bundesliga austriaca: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Bundesliga austriaca: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
 ## ⚽ MLS
 
 ### 11:30 · CF Montréal – Nashville SC · Stade Saputo, Montreal
@@ -1870,6 +2575,23 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - 📏 Goles 2.5 alta · MTL 0.5 justa · NSH 1.5 alta · AA alta
 - Picks: 🟢 Sin Sólido · 🔗 Nashville SC o empate + CF Montréal menos de 1.5 goles (67%) · 🔗 Córners menos de 11.5 + 1T córners menos de 5.5 (69%) · ❌ Evitar: Córners Nashville SC más de 4.5 (46%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (USA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · MLS: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: MLS All-Stars-Liga MX All-Stars 2026-07-30
+
+
+## 🇸🇦 Saudi Pro League
+
+### 12:00 · Al Riyadh – Al Taawoun · Al-Shabab Club Stadium, King Fahd International Stadium
+- 1X2: 35% / 28% / 38% · Sin confirmación suficiente
+- 📋 Al Riyadh 13º; sin Antunes, Al-Khaibari, Sylla ni el portero Al-Fadda. [Saudi Pro League: 13º, 9 pts en 9 (GF 9, DG -9)] | Al Taawoun 17º (4 pts en 10, solo 4 goles a favor); sin Al-Oraini. [Saudi Pro League: 17º, 4 pts en 10 (GF 4, DG -13)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: Al Riyadh: Leandro Antunes (talón), Mohammed Al-Khaibari (pelvis), Mamadou Sylla (no inscrito), Imad Al-Fadda (desgarro de muslo) · Al Taawoun: Bassem Al-Oraini (ligamento cruzado)
+- ⚔️ Al Riyadh (13º) recibe a Al Taawoun (17º, solo 4 goles en 10); Riyadh sin Antunes, Al-Khaibari, Sylla ni el portero Al-Fadda; Taawoun sin Al-Oraini. El modelo lo ve muy parejo (35% / 28% / 38%) y Taawoun saca más córners (≈6.5 contra ≈4.2). Dos equipos de la zona baja con poco gol: el modelo espera menos goles que el casino.
+- ⚽ Goles: total 2.3–2.9 · Al Riyadh 1.2–1.5 · Al Taawoun 1.0–1.5 · 1T 1.0–1.3 · modal 1-1 (alt. 0-0, 2-1, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Al Riyadh genera ≈11 tiros y 1.2–1.5 goles esperados; Al Taawoun, ≈12 tiros y 1.0–1.5. Taawoun anotó 4 en 10 y Riyadh 9 en 9. El casino espera ≈2.8 goles y el modelo ≈2.3; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Al Taawoun menos de 1.5 goles (60%) · 📏 Al Taawoun a 1.5: el casino espera ~1.5 goles de Al Taawoun; el modelo 1.0 porque pocos goles de Al Taawoun en muestra corta (0.40/PJ); Al Taawoun sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)).
+- 🚩 Córners FT 8–13 (línea 9.5) · 1T 3–7 (línea 4.5) · total sin_linea · 1t sin_linea · eq_h sin_linea · eq1t_h sin_linea · eq_a sin_linea · eq1t_a sin_linea
+- 📏 Goles 2.5 alta · RIY 1.5 justa · TAA 1.5 alta · AA alta
+- Picks: 🟢 Sin Sólido · 🔥 Al Taawoun menos de 1.5 goles (60%) · 🔗 Al Taawoun o empate + Al Taawoun más de 0.5 goles (57%) · ❌ Evitar: Más de 2.5 goles (51%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Saudi Pro League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · Saudi Pro League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
 ## ⚽ 2. Bundesliga
@@ -1888,6 +2610,24 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 2 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 72 de 74 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · 2. Bundesliga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
 
 
+## ⚽ Super League suiza
+
+### 12:30 · Young Boys – St. Gallen · Stadion Wankdorf, Berna
+- 1X2: 63% / 15% / 22% · Sin XI confirmado (estimación)
+- 📋 Young Boys 2º, 22 pts en 10 (GF 33, GC 18) [reportado: tabla Forebet] | St. Gallen 4º, 16 pts en 10 (GF 17, GC 19) [reportado: tabla Forebet]
+- 🏷️ Datos: Tabla, bajas y promedios de córners/tiros/tarjetas = reportados (Forebet/prensa) · goles y 1X2 = estimados (Poisson desde la tabla) · Forebet solo de contraste
+- Bajas: Young Boys: Loris Benito (cirugía de ingle), Gregory Wüthrich (lesión), R. Andrews (ligamento cruzado), Ludovic Blum (sanción (amarillas)), Kabeya (lesión), Virginius (duda) · St. Gallen: Stephan Kofi Ambrosius (ligamento cruzado), Nicolas Weibel (ligamento cruzado), Daniel Besio (lesión), Y. Bujard (baja), C. Kleine-Bekel (lesión)
+- ⚔️ Young Boys (2º, 22 pts, 33 goles en 10; invicto en 13 de liga según Forebet) recibe a St. Gallen (4º, 16 pts), que llega con 17 a favor y 19 en contra. YB juega sin su capitán Benito, Wüthrich ni Andrews y con Blum sancionado: la defensa es su punto débil (18 en contra). La estimación da a YB ≈2.9 goles contra ≈1.6: favorito local claro, pero St. Gallen tiene con qué marcarle.
+- ⚽ Goles: total 4.2–5.0 · Young Boys 2.7–3.2 · St. Gallen 1.5–1.8 · 1T 1.9–2.2 · modal 3-1 (alt. 2-1, 2-2, 3-2) · por resultado: local 3-1 · empate 2-2 · visita 1-2
+- 🧠 Young Boys: 2.7–3.2 goles estimados; St. Gallen: 1.5–1.8 (Poisson desde la tabla real con ventaja de local; sin xG ni tiros del modelo). YB es el mejor ataque de la liga (3.3 por partido) y lleva 13 partidos de liga marcando 2 o más (reportado por Forebet). Sin línea de casino a la vista; Forebet (referencia secundaria) proyecta ≈4.0 goles y la estimación ≈4.6; ~44% del gol en el 1T (media de ligas, estimado).
+- 🎯 🔥 Agresivo (estimado): Ambos anotan (AA) (73%)
+- 🚩 Córners/tiros/tarjetas [reportado, Forebet, promedio por partido]: córners Young Boys 5.1 · St. Gallen 6.2 (Forebet espera ~11.54 en total) · tiros Young Boys 17.0 · St. Gallen 18.5 · amarillas Young Boys 1.8 · St. Gallen 2.0 (~3.96 en total). Sin simulación → sin picks de estos mercados.
+- 🔎 Forebet (referencia secundaria, no entra en la estimación): 42/27/31 · marcador 3-1 · ~4.03 goles · Más de 2.5 81% · AA 85%
+- 📏 Sin línea de casino a la vista: probabilidades de la estimación → Más de 2.5 goles 81% · Menos de 3.5 goles 34% · Más de 3.5 goles 66% · Ambos anotan (AA) 73% · Young Boys más de 0.5 goles 93% · St. Gallen más de 0.5 goles 79% · Young Boys más de 1.5 goles 76% · St. Gallen menos de 1.5 goles 52% · Young Boys o empate 78% · St. Gallen o empate 38%
+- Picks: 🟢 Sin Sólido · 🔥 Ambos anotan (AA) (73%) · 🔥 St. Gallen más de 0.5 goles (79%) · 🔥 Young Boys o empate (78%)
+- Huecos: ESPN no publica eventos de la Super League suiza → fuera del motor v5: estimación Poisson con tabla real (10 jornadas), ventaja local ×1.06/×0.94 y ajuste leve por bajas · Sin córners/tarjetas/tiros simulados: solo promedios reportados, sin picks de esos mercados · XI sin confirmar; bajas de Forebet/prensa (pueden estar desactualizadas)
+
+
 ## ⚽ Ligue 1
 
 ### 12:45 · Lens – Paris FC · Stade Bollaert-Delelis, Lens
@@ -1902,6 +2642,37 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - 📏 Goles 2.5 justa · RCL 1.5 justa · PFC 1.5 justa · AA justa
 - Picks: 🟢 Sin Sólido · 🔥 Paris FC menos de 1.5 goles (56%) · 🔗 Lens o empate + Paris FC menos de 2.5 goles (61%) · ❌ Evitar: Lens menos de 0.5 goles en el 1T (49%)
 - Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-18) → estadísticas de ESPN · Football-Data.co.uk: 63 de 64 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · xG sin emparejar: Stade Rennais-Paris Saint-Germain 2026-08-23 · Córners HT TotalCorner sin dato: Stade Rennais-Paris Saint-Germain 2026-08-23 · Córners HT TotalCorner sin dato: Lille-Paris Saint-Germain 2026-08-28 · Córners HT TotalCorner sin dato: Paris Saint-Germain-AS Monaco 2026-09-04 · Córners HT TotalCorner sin dato: Brest-Paris Saint-Germain 2026-09-13 · Córners HT TotalCorner sin dato: Marseille-Paris Saint-Germain 2026-09-20 · Córners HT TotalCorner sin dato: Paris Saint-Germain-Le Mans 2026-10-10 · Córners HT TotalCorner sin dato: Strasbourg-Paris Saint-Germain 2026-10-17
+
+
+## ⚽ Pro League belga
+
+### 12:45 · RAAL La Louvière – Zulte-Waregem · Easi Arena, La Louvière
+- 1X2: 32% / 28% / 41% · Alineación probable
+- 📋 La Louvière 16º (4 pts en 8); sin Belkheir ni Soumaré. [Pro League: 16º, 4 pts en 8 (GF 8, DG -10)] | Zulte Waregem 8º; sin Diakité, Paugain ni Asare; Mbaye sancionado. [Pro League: 8º, 11 pts en 8 (GF 10, DG +1)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: RAAL La Louvière: Belkheir (lesión), Soumaré (lesión) · Zulte-Waregem: Diakité (lesión), Paugain (lesión), Asare (lesión), Mbaye (sanción)
+- ⚔️ La Louvière (16º, 4 pts en 8) recibe a Zulte Waregem (8º); La Louvière sin Belkheir ni Soumaré; Zulte sin Diakité, Paugain ni Asare y con Mbaye sancionado. El modelo le da a Zulte 41% contra 32% del local. Tiros y córners salen parejos (≈12 contra ≈14 tiros, ≈4.7 córners cada uno): visitante ligeramente favorito, sin dominio claro.
+- ⚽ Goles: total 2.5–2.9 · RAAL La Louvière 1.1–1.4 · Zulte-Waregem 1.3–1.7 · 1T 1.1–1.3 · modal 1-1 (alt. 0-0, 0-1, 1-2) · por resultado: local 2-1 · empate 1-1 · visita 0-1
+- 🧠 RAAL La Louvière genera ≈12 tiros y 1.1–1.4 goles esperados; Zulte-Waregem, ≈14 tiros y 1.3–1.7. La Louvière anotó 8 en 8 y concede mucho (DG −10). El casino espera ≈2.7 goles y el modelo ≈2.9; ~44% del gol cae en el 1T.
+- 🎯 🔗 Combinada: Zulte-Waregem más de 0.5 goles + Zulte-Waregem o empate (60%) · 📏 Zulte-Waregem a 1.5: el casino espera ~1.4 goles de Zulte-Waregem; el modelo 1.7 porque goleadas inflan el ataque de Zulte-Waregem (1.25 goles/PJ; 1.12 sin goleadas); goleadas recibidas inflan lo que concede RAAL La Louvière (2.25/PJ; 2.00 sin goleadas).
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h justa · eq1t_h sin_linea · eq_a justa · eq1t_a sin_linea
+- 📏 Goles 2.5 baja · RLL 1.5 justa · ZUL 1.5 baja · AA justa
+- Picks: 🟢 Sin Sólido · 🔗 Zulte-Waregem más de 0.5 goles + Zulte-Waregem o empate (60%) · 🔗 Córners menos de 11.5 + 1T córners menos de 5.5 (63%) · ❌ Evitar: Menos de 2.5 goles (49%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
+
+### 12:45 · KVC Westerlo – Waasland-Beveren · Het Kuipje, Westerlo
+- 1X2: 48% / 24% / 29% · Alineación probable
+- 📋 Westerlo 6º (20 goles en 8); sin Congreve, Haspolat ni Storm. [Pro League: 6º, 13 pts en 8 (GF 20, DG +3)] | Beveren 11º (recién ascendido); sin Kuavita, Najim ni Abrahams. [Pro League: 11º, 9 pts en 8 (GF 8, DG -6)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa)
+- Bajas: KVC Westerlo: Congreve (lesión), Haspolat (lesión), Storm (lesión) · Waasland-Beveren: Kuavita (lesión), Najim (lesión), Abrahams (lesión)
+- ⚔️ Westerlo (6º, 20 goles en 8) recibe al recién ascendido Beveren (11º, 8 goles); Westerlo sin Congreve, Haspolat ni Storm; Beveren sin Kuavita, Najim ni Abrahams. El modelo le da a Westerlo 48% y casi el doble de tiros (≈19 contra ≈10), aunque Beveren saca más córners (≈5.4 contra ≈4.2). El ataque local es lo más fiable del partido; Beveren genera poco.
+- ⚽ Goles: total 3.2–3.6 · KVC Westerlo 1.8–2.3 · Waasland-Beveren 1.1–1.6 · 1T 1.4–1.6 · modal 1-1 (alt. 2-1, 1-2, 2-2) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 KVC Westerlo genera ≈19 tiros y 1.8–2.3 goles esperados; Waasland-Beveren, ≈10 tiros y 1.1–1.6. Westerlo anotó 20 en 8; Beveren solo 8. El casino espera ≈3.4 goles y el modelo ≈3.4; ~45% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Waasland-Beveren menos de 1.5 goles (57%) · 📏 Waasland-Beveren a 1.5: el casino espera ~1.5 goles de Waasland-Beveren; el modelo 1.1 porque Waasland-Beveren sin prior de temporada anterior (media de liga (v3: sin temporada anterior en Football-Data → 1.0)); XI sin confirmar: el mercado puede haber descontado bajas/rotación que el modelo aún no tiene.
+- 🚩 Córners FT 7–12 (línea 9.5) · 1T 3–6 (línea 4.5) · total justa · 1t justa · eq_h alta · eq1t_h sin_linea · eq_a baja · eq1t_a sin_linea
+- 📏 Goles 3.5 justa · WES 1.5 baja · WAA 1.5 alta · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Waasland-Beveren menos de 1.5 goles (57%) · 🔥 Córners más de 7.5 (71%) · 🔥 Córners KVC Westerlo menos de 4.5 (59%) · 🔗 Waasland-Beveren +1.5 (hándicap) + KVC Westerlo menos de 2.5 goles (63%) · ❌ Evitar: Waasland-Beveren menos de 0.5 goles en el 1T (52%)
+- Huecos: sin 🟢 Sólido · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data.co.uk: 72 de 72 partidos con córners/tarjetas/tiros de FD; el resto de ESPN · Pro League belga: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: Club Brugge-KV Kortrijk 2026-08-07 · Córners HT TotalCorner sin dato: Standard Liege-Cercle Brugge KSV 2026-08-08 · Córners HT TotalCorner sin dato: KVC Westerlo-Union St.-Gilloise 2026-08-08 · Córners HT TotalCorner sin dato: Sint-Truidense-Lommel SK 2026-08-08 · Córners HT TotalCorner sin dato: KAA Gent-KV Mechelen 2026-08-09 · Córners HT TotalCorner sin dato: Royal Charleroi SC-OH Leuven 2026-08-09 · Córners HT TotalCorner sin dato: Zulte-Waregem-Racing Genk 2026-08-09 · Córners HT TotalCorner sin dato: Anderlecht-RAAL La Louvière 2026-08-09
 
 
 ## ⚽ Serie A
@@ -1995,46 +2766,6 @@ PARTE 2 DE 3 · partidos 27–54 de 76 (hora CDMX 08:00–13:30). Revisa estos p
 - 📏 Goles 2.5 alta · MIR 1.5 justa · SAO 1.5 alta · AA alta
 - Picks: 🟢 Córners São Paulo más de 4.5 (72%) · 🔗 Mirassol o empate + São Paulo menos de 1.5 goles (61%) · 🔥 Córners Mirassol menos de 5.5 (62%) · 🔗 Córners más de 8.5 + 1T córners más de 3.5 (64%) · ❌ Evitar: AA No (50%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (BRA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-20) → estadísticas de ESPN · Brasileirão: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
-</textarea><textarea id="t3" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
-
-Abajo va el análisis completo de 76 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey), hecho con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
-
-Tu trabajo:
-1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
-2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
-3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
-4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
-5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
-
-Reglas obligatorias (no se negocian):
-- Todo en español llano.
-- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
-- Nunca uses el Más de 1.5 goles del partido como pick.
-- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
-- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
-- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
-- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
-- Desconfía de rachas con muestras pequeñas.
-- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
-- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
-- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
-- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
-- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
-- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
-- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
-
-PARTE 3 DE 3 · partidos 55–76 de 76 (hora CDMX 13:30–21:10). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
-
-===================== ANÁLISIS =====================
-# Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
-
-76 partidos · 16 🟢 Sólidos · v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts).
-Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
-Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
-
-PARTE 3 DE 3 · partidos 55–76 de 76 (hora CDMX 13:30–21:10). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
-
-## ⚽ Brasileirão
 
 ### 13:30 · Vitória – Athletico-PR · Estadio Manoel Barradas, Salvador
 - 1X2: 37% / 27% / 35% · Alineación probable
@@ -2064,7 +2795,50 @@ PARTE 3 DE 3 · partidos 55–76 de 76 (hora CDMX 13:30–21:10). Revisa estos p
 - 📏 Goles 3.5 alta · CLB 1.5 justa · TOR 1.5 justa · AA justa
 - Picks: 🟢 Córners Toronto FC menos de 3.5 (71%) · 🔥 Menos de 3.5 goles (56%) · 🔗 1T córners menos de 6.5 + Córners menos de 11.5 (66%) · ❌ Evitar: Córners menos de 9.5 (50%)
 - Huecos: XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (USA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · MLS: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: MLS All-Stars-Liga MX All-Stars 2026-07-30
+</textarea><textarea id="t4" class="h" readonly>INSTRUCCIONES PARA CHATGPT (copiado y pegado por el usuario)
 
+Abajo va el análisis completo de los 100 partidos de fútbol del sábado 24-oct-2026 (hora CDMX/Monterrey): 95 con mi modelo propio (Monte Carlo v5, 10,000 simulaciones por partido), 3 de la Super League suiza por estimación (Poisson desde la tabla real, porque ESPN no publica esa liga) y 2 de la A-League que ya estaban en juego o terminados al generar el paquete (van con su marcador, sin picks prepartido). La lista de partidos salió de DataGaffer (solo para saber qué se juega; no se usó ninguna predicción suya) y cada partido está cruzado con ESPN. No vuelvas a correr ningún modelo y no inventes datos: usa solo lo que viene aquí.
+
+Tu trabajo:
+1. Revisar: lee cada partido completo (contexto, bajas, ⚔️ lectura, ⚽ goles, 🧠 lectura de goles, 🎯 mercado de goles, 🚩 córners, 📏 líneas, picks y huecos).
+2. Filtrar: quédate con los picks más sólidos y coherentes con la lectura de cada partido. Descarta lo que dependa de un escenario muy específico, lo que contradiga el guion táctico o lo que tenga datos flojos (revisa la línea &quot;Huecos&quot;).
+3. Representar: dame una cartelera limpia y fácil de leer en iPhone, agrupada por liga y ordenada por hora, con mis mejores jugadas del día arriba. Por partido: 🔥 encabezado, 📋 contexto y bajas (con su fuente: XI probable / sin confirmación), ⚔️ lectura, ⚽ goles (rangos, 1T, marcador modal y alternativas), 🎯 mercado de goles o &quot;sin mercado de goles claro&quot;, 🚩 córners, y el cierre: 🟢 Sólido (o &quot;Sin Sólido&quot;), 🔥 Agresivo, 💣 Atrevido y 🎯 marcador, cada pick con su % y una línea de contexto.
+4. Desacuerdos: si no estás de acuerdo con algún pick o lectura, dilo partido por partido y explica por qué, usando solo los datos del análisis.
+5. Cierre: termina con dos listas: (a) picks con los que estás de acuerdo y (b) picks con los que no, con el motivo en una línea.
+
+Reglas obligatorias (no se negocian):
+- Todo en español llano.
+- Nunca muestres momios, cuotas, EV, &quot;stake&quot;, calificaciones X/10 ni &quot;No bet&quot;. No inventes momios ni probabilidades del casino. Si un partido no tiene pick firme, escribe &quot;Sin Sólido&quot;.
+- Nunca uses el Más de 1.5 goles del partido como pick.
+- No te inclines por el favorito: los picks salen del modelo, no de la fama del equipo.
+- Sin hándicaps +2.5 inflados, sin &quot;12&quot; arriba de 85% y nunca &quot;No hay empate&quot; como pick.
+- Nunca escribas &quot;Sin bajas relevantes&quot; si el partido trae bajas.
+- No uses &quot;AA No&quot; como 💣 Atrevido si su % es menor a 45%.
+- Desconfía de rachas con muestras pequeñas.
+- Etiquetas: 🟢 Sólido, 🔥 Agresivo, 💣 Atrevido, 🔗 Combinada, ❌ Evitar, 🎯 marcador / mercado de goles.
+- Si un hueco (🔥 Agresivo o 💣 Atrevido) viene vacío es porque el filtro interno no encontró nada que pasara; puedes dejarlo vacío o proponer algo solo con los % que vienen aquí, y avisar que es tuyo.
+- Goles: no hay mercados fijos. Cada partido trae su ⚽ predicción, 🧠 lectura y 🎯 mercado elegido por el análisis. Respeta esa lectura.
+- Córners (🚩): rango proyectado del partido completo y del 1T, y si la línea del casino está justa, alta o baja. Los córners del modelo no se mezclan con el casino.
+- Tarjetas y hándicaps solo si vienen con datos reales en el análisis.
+- Los porcentajes son del modelo, no seguridad. Separa los datos observados de las proyecciones.
+- Etiquetas de datos: [observado] = medido (tabla, resultados, forma); [reportado] = de una fuente externa (bajas, promedios de Forebet o prensa); [estimado] = salida de modelo. La línea 🏷️ de cada partido dice qué es cada cosa. Respeta esa diferencia al presentar.
+- Forebet aparece solo como referencia secundaria (en los 3 suizos). No lo uses como fuente de picks.
+- Suiza (estimación): no tiene 🟢 Sólido porque no hay línea de casino ni simulación completa. Sus córners/tiros/tarjetas son promedios reportados, sin picks de esos mercados.
+- Bundesliga austriaca (Hartberg–Wolfsberger, Tirol–GAK, Rapid–Lustenau): sin datos fiables de córners ni tiros. No des picks de esos mercados.
+- A-League: la base es casi toda de la temporada 2025-26 (van 1–2 jornadas). Newcastle–Macarthur (terminado 1-1) y Western Sydney–Auckland (en juego) van sin picks: no los analices en prepartido.
+- Las alineaciones son probables (no oficiales) y los árbitros no están verificados; dilo donde importe.
+
+PARTE 4 DE 4 · partidos 80–100 de 100 (hora CDMX 13:30–21:10). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
+
+===================== ANÁLISIS =====================
+# Análisis FUT · 2026-10-24 (sábado 24 oct 2026) · hora CDMX
+
+100 partidos · 17 🟢 Sólidos · 95 con el motor (v5 · 10,000 simulaciones por partido (semilla fija) · Goles libres ON · córners sin mezcla con el casino (bloqueo &gt; 10 pts)) · 3 por estimación (Super League suiza, sin datos en ESPN) · 2 ya en juego/terminados al generar.
+Etiquetas: [observado] = dato medido (tabla, resultados, forma) · [reportado] = de una fuente externa (bajas, promedios de Forebet/prensa) · [estimado] = salida de modelo (motor v5 o Poisson). Forebet solo como referencia secundaria.
+Cartelera de DataGaffer (solo la lista de partidos), cruzada con ESPN. **No publicado en la cartelera del sitio**: paquete para revisión de ChatGPT.
+Porcentajes = % del modelo (no calibrado). Sin momios, sin EV, sin O1.5 del partido.
+
+PARTE 4 DE 4 · partidos 80–100 de 100 (hora CDMX 13:30–21:10). Revisa estos partidos y, como es la última parte, cierra con las listas de acuerdo / desacuerdo de TODAS las partes. Te mando las demás partes en mensajes aparte.
 
 ## ⚽ Primeira Liga
 
@@ -2315,6 +3089,26 @@ PARTE 3 DE 3 · partidos 55–76 de 76 (hora CDMX 13:30–21:10). Revisa estos p
 - 📏 Goles 3.5 justa · RSL 1.5 justa · STL 1.5 justa · AA justa
 - Picks: 🟢 Sin Sólido · 🔗 St. Louis CITY SC menos de 2.5 goles + Real Salt Lake más de 0.5 goles (65%) · 🔗 1T córners menos de 6.5 + Córners menos de 12.5 (62%) · ❌ Evitar: St. Louis CITY SC menos de 0.5 goles en el 1T (50%)
 - Huecos: sin 🟢 Sólido · Hora: DataGaffer la lista 1 h más tarde que ESPN; se usa la de ESPN · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · Football-Data &#x27;extra&#x27; (USA): solo marcador y 1X2 de cierre → córners/tarjetas/tiros siguen de ESPN · Football-Data: 1 partidos aún no publicados en el CSV (último FD 2026-10-22) → estadísticas de ESPN · MLS: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG · Córners HT TotalCorner sin dato: MLS All-Stars-Liga MX All-Stars 2026-07-30
+
+
+## ⚽ A-League
+
+### 20:00 · Wellington Phoenix – Central Coast Mariners FC · Sky Stadium, Wellington
+- 1X2: 52% / 24% / 24% · Sin confirmación suficiente
+- 📋 Wellington ganó la jornada 1 (2-1 a Melbourne Victory); sin Roa Conchie, Hughes ni J. Smith; Rufer y Durán en duda. [A-League: 8º, 36 pts en 27 (GF 38, DG -11)] | Central Coast sin Sainsbury; Hisamatsu espera visado. [A-League: 9º, 33 pts en 27 (GF 37, DG -7)]
+- 🏷️ Datos: 1X2, goles y córners = estimados (motor v5, 10,000 simulaciones con datos de la temporada de ESPN) · tabla, forma y bajas = observados/reportados (ESPN, FotMob, prensa) · A-League con 1–2 jornadas: base mayormente temporada 2025-26 (estimado)
+- Bajas: Wellington Phoenix: Fin Roa Conchie (lesión), Isaac Hughes (lesión), Jayden Smith (lesión), Alex Rufer (enfermedad (duda)), Rafael Durán (tobillo (duda)) · Central Coast Mariners FC: Trent Sainsbury (lesión), Taiyo Hisamatsu (sin visado)
+- ⚔️ Wellington ganó la jornada 1 (2-1 a Melbourne Victory) y recibe a Central Coast; Phoenix sin Roa Conchie, Hughes ni J. Smith, con Rufer y Durán en duda; Mariners sin Sainsbury. El modelo le da a Wellington 52% y ≈18 tiros contra ≈9. La base es casi toda de la temporada pasada (8º contra 9º): ventaja local, pero sin margen para darla por hecha.
+- ⚽ Goles: total 2.8–3.2 · Wellington Phoenix 1.7–2.0 · Central Coast Mariners FC 1.0–1.3 · 1T 1.2–1.4 · modal 1-1 (alt. 2-1, 2-0, 1-0) · por resultado: local 2-1 · empate 1-1 · visita 1-2
+- 🧠 Wellington Phoenix genera ≈18 tiros y 1.7–2.0 goles esperados; Central Coast Mariners FC, ≈9 tiros y 1.0–1.3. La base es la temporada pasada: los dos promediaron ≈1.4 goles por partido. El casino espera ≈3.0 goles y el modelo ≈3.0; ~44% del gol cae en el 1T.
+- 🎯 🔥 Agresivo: Más de 2.5 goles (58%)
+- 🚩 Córners FT 10–15 (línea 10.5) · 1T 4–8 (línea 4.5) · total baja · 1t baja · eq_h baja · eq1t_h sin_linea · eq_a alta · eq1t_a sin_linea
+- 📏 Goles 2.5 justa · WEL 1.5 justa · CCM 0.5 justa · AA justa
+- Picks: 🟢 Sin Sólido · 🔥 Más de 2.5 goles (58%) · 🔗 Central Coast Mariners FC +1.5 (hándicap) + Wellington Phoenix menos de 2.5 goles (64%) · ❌ Evitar: Gana Wellington Phoenix (52%)
+- Huecos: sin 🟢 Sólido · A-League 2026-27 recién empezó (jornada 2): la base estadística es mayormente la temporada 2025-26 + 1 partido → estimación con muestra de temporada previa · XI oficial todavía no publicado al correr (≈1 h antes): bajas de fuentes previas · Árbitro: designación no verificada → sin ajuste de árbitro · A-League: Football-Data.co.uk no cubre la liga → córners/tarjetas/tiros de ESPN · A-League: Understat no cubre la liga → el modelo usa goles + tiros a puerta como proxy de xG
+
+
+## ⚽ MLS
 
 ### 20:30 · Portland Timbers – Charlotte FC · Providence Park, Portland, Oregon
 - 1X2: 47% / 21% / 31% · Sin confirmación suficiente
