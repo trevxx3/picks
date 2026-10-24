@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:51:15-06:00",
+ "updated": "2026-10-23T23:51:44-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2752,6 +2752,27 @@
    "league": "NFL · Semana 7",
    "updated": "2026-10-23T23:51:15-06:00",
    "page": "nfl/2026-10-25/lar-lv/index.html"
+  },
+  {
+   "id": "nfl/2026-10-25/kc-sea",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "kc-sea",
+   "dir": "nfl/2026-10-25/kc-sea",
+   "kind": "game",
+   "title": "Kansas City Chiefs @ Seattle Seahawks",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/kc-sea/reporte/index.html",
+   "pdf": "nfl/2026-10-25/kc-sea/kc-sea.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:51:44-06:00",
+   "pick": "🟢 Principal: Kenneth Walker III over 85.5 yardas por tierra",
+   "kickoff": "18:20",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:51:44-06:00",
+   "page": "nfl/2026-10-25/kc-sea/index.html"
   }
  ],
  "sources": {
@@ -2945,7 +2966,9 @@
   "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.html": "nfl/2026-10-25/gb-det/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.pdf": "nfl/2026-10-25/gb-det/gb-det.pdf",
   "nfl_analisis/2026-10-25/partidos/LAR-LV/LAR-LV.html": "nfl/2026-10-25/lar-lv/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/LAR-LV/LAR-LV.pdf": "nfl/2026-10-25/lar-lv/lar-lv.pdf"
+  "nfl_analisis/2026-10-25/partidos/LAR-LV/LAR-LV.pdf": "nfl/2026-10-25/lar-lv/lar-lv.pdf",
+  "nfl_analisis/2026-10-25/partidos/KC-SEA/KC-SEA.html": "nfl/2026-10-25/kc-sea/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/KC-SEA/KC-SEA.pdf": "nfl/2026-10-25/kc-sea/kc-sea.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
