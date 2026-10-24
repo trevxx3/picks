@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:49:30-06:00",
+ "updated": "2026-10-23T23:49:54-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2628,6 +2628,27 @@
    "page": "nfl/2026-10-25/mia-nyj/index.html"
   },
   {
+   "id": "nfl/2026-10-25/nyg-hou",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "nyg-hou",
+   "dir": "nfl/2026-10-25/nyg-hou",
+   "kind": "game",
+   "title": "New York Giants @ Houston Texans",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/nyg-hou/reporte/index.html",
+   "pdf": "nfl/2026-10-25/nyg-hou/nyg-hou.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:49:54-06:00",
+   "pick": "🟢 Principal: Xavier Hutchinson over 1.5 recepciones",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:49:54-06:00",
+   "page": "nfl/2026-10-25/nyg-hou/index.html"
+  },
+  {
    "id": "nfl/2026-10-25/sf-atl",
    "section": "nfl",
    "date": "2026-10-25",
@@ -2853,7 +2874,9 @@
   "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.html": "nfl/2026-10-25/tb-car/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.pdf": "nfl/2026-10-25/tb-car/tb-car.pdf",
   "nfl_analisis/2026-10-25/partidos/CIN-BAL/CIN-BAL.html": "nfl/2026-10-25/cin-bal/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/CIN-BAL/CIN-BAL.pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf"
+  "nfl_analisis/2026-10-25/partidos/CIN-BAL/CIN-BAL.pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf",
+  "nfl_analisis/2026-10-25/partidos/NYG-HOU/NYG-HOU.html": "nfl/2026-10-25/nyg-hou/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/NYG-HOU/NYG-HOU.pdf": "nfl/2026-10-25/nyg-hou/nyg-hou.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
