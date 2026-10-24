@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:50:47-06:00",
+ "updated": "2026-10-23T23:51:15-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2731,6 +2731,27 @@
    "league": "NFL · Semana 7",
    "updated": "2026-10-23T23:50:47-06:00",
    "page": "nfl/2026-10-25/gb-det/index.html"
+  },
+  {
+   "id": "nfl/2026-10-25/lar-lv",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "lar-lv",
+   "dir": "nfl/2026-10-25/lar-lv",
+   "kind": "game",
+   "title": "Los Angeles Rams @ Las Vegas Raiders",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/lar-lv/reporte/index.html",
+   "pdf": "nfl/2026-10-25/lar-lv/lar-lv.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:51:15-06:00",
+   "pick": "🟢 Principal: Kyren Williams over 3.5 recepciones",
+   "kickoff": "14:25",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:51:15-06:00",
+   "page": "nfl/2026-10-25/lar-lv/index.html"
   }
  ],
  "sources": {
@@ -2922,7 +2943,9 @@
   "nfl_analisis/2026-10-25/partidos/DEN-ARI/DEN-ARI.html": "nfl/2026-10-25/den-ari/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/DEN-ARI/DEN-ARI.pdf": "nfl/2026-10-25/den-ari/den-ari.pdf",
   "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.html": "nfl/2026-10-25/gb-det/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.pdf": "nfl/2026-10-25/gb-det/gb-det.pdf"
+  "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.pdf": "nfl/2026-10-25/gb-det/gb-det.pdf",
+  "nfl_analisis/2026-10-25/partidos/LAR-LV/LAR-LV.html": "nfl/2026-10-25/lar-lv/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/LAR-LV/LAR-LV.pdf": "nfl/2026-10-25/lar-lv/lar-lv.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
