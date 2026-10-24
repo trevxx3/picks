@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:50:20-06:00",
+ "updated": "2026-10-23T23:50:47-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2710,6 +2710,27 @@
    "league": "NFL · Semana 7",
    "updated": "2026-10-23T23:50:20-06:00",
    "page": "nfl/2026-10-25/den-ari/index.html"
+  },
+  {
+   "id": "nfl/2026-10-25/gb-det",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "gb-det",
+   "dir": "nfl/2026-10-25/gb-det",
+   "kind": "game",
+   "title": "Green Bay Packers @ Detroit Lions",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/gb-det/reporte/index.html",
+   "pdf": "nfl/2026-10-25/gb-det/gb-det.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:50:47-06:00",
+   "pick": "🟢 Principal: Tucker Kraft under 51.5 yardas recibidas",
+   "kickoff": "14:25",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:50:47-06:00",
+   "page": "nfl/2026-10-25/gb-det/index.html"
   }
  ],
  "sources": {
@@ -2899,7 +2920,9 @@
   "nfl_analisis/2026-10-25/partidos/NYG-HOU/NYG-HOU.html": "nfl/2026-10-25/nyg-hou/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/NYG-HOU/NYG-HOU.pdf": "nfl/2026-10-25/nyg-hou/nyg-hou.pdf",
   "nfl_analisis/2026-10-25/partidos/DEN-ARI/DEN-ARI.html": "nfl/2026-10-25/den-ari/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/DEN-ARI/DEN-ARI.pdf": "nfl/2026-10-25/den-ari/den-ari.pdf"
+  "nfl_analisis/2026-10-25/partidos/DEN-ARI/DEN-ARI.pdf": "nfl/2026-10-25/den-ari/den-ari.pdf",
+  "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.html": "nfl/2026-10-25/gb-det/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/GB-DET/GB-DET.pdf": "nfl/2026-10-25/gb-det/gb-det.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
