@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-23T23:49:06-06:00",
+ "updated": "2026-10-23T23:49:30-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2544,6 +2544,27 @@
    "updated": "2026-10-22T21:01:43-06:00"
   },
   {
+   "id": "nfl/2026-10-25/cin-bal",
+   "section": "nfl",
+   "date": "2026-10-25",
+   "slug": "cin-bal",
+   "dir": "nfl/2026-10-25/cin-bal",
+   "kind": "game",
+   "title": "Cincinnati Bengals @ Baltimore Ravens",
+   "status": "pendiente",
+   "report": "nfl/2026-10-25/cin-bal/reporte/index.html",
+   "pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf",
+   "grading": null,
+   "extras": [],
+   "older": [],
+   "published": "2026-10-23T23:49:30-06:00",
+   "pick": "🟢 Principal: Chase Brown over 10.5 acarreos",
+   "kickoff": "11:00",
+   "league": "NFL · Semana 7",
+   "updated": "2026-10-23T23:49:30-06:00",
+   "page": "nfl/2026-10-25/cin-bal/index.html"
+  },
+  {
    "id": "nfl/2026-10-25/cle-ten",
    "section": "nfl",
    "date": "2026-10-25",
@@ -2830,7 +2851,9 @@
   "nfl_analisis/2026-10-25/partidos/MIA-NYJ/MIA-NYJ.html": "nfl/2026-10-25/mia-nyj/reporte/index.html",
   "nfl_analisis/2026-10-25/partidos/MIA-NYJ/MIA-NYJ.pdf": "nfl/2026-10-25/mia-nyj/mia-nyj.pdf",
   "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.html": "nfl/2026-10-25/tb-car/reporte/index.html",
-  "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.pdf": "nfl/2026-10-25/tb-car/tb-car.pdf"
+  "nfl_analisis/2026-10-25/partidos/TB-CAR/TB-CAR.pdf": "nfl/2026-10-25/tb-car/tb-car.pdf",
+  "nfl_analisis/2026-10-25/partidos/CIN-BAL/CIN-BAL.html": "nfl/2026-10-25/cin-bal/reporte/index.html",
+  "nfl_analisis/2026-10-25/partidos/CIN-BAL/CIN-BAL.pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf"
  },
  "date_notes": {
   "fut/2026-10-19": "Cartelera v2 (sistema nuevo): los 15 partidos ya jugados se re-corrieron solo con datos pre-partido (retro); Abha–Al Kholood fue aplazado; Corinthians–Vitória es análisis pre-partido real. Hora Monterrey/CDMX.",
