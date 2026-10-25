@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-25T01:42:53-06:00",
+ "updated": "2026-10-25T01:43:29-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2570,12 +2570,18 @@
    "pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf",
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "1ª versión · sáb 24-oct",
+     "href": "nfl/2026-10-25/cin-bal/v/1a-version-sab-24-oct/index.html",
+     "pdf": "nfl/2026-10-25/cin-bal/v/1a-version-sab-24-oct/cin-bal.pdf"
+    }
+   ],
    "published": "2026-10-23T23:49:30-06:00",
-   "pick": "🟢 Principal: Chase Brown over 10.5 acarreos",
+   "pick": "🟢 Principal: Chase Brown over 11.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-23T23:49:30-06:00",
+   "updated": "2026-10-25T01:43:29-06:00",
    "page": "nfl/2026-10-25/cin-bal/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/CIN-BAL",
    "stamp": "25 oct 2026 01:36"
