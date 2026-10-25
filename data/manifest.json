@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-25T01:46:47-06:00",
+ "updated": "2026-10-25T01:47:30-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2889,12 +2889,18 @@
    "pdf": "nfl/2026-10-26/dal-phi/dal-phi.pdf",
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "1ª versión · sáb 24-oct",
+     "href": "nfl/2026-10-26/dal-phi/v/1a-version-sab-24-oct/index.html",
+     "pdf": "nfl/2026-10-26/dal-phi/v/1a-version-sab-24-oct/dal-phi.pdf"
+    }
+   ],
    "published": "2026-10-23T23:52:15-06:00",
    "pick": "🟢 Principal: Dak Prescott over 23.5 pases completos",
    "kickoff": "18:15",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-23T23:52:15-06:00",
+   "updated": "2026-10-25T01:47:30-06:00",
    "page": "nfl/2026-10-26/dal-phi/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/DAL-PHI",
    "stamp": "25 oct 2026 01:36"
