@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-25T01:44:46-06:00",
+ "updated": "2026-10-25T01:45:25-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2802,12 +2802,18 @@
    "pdf": "nfl/2026-10-25/gb-det/gb-det.pdf",
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "1ª versión · sáb 24-oct",
+     "href": "nfl/2026-10-25/gb-det/v/1a-version-sab-24-oct/index.html",
+     "pdf": "nfl/2026-10-25/gb-det/v/1a-version-sab-24-oct/gb-det.pdf"
+    }
+   ],
    "published": "2026-10-23T23:50:47-06:00",
-   "pick": "🟢 Principal: Tucker Kraft under 51.5 yardas recibidas",
+   "pick": "🟢 Principal: Tucker Kraft under 49.5 yardas recibidas",
    "kickoff": "14:25",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-23T23:50:47-06:00",
+   "updated": "2026-10-25T01:45:25-06:00",
    "page": "nfl/2026-10-25/gb-det/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/GB-DET",
    "stamp": "25 oct 2026 01:36"
