@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-25T01:40:00-06:00",
+ "updated": "2026-10-25T01:40:33-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2685,12 +2685,18 @@
    "pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf",
    "grading": null,
    "extras": [],
-   "older": [],
+   "older": [
+    {
+     "label": "1ª versión · sáb 24-oct",
+     "href": "nfl/2026-10-25/sf-atl/v/1a-version-sab-24-oct/index.html",
+     "pdf": "nfl/2026-10-25/sf-atl/v/1a-version-sab-24-oct/sf-atl.pdf"
+    }
+   ],
    "published": "2026-10-23T23:47:47-06:00",
    "pick": "🟢 Principal: Bijan Robinson over 18.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-23T23:47:47-06:00",
+   "updated": "2026-10-25T01:40:33-06:00",
    "page": "nfl/2026-10-25/sf-atl/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/SF-ATL",
    "stamp": "25 oct 2026 01:36"
