@@ -2,3 +2,4 @@ id,deporte,partido,mercado,linea,casa,cuota_decimal,prob_modelo,prob_implicita_s
 NFL-2026W07-DALPHI-001,NFL,DAL @ PHI,Tanner McKee · TD por pase · Más de,1.5,draftkings,2.610,0.4484,0.3619,0.1703,2.00,2026-10-26T06:56:41Z,,,
 NFL-2026W07-DALPHI-002,NFL,DAL @ PHI,Tanner McKee · intercepciones lanzadas · Menos de,0.5,draftkings,2.130,0.5469,0.4424,0.1648,2.00,2026-10-26T06:56:41Z,,,
 NFL-2026W07-DALPHI-003,NFL,DAL @ PHI,Dak Prescott · pases completos · Más de,23.5,draftkings,1.980,0.5779,0.4762,0.1442,2.00,2026-10-26T06:56:41Z,,,
+NFL-2026W07-DALPHI-004,NFL,DAL @ PHI,Dak Prescott · pases intentados · Más de,36.5,draftkings,1.940,0.6008,0.4854,0.1655,2.00,2026-10-26T19:05:13Z,,,

@@ -1,11 +1,11 @@
 {
- "generado_utc": "2026-10-26T17:05:51Z",
+ "generado_utc": "2026-10-26T19:07:58Z",
  "registro": {
   "total": {
    "todos": {
-    "picks": 1,
+    "picks": 2,
     "calificados": 0,
-    "pendientes": 1,
+    "pendientes": 2,
     "push_anulados": 0,
     "retirados": 2,
     "acierto": null,
@@ -18,9 +18,9 @@
   },
   "por_semana": {
    "NFL S7": {
-    "picks": 1,
+    "picks": 2,
     "calificados": 0,
-    "pendientes": 1,
+    "pendientes": 2,
     "push_anulados": 0,
     "retirados": 2,
     "acierto": null,
@@ -33,9 +33,9 @@
   },
   "por_mercado": {
    "NFL · props_qb": {
-    "picks": 1,
+    "picks": 2,
     "calificados": 0,
-    "pendientes": 1,
+    "pendientes": 2,
     "push_anulados": 0,
     "retirados": 2,
     "acierto": null,
@@ -104,6 +104,28 @@
     "ev": "0.1442",
     "stake_sugerido": "2.00",
     "hora_publicacion": "2026-10-26T06:56:41Z",
+    "resultado": "",
+    "hora_cierre": "",
+    "cuota_cierre": "",
+    "retirado": false,
+    "hora_retiro": "",
+    "motivo_retiro": "",
+    "grupo": "props_qb",
+    "kickoff_utc": "2026-10-27T00:15:00Z"
+   },
+   {
+    "id": "NFL-2026W07-DALPHI-004",
+    "deporte": "NFL",
+    "partido": "DAL @ PHI",
+    "mercado": "Dak Prescott · pases intentados · Más de",
+    "linea": "36.5",
+    "casa": "draftkings",
+    "cuota_decimal": "1.940",
+    "prob_modelo": "0.6008",
+    "prob_implicita_sin_margen": "0.4854",
+    "ev": "0.1655",
+    "stake_sugerido": "2.00",
+    "hora_publicacion": "2026-10-26T19:05:13Z",
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
