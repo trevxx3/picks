@@ -1,12 +1,13 @@
 {
- "generado_utc": "2026-10-26T07:38:03Z",
+ "generado_utc": "2026-10-26T17:05:51Z",
  "registro": {
   "total": {
    "todos": {
-    "picks": 3,
+    "picks": 1,
     "calificados": 0,
-    "pendientes": 3,
+    "pendientes": 1,
     "push_anulados": 0,
+    "retirados": 2,
     "acierto": null,
     "roi_stake": null,
     "unidades": 0.0,
@@ -17,10 +18,11 @@
   },
   "por_semana": {
    "NFL S7": {
-    "picks": 3,
+    "picks": 1,
     "calificados": 0,
-    "pendientes": 3,
+    "pendientes": 1,
     "push_anulados": 0,
+    "retirados": 2,
     "acierto": null,
     "roi_stake": null,
     "unidades": 0.0,
@@ -31,10 +33,11 @@
   },
   "por_mercado": {
    "NFL · props_qb": {
-    "picks": 3,
+    "picks": 1,
     "calificados": 0,
-    "pendientes": 3,
+    "pendientes": 1,
     "push_anulados": 0,
+    "retirados": 2,
     "acierto": null,
     "roi_stake": null,
     "unidades": 0.0,
@@ -60,6 +63,9 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
+    "retirado": true,
+    "hora_retiro": "2026-10-26T16:59:50Z",
+    "motivo_retiro": "Regla 26-oct (adición): P calibrada 44.8 % < 55 % y muestra insuficiente (Tanner McKee: 45 intentos de pase 2026 en el registro; 48 en el play-by-play; mínimo 150)",
     "grupo": "props_qb",
     "kickoff_utc": "2026-10-27T00:15:00Z"
    },
@@ -79,6 +85,9 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
+    "retirado": true,
+    "hora_retiro": "2026-10-26T16:59:50Z",
+    "motivo_retiro": "Regla 26-oct (adición): P calibrada 54.7 % < 55 % y muestra insuficiente (Tanner McKee: 45 intentos de pase 2026 en el registro; 48 en el play-by-play; mínimo 150)",
     "grupo": "props_qb",
     "kickoff_utc": "2026-10-27T00:15:00Z"
    },
@@ -98,6 +107,9 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
+    "retirado": false,
+    "hora_retiro": "",
+    "motivo_retiro": "",
     "grupo": "props_qb",
     "kickoff_utc": "2026-10-27T00:15:00Z"
    }
