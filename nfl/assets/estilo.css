@@ -456,3 +456,15 @@ table.tq.bx tr.pr td{white-space:normal;text-align:left;background:var(--paper2)
 .escs .emk .num{color:var(--ink);font-weight:700;white-space:nowrap}
 .escs .ereal{color:var(--ink)}
 .escs .esc.real .el{font-weight:700}
+
+/* 26-oct-2026: bloque Mercado (movimiento de línea, público, oscilador) */
+.mkt .mkr{margin:8px 0 0;padding-top:6px;border-top:1px dashed var(--rule)}
+.mkt .kv>div{min-width:0;overflow-wrap:anywhere}
+.mkt .ztag{display:inline-block;margin-left:4px;padding:0 5px;border-radius:3px;font:700 10.5px/16px var(--mono);color:#fff;white-space:nowrap}
+.mkt .ztag.fav{background:#1f7a3a}.mkt .ztag.con{background:#b3261e}.mkt .ztag.nos{background:#85837c}
+.mkt .mkf{margin:8px 0 2px;padding:6px 8px;border:1px solid var(--ink);border-radius:3px;font:11px/1.45 var(--mono);overflow-wrap:anywhere}
+.mkt .dmk{display:inline-block;margin-left:4px;padding:0 5px;border:1px solid var(--ink);border-radius:3px;font-size:10.5px;font-weight:700;vertical-align:1px}
+.mkt .mkl{margin:2px 0 6px;font-size:13px;line-height:1.4;font-weight:700}
+.mkt .mkv{display:inline-block;padding:1px 7px;border-radius:3px;font:800 11px/18px var(--mono);text-transform:uppercase;color:#fff}
+.mkt .mkv.no{background:#b3261e}.mkt .mkv.ok{background:#1f7a3a}
+.mkt .src{font:500 11px/1.4 var(--mono);color:var(--dim);margin-top:6px;overflow-wrap:anywhere}

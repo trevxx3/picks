@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-26T14:16:03-06:00",
+ "updated": "2026-10-26T16:21:10-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2935,10 +2935,10 @@
    "pick": "Pick principal: Dak Prescott Más de 36.5 pases intentados · DraftKings 1.94 · Prob. modelo 60.1% · EV +16.6%",
    "kickoff": "18:15",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-26T00:30:58-06:00",
+   "updated": "2026-10-26T16:21:06-06:00",
    "page": "nfl/2026-10-26/dal-phi/index.html",
-   "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/DAL-PHI/v21",
-   "stamp": "26 oct 2026 00:28"
+   "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/DAL-PHI/v22",
+   "stamp": "26 oct 2026 16:21"
   }
  ],
  "sources": {
