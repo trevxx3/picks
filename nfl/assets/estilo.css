@@ -421,3 +421,19 @@ table.tq .ok{color:var(--gr);font-weight:700}.ko{color:var(--red);font-weight:70
 .pk.ret .pline{background:#eee9de;color:var(--ink2)}
 .pk.ret .ring{opacity:.55;filter:grayscale(1)}
 .rtx{flex-basis:100%;font-size:11px}
+/* box score de props (26-oct-2026) */
+.bxc{padding:12px 10px}
+.bxh{display:flex;align-items:center;gap:8px;margin-bottom:6px}.bxh b{font:900 18px/1 var(--wide);font-stretch:85%;text-transform:uppercase}.bxh .cap{margin-left:auto}
+.bxg{font:800 12px/1 var(--wide);letter-spacing:1px;text-transform:uppercase;margin:12px 0 5px;padding-left:6px;border-left:4px solid var(--ink)}
+table.tq.bx{font-size:12px}
+table.tq.bx th,table.tq.bx td{padding:6px 5px}
+table.tq.bx th:first-child,table.tq.bx td:first-child{min-width:96px}
+table.tq.bx td .bxa,table.tq.bx td i.bxa{display:block;font-style:normal;font-weight:700;color:var(--ink);border-top:1px dotted var(--rule);margin-top:2px;padding-top:1px}
+table.tq.bx td{color:var(--ink2)}
+.bxn{font-weight:700;color:var(--ink);font-family:var(--wide)}.bxpos{font-style:normal;font-size:10px;color:var(--dim)}
+.bxq,.bxr{display:inline-block;margin-left:4px;padding:0 4px;border-radius:3px;font:700 10px/15px var(--mono);vertical-align:1px}
+.bxq{background:var(--ye);color:#fff}.bxr{background:var(--or);color:#fff}
+table.tq.bx tr.pr td{white-space:normal;text-align:left;background:var(--paper2);padding:4px 6px 6px;font-size:11.5px;line-height:1.4}
+.bxp{padding:3px 0;overflow-wrap:anywhere}.bxp+.bxp{border-top:1px dashed var(--rule)}
+.bxp .stc{font-size:10px;padding:1px 5px;margin-left:2px}
+.bxo{margin:10px 0 0;overflow-wrap:anywhere}
