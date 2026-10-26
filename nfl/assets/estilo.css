@@ -437,3 +437,14 @@ table.tq.bx tr.pr td{white-space:normal;text-align:left;background:var(--paper2)
 .bxp{padding:3px 0;overflow-wrap:anywhere}.bxp+.bxp{border-top:1px dashed var(--rule)}
 .bxp .stc{font-size:10px;padding:1px 5px;margin-left:2px}
 .bxo{margin:10px 0 0;overflow-wrap:anywhere}
+
+/* 26-oct-2026: marcador propio (sin ancla) + escenarios del partido */
+.proj.propio{border-color:#3a3a12;background:#08080a}
+.proj.propio small{color:#e8d24a}
+.pjx{margin-top:6px;font-size:10.5px;line-height:1.4;overflow-wrap:anywhere}
+.escs .esc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;align-items:baseline;margin:7px 0 0}
+.escs .el{font-size:12.5px;line-height:1.3;min-width:0;overflow-wrap:anywhere}
+.escs .ep{font:700 13px/1 var(--mono);text-align:right}
+.escs .eb{grid-column:1/-1;height:8px;border:1px solid var(--ink);border-radius:2px;overflow:hidden;background:transparent}
+.escs .eb i{display:block;height:100%}
+.escs .esum{display:flex;flex-wrap:wrap;gap:2px 8px;margin-top:9px;padding-top:7px;border-top:1px dashed var(--rule);font-size:12.5px;overflow-wrap:anywhere}
