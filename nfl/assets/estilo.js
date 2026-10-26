@@ -9,7 +9,7 @@
       if(!ok)return false;
       var ps=document.querySelectorAll('.panel');
       for(var j=0;j<ps.length;j++){ps[j].classList.toggle('on',ps[j].id===id);}
-      if(scroll){var t=document.querySelector('.tabs');window.scrollTo(0,t.offsetTop-49>window.scrollY?window.scrollY:t.offsetTop-49);} 
+      if(scroll){var t=document.querySelector('.tabs');window.scrollTo(0,t.offsetTop>window.scrollY?window.scrollY:t.offsetTop);} 
       return true;
     };
     for(var i=0;i<tabs.length;i++){tabs[i].addEventListener('click',function(e){e.preventDefault();var id=this.getAttribute('data-tab');show(id,true);if(history.replaceState)history.replaceState(null,'','#'+id);});}

@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-10-26T07:18:07Z",
+ "generado_utc": "2026-10-26T07:38:03Z",
  "registro": {
   "total": {
    "todos": {
@@ -60,7 +60,8 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
-    "grupo": "props_qb"
+    "grupo": "props_qb",
+    "kickoff_utc": "2026-10-27T00:15:00Z"
    },
    {
     "id": "NFL-2026W07-DALPHI-002",
@@ -78,7 +79,8 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
-    "grupo": "props_qb"
+    "grupo": "props_qb",
+    "kickoff_utc": "2026-10-27T00:15:00Z"
    },
    {
     "id": "NFL-2026W07-DALPHI-003",
@@ -96,7 +98,8 @@
     "resultado": "",
     "hora_cierre": "",
     "cuota_cierre": "",
-    "grupo": "props_qb"
+    "grupo": "props_qb",
+    "kickoff_utc": "2026-10-27T00:15:00Z"
    }
   ]
  },
@@ -315,6 +318,80 @@
     "roi_ref": -0.3635,
     "sin_dato": 0,
     "anulados": 0
+   }
+  },
+  "por_etiqueta_neutral": {
+   "FUT · Combinada": {
+    "picks": 164,
+    "calificados": 136,
+    "acierto": 0.5882352941176471,
+    "p_media_publicada": 0.6301933823529412,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 27,
+    "anulados": 1
+   },
+   "FUT · Mercado de goles": {
+    "picks": 95,
+    "calificados": 94,
+    "acierto": 0.46808510638297873,
+    "p_media_publicada": 0.5805351063829788,
+    "con_cuota_ref": 45,
+    "roi_ref": -0.17097777777777778,
+    "sin_dato": 0,
+    "anulados": 1
+   },
+   "FUT · Pick adicional": {
+    "picks": 123,
+    "calificados": 123,
+    "acierto": 0.4878048780487805,
+    "p_media_publicada": 0.5996723577235772,
+    "con_cuota_ref": 70,
+    "roi_ref": -0.17108571428571429,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "FUT · Pick principal": {
+    "picks": 62,
+    "calificados": 61,
+    "acierto": 0.6229508196721312,
+    "p_media_publicada": 0.7259655737704919,
+    "con_cuota_ref": 43,
+    "roi_ref": -0.09211627906976745,
+    "sin_dato": 1,
+    "anulados": 0
+   },
+   "NFL · Pick adicional": {
+    "picks": 52,
+    "calificados": 52,
+    "acierto": 0.5576923076923077,
+    "p_media_publicada": 0.6319596153846153,
+    "con_cuota_ref": 3,
+    "roi_ref": 0.2816666666666667,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · Pick principal": {
+    "picks": 26,
+    "calificados": 26,
+    "acierto": 0.46153846153846156,
+    "p_media_publicada": 0.686023076923077,
+    "con_cuota_ref": 6,
+    "roi_ref": -0.3635,
+    "sin_dato": 0,
+    "anulados": 0
+   }
+  },
+  "total": {
+   "todos": {
+    "picks": 522,
+    "calificados": 492,
+    "acierto": 0.5345528455284553,
+    "p_media_publicada": 0.6280867886178862,
+    "con_cuota_ref": 167,
+    "roi_ref": -0.149502994011976,
+    "sin_dato": 28,
+    "anulados": 2
    }
   },
   "lecturas_nfl_ganador": {
