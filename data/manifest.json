@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-26T00:30:58-06:00",
+ "updated": "2026-10-26T01:17:26-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2134,7 +2134,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: JAX -2.5 (-120, DK)",
+   "pick": "Pick principal (histórico sin cuota): JAX -2.5 (-120, DK)",
    "score": "HOU 34 – JAX 31",
    "kickoff": "07:30",
    "league": "NFL · Semana 6",
@@ -2156,7 +2156,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: CLE +3 (DK)",
+   "pick": "Pick principal (histórico sin cuota): CLE +3 (DK)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:52-06:00",
@@ -2177,7 +2177,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: Over 39.5",
+   "pick": "Pick principal (histórico sin cuota): Over 39.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:52-06:00",
@@ -2198,7 +2198,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: Under 52.5 (-110)",
+   "pick": "Pick principal (histórico sin cuota): Under 52.5 (-110)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:52-06:00",
@@ -2219,7 +2219,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: NO +1.5",
+   "pick": "Pick principal (histórico sin cuota): NO +1.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:53-06:00",
@@ -2240,7 +2240,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: NYJ +7.5 (DK)",
+   "pick": "Pick principal (histórico sin cuota): NYJ +7.5 (DK)",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:53-06:00",
@@ -2261,7 +2261,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: TB +2.5",
+   "pick": "Pick principal (histórico sin cuota): TB +2.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:53-06:00",
@@ -2282,7 +2282,7 @@
    "extras": [],
    "older": [],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: Under 44.5",
+   "pick": "Pick principal (histórico sin cuota): Under 44.5",
    "kickoff": "11:00",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:53-06:00",
@@ -2326,7 +2326,7 @@
     }
    ],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: ARI +12.5 (-108)",
+   "pick": "Pick principal (histórico sin cuota): ARI +12.5 (-108)",
    "kickoff": "14:05",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:52-06:00",
@@ -2352,7 +2352,7 @@
     }
    ],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: Over 53.5 (-112)",
+   "pick": "Pick principal (histórico sin cuota): Over 53.5 (-112)",
    "kickoff": "14:25",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:52-06:00",
@@ -2378,7 +2378,7 @@
     }
    ],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: Omarion Hampton over 9.5 acarreos (74% over; 73 acarreos en 2026)",
+   "pick": "Pick principal (histórico sin cuota): Omarion Hampton over 9.5 acarreos (74% over; 73 acarreos en 2026)",
    "kickoff": "14:25",
    "league": "NFL · Semana 6",
    "updated": "2026-10-20T00:01:53-06:00",
@@ -2413,7 +2413,7 @@
     }
    ],
    "published": "2026-10-20T00:01:52-06:00",
-   "pick": "🟢 Principal: Over 53.5 (-112)",
+   "pick": "Pick principal (histórico sin cuota): Over 53.5 (-112)",
    "pick_result": "fallo",
    "score": "DAL 13 – GB 23",
    "kickoff": "18:20",
@@ -2429,7 +2429,7 @@
    "dir": "nfl/2026-10-19/indice-mnf",
    "kind": "slate",
    "title": "Índice MNF",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-19/indice-mnf/index.html",
    "pdf": null,
    "grading": null,
@@ -2474,7 +2474,7 @@
     }
    ],
    "published": "2026-10-20T00:01:53-06:00",
-   "pick": "🟢 Principal: SF −7.5 (−110)",
+   "pick": "Pick principal (histórico sin cuota): SF −7.5 (−110)",
    "pick_result": "fallo",
    "score": "WSH 17 – SF 23",
    "kickoff": "18:15",
@@ -2490,18 +2490,20 @@
    "dir": "nfl/2026-10-22/ne-chi",
    "kind": "game",
    "title": "New England Patriots @ Chicago Bears",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-22/ne-chi/reporte/index.html",
    "pdf": "nfl/2026-10-22/ne-chi/ne-chi.pdf",
    "grading": null,
    "extras": [],
    "older": [],
    "published": "2026-10-22T12:49:42-06:00",
-   "pick": "🟢 Principal: D'Andre Swift over 14.5 acarreos",
+   "pick": "Pick principal (histórico sin cuota): D'Andre Swift over 14.5 acarreos",
    "kickoff": "18:15",
    "league": "NFL · Semana 7",
    "updated": "2026-10-22T12:49:42-06:00",
-   "page": "nfl/2026-10-22/ne-chi/index.html"
+   "page": "nfl/2026-10-22/ne-chi/index.html",
+   "score": "NE 24 – CHI 30",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/pit-no",
@@ -2511,7 +2513,7 @@
    "dir": "nfl/2026-10-25/pit-no",
    "kind": "game",
    "title": "Pittsburgh Steelers vs New Orleans Saints",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/pit-no/reporte/index.html",
    "pdf": "nfl/2026-10-25/pit-no/pit-no.pdf",
    "grading": null,
@@ -2524,14 +2526,16 @@
     }
    ],
    "published": "2026-10-23T23:47:25-06:00",
-   "pick": "🟢 Principal: Jaylen Warren over 25.5 yardas recibidas",
+   "pick": "Pick principal (histórico sin cuota): Jaylen Warren over 25.5 yardas recibidas",
    "kickoff": "07:30",
    "league": "NFL · Semana 7",
    "note": "Sede neutral: Stade de France, París",
    "updated": "2026-10-25T01:40:00-06:00",
    "page": "nfl/2026-10-25/pit-no/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/PIT-NO",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "PIT 16 – NO 10",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/semana7-ganadores",
@@ -2541,7 +2545,7 @@
    "dir": "nfl/2026-10-25/semana7-ganadores",
    "kind": "slate",
    "title": "Semana 7 · Ganadores proyectados",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/semana7-ganadores/index.html",
    "pdf": null,
    "grading": null,
@@ -2569,7 +2573,7 @@
    "dir": "nfl/2026-10-25/cin-bal",
    "kind": "game",
    "title": "Cincinnati Bengals @ Baltimore Ravens",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/cin-bal/reporte/index.html",
    "pdf": "nfl/2026-10-25/cin-bal/cin-bal.pdf",
    "grading": null,
@@ -2582,13 +2586,15 @@
     }
    ],
    "published": "2026-10-23T23:49:30-06:00",
-   "pick": "🟢 Principal: Chase Brown over 11.5 acarreos",
+   "pick": "Pick principal (histórico sin cuota): Chase Brown over 11.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:43:29-06:00",
    "page": "nfl/2026-10-25/cin-bal/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/CIN-BAL",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "CIN 35 – BAL 13",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-25/cle-ten",
@@ -2598,7 +2604,7 @@
    "dir": "nfl/2026-10-25/cle-ten",
    "kind": "game",
    "title": "Cleveland Browns @ Tennessee Titans",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/cle-ten/reporte/index.html",
    "pdf": "nfl/2026-10-25/cle-ten/cle-ten.pdf",
    "grading": null,
@@ -2611,13 +2617,15 @@
     }
    ],
    "published": "2026-10-23T23:48:04-06:00",
-   "pick": "🟢 Principal: Quinshon Judkins under 14.5 acarreos",
+   "pick": "Pick principal (histórico sin cuota): Quinshon Judkins under 14.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:41:06-06:00",
    "page": "nfl/2026-10-25/cle-ten/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/CLE-TEN",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "CLE 27 – TEN 24",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-25/ind-min",
@@ -2627,7 +2635,7 @@
    "dir": "nfl/2026-10-25/ind-min",
    "kind": "game",
    "title": "Indianapolis Colts @ Minnesota Vikings",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/ind-min/reporte/index.html",
    "pdf": "nfl/2026-10-25/ind-min/ind-min.pdf",
    "grading": null,
@@ -2640,13 +2648,15 @@
     }
    ],
    "published": "2026-10-23T23:48:24-06:00",
-   "pick": "🟢 Principal: Aaron Jones Sr. over 10.5 acarreos",
+   "pick": "Pick principal (histórico sin cuota): Aaron Jones Sr. over 10.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:41:41-06:00",
    "page": "nfl/2026-10-25/ind-min/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/IND-MIN",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "IND 10 – MIN 16",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-25/mia-nyj",
@@ -2656,7 +2666,7 @@
    "dir": "nfl/2026-10-25/mia-nyj",
    "kind": "game",
    "title": "Miami Dolphins @ New York Jets",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/mia-nyj/reporte/index.html",
    "pdf": "nfl/2026-10-25/mia-nyj/mia-nyj.pdf",
    "grading": null,
@@ -2669,13 +2679,15 @@
     }
    ],
    "published": "2026-10-23T23:48:44-06:00",
-   "pick": "🟢 Principal: Garrett Wilson under 64.5 yardas recibidas",
+   "pick": "Pick principal (histórico sin cuota): Garrett Wilson under 64.5 yardas recibidas",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:42:16-06:00",
    "page": "nfl/2026-10-25/mia-nyj/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/MIA-NYJ",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "MIA 28 – NYJ 25",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/nyg-hou",
@@ -2685,7 +2697,7 @@
    "dir": "nfl/2026-10-25/nyg-hou",
    "kind": "game",
    "title": "New York Giants @ Houston Texans",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/nyg-hou/reporte/index.html",
    "pdf": "nfl/2026-10-25/nyg-hou/nyg-hou.pdf",
    "grading": null,
@@ -2698,13 +2710,15 @@
     }
    ],
    "published": "2026-10-23T23:49:54-06:00",
-   "pick": "🟢 Principal: Xavier Hutchinson over 1.5 recepciones",
+   "pick": "Pick principal (histórico sin cuota): Xavier Hutchinson over 1.5 recepciones",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:44:08-06:00",
    "page": "nfl/2026-10-25/nyg-hou/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/NYG-HOU",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "NYG 27 – HOU 21",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/sf-atl",
@@ -2714,7 +2728,7 @@
    "dir": "nfl/2026-10-25/sf-atl",
    "kind": "game",
    "title": "San Francisco 49ers @ Atlanta Falcons",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/sf-atl/reporte/index.html",
    "pdf": "nfl/2026-10-25/sf-atl/sf-atl.pdf",
    "grading": null,
@@ -2727,13 +2741,15 @@
     }
    ],
    "published": "2026-10-23T23:47:47-06:00",
-   "pick": "🟢 Principal: Bijan Robinson over 18.5 acarreos",
+   "pick": "Pick principal (histórico sin cuota): Bijan Robinson over 18.5 acarreos",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:40:33-06:00",
    "page": "nfl/2026-10-25/sf-atl/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/SF-ATL",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "SF 20 – ATL 29",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/tb-car",
@@ -2743,7 +2759,7 @@
    "dir": "nfl/2026-10-25/tb-car",
    "kind": "game",
    "title": "Tampa Bay Buccaneers @ Carolina Panthers",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/tb-car/reporte/index.html",
    "pdf": "nfl/2026-10-25/tb-car/tb-car.pdf",
    "grading": null,
@@ -2756,13 +2772,15 @@
     }
    ],
    "published": "2026-10-23T23:49:06-06:00",
-   "pick": "🟢 Principal: Tommy Tremble over 1.5 recepciones",
+   "pick": "Pick principal (histórico sin cuota): Tommy Tremble over 1.5 recepciones",
    "kickoff": "11:00",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:42:53-06:00",
    "page": "nfl/2026-10-25/tb-car/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/TB-CAR",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "TB 43 – CAR 13",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-25/den-ari",
@@ -2772,7 +2790,7 @@
    "dir": "nfl/2026-10-25/den-ari",
    "kind": "game",
    "title": "Denver Broncos @ Arizona Cardinals",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/den-ari/reporte/index.html",
    "pdf": "nfl/2026-10-25/den-ari/den-ari.pdf",
    "grading": null,
@@ -2785,13 +2803,15 @@
     }
    ],
    "published": "2026-10-23T23:50:20-06:00",
-   "pick": "🟢 Principal: Courtland Sutton under 3.5 recepciones",
+   "pick": "Pick principal (histórico sin cuota): Courtland Sutton under 3.5 recepciones",
    "kickoff": "14:05",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:44:46-06:00",
    "page": "nfl/2026-10-25/den-ari/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/DEN-ARI",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "DEN 30 – ARI 16",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/gb-det",
@@ -2801,7 +2821,7 @@
    "dir": "nfl/2026-10-25/gb-det",
    "kind": "game",
    "title": "Green Bay Packers @ Detroit Lions",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/gb-det/reporte/index.html",
    "pdf": "nfl/2026-10-25/gb-det/gb-det.pdf",
    "grading": null,
@@ -2814,13 +2834,15 @@
     }
    ],
    "published": "2026-10-23T23:50:47-06:00",
-   "pick": "🟢 Principal: Tucker Kraft under 49.5 yardas recibidas",
+   "pick": "Pick principal (histórico sin cuota): Tucker Kraft under 49.5 yardas recibidas",
    "kickoff": "14:25",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:45:25-06:00",
    "page": "nfl/2026-10-25/gb-det/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/GB-DET",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "GB 17 – DET 20",
+   "pick_result": "acierto"
   },
   {
    "id": "nfl/2026-10-25/lar-lv",
@@ -2830,7 +2852,7 @@
    "dir": "nfl/2026-10-25/lar-lv",
    "kind": "game",
    "title": "Los Angeles Rams @ Las Vegas Raiders",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/lar-lv/reporte/index.html",
    "pdf": "nfl/2026-10-25/lar-lv/lar-lv.pdf",
    "grading": null,
@@ -2843,13 +2865,15 @@
     }
    ],
    "published": "2026-10-23T23:51:15-06:00",
-   "pick": "🟢 Principal: Kyren Williams over 3.5 recepciones",
+   "pick": "Pick principal (histórico sin cuota): Kyren Williams over 3.5 recepciones",
    "kickoff": "14:25",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:46:06-06:00",
    "page": "nfl/2026-10-25/lar-lv/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/LAR-LV",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "LAR 35 – LV 21",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-25/kc-sea",
@@ -2859,7 +2883,7 @@
    "dir": "nfl/2026-10-25/kc-sea",
    "kind": "game",
    "title": "Kansas City Chiefs @ Seattle Seahawks",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-25/kc-sea/reporte/index.html",
    "pdf": "nfl/2026-10-25/kc-sea/kc-sea.pdf",
    "grading": null,
@@ -2872,13 +2896,15 @@
     }
    ],
    "published": "2026-10-23T23:51:44-06:00",
-   "pick": "🟢 Principal: Kenneth Walker III over 80.5 yardas por tierra",
+   "pick": "Pick principal (histórico sin cuota): Kenneth Walker III over 80.5 yardas por tierra",
    "kickoff": "18:20",
    "league": "NFL · Semana 7",
    "updated": "2026-10-25T01:46:47-06:00",
    "page": "nfl/2026-10-25/kc-sea/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/KC-SEA",
-   "stamp": "25 oct 2026 01:36"
+   "stamp": "25 oct 2026 01:36",
+   "score": "KC 3 – SEA 20",
+   "pick_result": "fallo"
   },
   {
    "id": "nfl/2026-10-26/dal-phi",
@@ -2906,7 +2932,7 @@
     }
    ],
    "published": "2026-10-23T23:52:15-06:00",
-   "pick": "🟢 Principal: Dak Prescott over 23.5 pases completos",
+   "pick": "Pick principal: Tanner McKee Más de 1.5 TD por pase · DraftKings 2.61 · EV +17.0 %",
    "kickoff": "18:15",
    "league": "NFL · Semana 7",
    "updated": "2026-10-26T00:30:58-06:00",

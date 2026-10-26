@@ -1,0 +1,1147 @@
+{
+ "generado_utc": "2026-10-26T07:18:07Z",
+ "registro": {
+  "total": {
+   "todos": {
+    "picks": 3,
+    "calificados": 0,
+    "pendientes": 3,
+    "push_anulados": 0,
+    "acierto": null,
+    "roi_stake": null,
+    "unidades": 0.0,
+    "roi_plano": null,
+    "clv_medio": null,
+    "n_clv": 0
+   }
+  },
+  "por_semana": {
+   "NFL S7": {
+    "picks": 3,
+    "calificados": 0,
+    "pendientes": 3,
+    "push_anulados": 0,
+    "acierto": null,
+    "roi_stake": null,
+    "unidades": 0.0,
+    "roi_plano": null,
+    "clv_medio": null,
+    "n_clv": 0
+   }
+  },
+  "por_mercado": {
+   "NFL · props_qb": {
+    "picks": 3,
+    "calificados": 0,
+    "pendientes": 3,
+    "push_anulados": 0,
+    "acierto": null,
+    "roi_stake": null,
+    "unidades": 0.0,
+    "roi_plano": null,
+    "clv_medio": null,
+    "n_clv": 0
+   }
+  },
+  "picks": [
+   {
+    "id": "NFL-2026W07-DALPHI-001",
+    "deporte": "NFL",
+    "partido": "DAL @ PHI",
+    "mercado": "Tanner McKee · TD por pase · Más de",
+    "linea": "1.5",
+    "casa": "draftkings",
+    "cuota_decimal": "2.610",
+    "prob_modelo": "0.4484",
+    "prob_implicita_sin_margen": "0.3619",
+    "ev": "0.1703",
+    "stake_sugerido": "2.00",
+    "hora_publicacion": "2026-10-26T06:56:41Z",
+    "resultado": "",
+    "hora_cierre": "",
+    "cuota_cierre": "",
+    "grupo": "props_qb"
+   },
+   {
+    "id": "NFL-2026W07-DALPHI-002",
+    "deporte": "NFL",
+    "partido": "DAL @ PHI",
+    "mercado": "Tanner McKee · intercepciones lanzadas · Menos de",
+    "linea": "0.5",
+    "casa": "draftkings",
+    "cuota_decimal": "2.130",
+    "prob_modelo": "0.5469",
+    "prob_implicita_sin_margen": "0.4424",
+    "ev": "0.1648",
+    "stake_sugerido": "2.00",
+    "hora_publicacion": "2026-10-26T06:56:41Z",
+    "resultado": "",
+    "hora_cierre": "",
+    "cuota_cierre": "",
+    "grupo": "props_qb"
+   },
+   {
+    "id": "NFL-2026W07-DALPHI-003",
+    "deporte": "NFL",
+    "partido": "DAL @ PHI",
+    "mercado": "Dak Prescott · pases completos · Más de",
+    "linea": "23.5",
+    "casa": "draftkings",
+    "cuota_decimal": "1.980",
+    "prob_modelo": "0.5779",
+    "prob_implicita_sin_margen": "0.4762",
+    "ev": "0.1442",
+    "stake_sugerido": "2.00",
+    "hora_publicacion": "2026-10-26T06:56:41Z",
+    "resultado": "",
+    "hora_cierre": "",
+    "cuota_cierre": "",
+    "grupo": "props_qb"
+   }
+  ]
+ },
+ "historico": {
+  "por_semana": {
+   "FUT sem. 19-oct": {
+    "picks": 444,
+    "calificados": 414,
+    "acierto": 0.5362318840579711,
+    "p_media_publicada": 0.6239618357487923,
+    "con_cuota_ref": 158,
+    "roi_ref": -0.14956329113924044,
+    "sin_dato": 28,
+    "anulados": 2
+   },
+   "NFL S6": {
+    "picks": 39,
+    "calificados": 39,
+    "acierto": 0.48717948717948717,
+    "p_media_publicada": 0.6143589743589744,
+    "con_cuota_ref": 9,
+    "roi_ref": -0.1484444444444445,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL S7": {
+    "picks": 39,
+    "calificados": 39,
+    "acierto": 0.5641025641025641,
+    "p_media_publicada": 0.685602564102564,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   }
+  },
+  "por_mercado": {
+   "FUT · 1x2": {
+    "picks": 39,
+    "calificados": 39,
+    "acierto": 0.5641025641025641,
+    "p_media_publicada": 0.6543025641025642,
+    "con_cuota_ref": 12,
+    "roi_ref": -0.3790833333333334,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "FUT · combinada": {
+    "picks": 217,
+    "calificados": 188,
+    "acierto": 0.5585106382978723,
+    "p_media_publicada": 0.6153356382978723,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 27,
+    "anulados": 2
+   },
+   "FUT · corners": {
+    "picks": 96,
+    "calificados": 95,
+    "acierto": 0.5157894736842106,
+    "p_media_publicada": 0.6677315789473685,
+    "con_cuota_ref": 83,
+    "roi_ref": -0.08413253012048194,
+    "sin_dato": 1,
+    "anulados": 0
+   },
+   "FUT · goles": {
+    "picks": 91,
+    "calificados": 91,
+    "acierto": 0.4945054945054945,
+    "p_media_publicada": 0.5819219780219781,
+    "con_cuota_ref": 63,
+    "roi_ref": -0.1920476190476191,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "FUT · tarjetas": {
+    "picks": 1,
+    "calificados": 1,
+    "acierto": 1.0,
+    "p_media_publicada": 0.7299,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · ml": {
+    "picks": 5,
+    "calificados": 5,
+    "acierto": 0.6,
+    "p_media_publicada": 0.44400000000000006,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · prop": {
+    "picks": 50,
+    "calificados": 50,
+    "acierto": 0.56,
+    "p_media_publicada": 0.6941700000000001,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · spread": {
+    "picks": 10,
+    "calificados": 10,
+    "acierto": 0.7,
+    "p_media_publicada": 0.594,
+    "con_cuota_ref": 3,
+    "roi_ref": 0.27299999999999996,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · td": {
+    "picks": 4,
+    "calificados": 4,
+    "acierto": 0.25,
+    "p_media_publicada": 0.575,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · total": {
+    "picks": 9,
+    "calificados": 9,
+    "acierto": 0.2222222222222222,
+    "p_media_publicada": 0.6144444444444445,
+    "con_cuota_ref": 6,
+    "roi_ref": -0.3591666666666667,
+    "sin_dato": 0,
+    "anulados": 0
+   }
+  },
+  "por_etiqueta": {
+   "FUT · agresivo": {
+    "picks": 106,
+    "calificados": 106,
+    "acierto": 0.5188679245283019,
+    "p_media_publicada": 0.6548896226415094,
+    "con_cuota_ref": 70,
+    "roi_ref": -0.17108571428571429,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "FUT · atrevido": {
+    "picks": 17,
+    "calificados": 17,
+    "acierto": 0.29411764705882354,
+    "p_media_publicada": 0.2553764705882353,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "FUT · combinada": {
+    "picks": 164,
+    "calificados": 136,
+    "acierto": 0.5882352941176471,
+    "p_media_publicada": 0.6301933823529412,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 27,
+    "anulados": 1
+   },
+   "FUT · goles": {
+    "picks": 95,
+    "calificados": 94,
+    "acierto": 0.46808510638297873,
+    "p_media_publicada": 0.5805351063829788,
+    "con_cuota_ref": 45,
+    "roi_ref": -0.17097777777777778,
+    "sin_dato": 0,
+    "anulados": 1
+   },
+   "FUT · solido": {
+    "picks": 62,
+    "calificados": 61,
+    "acierto": 0.6229508196721312,
+    "p_media_publicada": 0.7259655737704919,
+    "con_cuota_ref": 43,
+    "roi_ref": -0.09211627906976745,
+    "sin_dato": 1,
+    "anulados": 0
+   },
+   "NFL · agresiva": {
+    "picks": 26,
+    "calificados": 26,
+    "acierto": 0.5769230769230769,
+    "p_media_publicada": 0.6666423076923077,
+    "con_cuota_ref": 3,
+    "roi_ref": 0.2816666666666667,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · atrevida": {
+    "picks": 26,
+    "calificados": 26,
+    "acierto": 0.5384615384615384,
+    "p_media_publicada": 0.597276923076923,
+    "con_cuota_ref": 0,
+    "roi_ref": null,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL · principal": {
+    "picks": 26,
+    "calificados": 26,
+    "acierto": 0.46153846153846156,
+    "p_media_publicada": 0.686023076923077,
+    "con_cuota_ref": 6,
+    "roi_ref": -0.3635,
+    "sin_dato": 0,
+    "anulados": 0
+   }
+  },
+  "lecturas_nfl_ganador": {
+   "NFL S6": {
+    "picks": 13,
+    "calificados": 13,
+    "acierto": 0.6923076923076923,
+    "p_media_publicada": 0.6032153846153846,
+    "con_cuota_ref": 12,
+    "roi_ref": 0.24666666666666667,
+    "sin_dato": 0,
+    "anulados": 0
+   },
+   "NFL S7": {
+    "picks": 13,
+    "calificados": 13,
+    "acierto": 0.6923076923076923,
+    "p_media_publicada": 0.5884307692307692,
+    "con_cuota_ref": 12,
+    "roi_ref": 0.029166666666666674,
+    "sin_dato": 0,
+    "anulados": 0
+   }
+  }
+ },
+ "calibracion": {
+  "nfl": {
+   "props_qb": {
+    "n": 332,
+    "brier_antes": 0.24897380379518072,
+    "brier_despues": 0.24558346268451006,
+    "brier_wf": 0.24737906921491204,
+    "n_wf": 164,
+    "pendiente": 0.5258468278834069,
+    "ic95": [
+     0.09136052381663012,
+     0.9603331319501835
+    ],
+    "publicable": true,
+    "evidencia": false,
+    "motivo": "calibrado (pendiente > 0 y mejor que la moneda fuera de muestra); publicar solo con P calibrada en 35–75 %",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 2,
+      "p_media": 0.03,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "10–20%",
+      "n": 2,
+      "p_media": 0.169,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "20–30%",
+      "n": 12,
+      "p_media": 0.273,
+      "acierto_real": 0.4167
+     },
+     {
+      "bin": "30–40%",
+      "n": 47,
+      "p_media": 0.3574,
+      "acierto_real": 0.4468
+     },
+     {
+      "bin": "40–50%",
+      "n": 95,
+      "p_media": 0.4488,
+      "acierto_real": 0.4737
+     },
+     {
+      "bin": "50–60%",
+      "n": 108,
+      "p_media": 0.5453,
+      "acierto_real": 0.537
+     },
+     {
+      "bin": "60–70%",
+      "n": 53,
+      "p_media": 0.6356,
+      "acierto_real": 0.4717
+     },
+     {
+      "bin": "70–80%",
+      "n": 12,
+      "p_media": 0.7165,
+      "acierto_real": 0.5833
+     },
+     {
+      "bin": "80–90%",
+      "n": 1,
+      "p_media": 0.8273,
+      "acierto_real": 1.0
+     }
+    ]
+   },
+   "props_uso": {
+    "n": 820,
+    "brier_antes": 0.26993695085365854,
+    "brier_despues": 0.25109918410723386,
+    "brier_wf": 0.2514025707665575,
+    "n_wf": 410,
+    "pendiente": -0.12630969920696344,
+    "ic95": [
+     -0.37828048066427794,
+     0.12566108225035105
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración no distinta de 0 (IC95 incluye 0): el modelo no aporta información en este grupo → no se publica",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 5,
+      "p_media": 0.077,
+      "acierto_real": 0.8
+     },
+     {
+      "bin": "10–20%",
+      "n": 35,
+      "p_media": 0.157,
+      "acierto_real": 0.4
+     },
+     {
+      "bin": "20–30%",
+      "n": 72,
+      "p_media": 0.2626,
+      "acierto_real": 0.5139
+     },
+     {
+      "bin": "30–40%",
+      "n": 205,
+      "p_media": 0.3559,
+      "acierto_real": 0.5317
+     },
+     {
+      "bin": "40–50%",
+      "n": 315,
+      "p_media": 0.4475,
+      "acierto_real": 0.4286
+     },
+     {
+      "bin": "50–60%",
+      "n": 135,
+      "p_media": 0.5429,
+      "acierto_real": 0.5333
+     },
+     {
+      "bin": "60–70%",
+      "n": 43,
+      "p_media": 0.6315,
+      "acierto_real": 0.2558
+     },
+     {
+      "bin": "70–80%",
+      "n": 9,
+      "p_media": 0.7417,
+      "acierto_real": 0.5556
+     },
+     {
+      "bin": "80–90%",
+      "n": 1,
+      "p_media": 0.8256,
+      "acierto_real": 1.0
+     }
+    ]
+   },
+   "props_todos": {
+    "n": 1152,
+    "brier_antes": 0.2638954883333333,
+    "brier_despues": 0.2515981581300697,
+    "brier_wf": 0.25095972805870703,
+    "n_wf": 574,
+    "pendiente": 0.06047135584418691,
+    "ic95": [
+     -0.14492898034819784,
+     0.2658716920365717
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración no distinta de 0 (IC95 incluye 0): el modelo no aporta información en este grupo → no se publica",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 7,
+      "p_media": 0.0635,
+      "acierto_real": 0.5714
+     },
+     {
+      "bin": "10–20%",
+      "n": 37,
+      "p_media": 0.1577,
+      "acierto_real": 0.3784
+     },
+     {
+      "bin": "20–30%",
+      "n": 84,
+      "p_media": 0.2641,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "30–40%",
+      "n": 252,
+      "p_media": 0.3562,
+      "acierto_real": 0.5159
+     },
+     {
+      "bin": "40–50%",
+      "n": 410,
+      "p_media": 0.4478,
+      "acierto_real": 0.439
+     },
+     {
+      "bin": "50–60%",
+      "n": 243,
+      "p_media": 0.544,
+      "acierto_real": 0.535
+     },
+     {
+      "bin": "60–70%",
+      "n": 96,
+      "p_media": 0.6338,
+      "acierto_real": 0.375
+     },
+     {
+      "bin": "70–80%",
+      "n": 21,
+      "p_media": 0.7273,
+      "acierto_real": 0.5714
+     },
+     {
+      "bin": "80–90%",
+      "n": 2,
+      "p_media": 0.8265,
+      "acierto_real": 1.0
+     }
+    ]
+   },
+   "props_v2_publicado": {
+    "n": 1152,
+    "brier_antes": 0.26704969619791663,
+    "brier_despues": 0.25242869888241537,
+    "brier_wf": 0.25158616825110447,
+    "n_wf": 574,
+    "pendiente": 0.06131356059227207,
+    "ic95": [
+     -0.10664847628391623,
+     0.22927559746846038
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración no distinta de 0 (IC95 incluye 0): el modelo no aporta información en este grupo → no se publica",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 14,
+      "p_media": 0.0572,
+      "acierto_real": 0.3571
+     },
+     {
+      "bin": "10–20%",
+      "n": 33,
+      "p_media": 0.15,
+      "acierto_real": 0.4242
+     },
+     {
+      "bin": "20–30%",
+      "n": 69,
+      "p_media": 0.2595,
+      "acierto_real": 0.4783
+     },
+     {
+      "bin": "30–40%",
+      "n": 183,
+      "p_media": 0.3584,
+      "acierto_real": 0.5137
+     },
+     {
+      "bin": "40–50%",
+      "n": 341,
+      "p_media": 0.4526,
+      "acierto_real": 0.4545
+     },
+     {
+      "bin": "50–60%",
+      "n": 311,
+      "p_media": 0.5463,
+      "acierto_real": 0.5016
+     },
+     {
+      "bin": "60–70%",
+      "n": 146,
+      "p_media": 0.6398,
+      "acierto_real": 0.4658
+     },
+     {
+      "bin": "70–80%",
+      "n": 45,
+      "p_media": 0.73,
+      "acierto_real": 0.4444
+     },
+     {
+      "bin": "80–90%",
+      "n": 10,
+      "p_media": 0.8227,
+      "acierto_real": 0.5
+     }
+    ]
+   },
+   "spread_propio": {
+    "n": 87,
+    "brier_antes": 0.2665224652602636,
+    "brier_despues": 0.24441497902955653,
+    "brier_wf": 0.2558071554898561,
+    "n_wf": 57,
+    "pendiente": -0.016479401274512043,
+    "ic95": [
+     -1.0046753235074166,
+     0.9717165209583926
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración no distinta de 0 (IC95 incluye 0): el modelo no aporta información en este grupo → no se publica",
+    "curva": [
+     {
+      "bin": "20–30%",
+      "n": 2,
+      "p_media": 0.2609,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "30–40%",
+      "n": 4,
+      "p_media": 0.3555,
+      "acierto_real": 0.25
+     },
+     {
+      "bin": "40–50%",
+      "n": 28,
+      "p_media": 0.4484,
+      "acierto_real": 0.4286
+     },
+     {
+      "bin": "50–60%",
+      "n": 29,
+      "p_media": 0.5542,
+      "acierto_real": 0.4138
+     },
+     {
+      "bin": "60–70%",
+      "n": 19,
+      "p_media": 0.6308,
+      "acierto_real": 0.4737
+     },
+     {
+      "bin": "70–80%",
+      "n": 5,
+      "p_media": 0.7247,
+      "acierto_real": 0.4
+     }
+    ]
+   },
+   "total_propio": {
+    "n": 90,
+    "brier_antes": 0.29144026046175014,
+    "brier_despues": 0.23235173782859708,
+    "brier_wf": 0.24185066060801927,
+    "n_wf": 58,
+    "pendiente": -1.1999047152863422,
+    "ic95": [
+     -2.1636991026556296,
+     -0.23611032791705489
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración NEGATIVA (IC95 < 0): en esta muestra el modelo apunta al revés → no se publica",
+    "curva": [
+     {
+      "bin": "20–30%",
+      "n": 1,
+      "p_media": 0.2984,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "30–40%",
+      "n": 12,
+      "p_media": 0.3734,
+      "acierto_real": 0.9167
+     },
+     {
+      "bin": "40–50%",
+      "n": 27,
+      "p_media": 0.4594,
+      "acierto_real": 0.5556
+     },
+     {
+      "bin": "50–60%",
+      "n": 22,
+      "p_media": 0.5381,
+      "acierto_real": 0.4091
+     },
+     {
+      "bin": "60–70%",
+      "n": 22,
+      "p_media": 0.6423,
+      "acierto_real": 0.5455
+     },
+     {
+      "bin": "70–80%",
+      "n": 4,
+      "p_media": 0.7227,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "80–90%",
+      "n": 2,
+      "p_media": 0.8164,
+      "acierto_real": 0.0
+     }
+    ]
+   },
+   "ml_propio": {
+    "n": 89,
+    "brier_antes": 0.24406911407741208,
+    "brier_despues": 0.23126284115161236,
+    "brier_wf": 0.23492406193254314,
+    "n_wf": 57,
+    "pendiente": 0.7986888078096636,
+    "ic95": [
+     0.155546436659464,
+     1.441831178959863
+    ],
+    "publicable": true,
+    "evidencia": false,
+    "motivo": "calibrado (pendiente > 0 y mejor que la moneda fuera de muestra); publicar solo con P calibrada en 35–75 %",
+    "curva": [
+     {
+      "bin": "20–30%",
+      "n": 2,
+      "p_media": 0.2472,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "30–40%",
+      "n": 11,
+      "p_media": 0.3523,
+      "acierto_real": 0.2727
+     },
+     {
+      "bin": "40–50%",
+      "n": 17,
+      "p_media": 0.442,
+      "acierto_real": 0.2941
+     },
+     {
+      "bin": "50–60%",
+      "n": 19,
+      "p_media": 0.5469,
+      "acierto_real": 0.5789
+     },
+     {
+      "bin": "60–70%",
+      "n": 20,
+      "p_media": 0.6485,
+      "acierto_real": 0.4
+     },
+     {
+      "bin": "70–80%",
+      "n": 10,
+      "p_media": 0.7456,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "80–90%",
+      "n": 10,
+      "p_media": 0.8292,
+      "acierto_real": 0.9
+     }
+    ]
+   }
+  },
+  "fut": {
+   "1x2": {
+    "n": 81,
+    "brier_antes": 0.2225009641833545,
+    "brier_despues": 0.21390202843953862,
+    "brier_wf": 0.2462530917827425,
+    "n_wf": 39,
+    "pendiente": 0.6341763208523324,
+    "ic95": [
+     0.1609709335038081,
+     1.1073817082008568
+    ],
+    "publicable": true,
+    "evidencia": false,
+    "motivo": "calibrado (pendiente > 0 y mejor que la moneda fuera de muestra); publicar solo con P calibrada en 35–75 %",
+    "curva": [
+     {
+      "bin": "10–20%",
+      "n": 4,
+      "p_media": 0.1932,
+      "acierto_real": 0.75
+     },
+     {
+      "bin": "20–30%",
+      "n": 19,
+      "p_media": 0.2747,
+      "acierto_real": 0.3684
+     },
+     {
+      "bin": "30–40%",
+      "n": 2,
+      "p_media": 0.3897,
+      "acierto_real": 1.0
+     },
+     {
+      "bin": "40–50%",
+      "n": 1,
+      "p_media": 0.4298,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "50–60%",
+      "n": 3,
+      "p_media": 0.5592,
+      "acierto_real": 1.0
+     },
+     {
+      "bin": "60–70%",
+      "n": 19,
+      "p_media": 0.6451,
+      "acierto_real": 0.4211
+     },
+     {
+      "bin": "70–80%",
+      "n": 20,
+      "p_media": 0.7321,
+      "acierto_real": 0.8
+     },
+     {
+      "bin": "80–90%",
+      "n": 11,
+      "p_media": 0.8329,
+      "acierto_real": 0.9091
+     },
+     {
+      "bin": "90–100%",
+      "n": 2,
+      "p_media": 0.9152,
+      "acierto_real": 1.0
+     }
+    ]
+   },
+   "combinada": {
+    "n": 205,
+    "brier_antes": 0.2568413260297748,
+    "brier_despues": 0.24714653670757789,
+    "brier_wf": 0.24984789975933175,
+    "n_wf": 164,
+    "pendiente": 0.2027472162127641,
+    "ic95": [
+     -0.32062473361201455,
+     0.7261191660375428
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración no distinta de 0 (IC95 incluye 0): el modelo no aporta información en este grupo → no se publica",
+    "curva": [
+     {
+      "bin": "10–20%",
+      "n": 6,
+      "p_media": 0.1718,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "20–30%",
+      "n": 8,
+      "p_media": 0.2696,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "30–40%",
+      "n": 2,
+      "p_media": 0.3361,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "40–50%",
+      "n": 7,
+      "p_media": 0.4645,
+      "acierto_real": 0.5714
+     },
+     {
+      "bin": "50–60%",
+      "n": 55,
+      "p_media": 0.5597,
+      "acierto_real": 0.4545
+     },
+     {
+      "bin": "60–70%",
+      "n": 112,
+      "p_media": 0.6416,
+      "acierto_real": 0.6339
+     },
+     {
+      "bin": "70–80%",
+      "n": 15,
+      "p_media": 0.727,
+      "acierto_real": 0.3333
+     }
+    ]
+   },
+   "corners": {
+    "n": 132,
+    "brier_antes": 0.28473329356060606,
+    "brier_despues": 0.2333726801079714,
+    "brier_wf": 0.2675604710116568,
+    "n_wf": 95,
+    "pendiente": -0.8745713696318532,
+    "ic95": [
+     -1.6385086368524409,
+     -0.1106341024112657
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente de calibración NEGATIVA (IC95 < 0): en esta muestra el modelo apunta al revés → no se publica",
+    "curva": [
+     {
+      "bin": "20–30%",
+      "n": 6,
+      "p_media": 0.2613,
+      "acierto_real": 0.8333
+     },
+     {
+      "bin": "30–40%",
+      "n": 5,
+      "p_media": 0.363,
+      "acierto_real": 0.8
+     },
+     {
+      "bin": "40–50%",
+      "n": 8,
+      "p_media": 0.4699,
+      "acierto_real": 1.0
+     },
+     {
+      "bin": "50–60%",
+      "n": 18,
+      "p_media": 0.5855,
+      "acierto_real": 0.4444
+     },
+     {
+      "bin": "60–70%",
+      "n": 58,
+      "p_media": 0.6529,
+      "acierto_real": 0.6207
+     },
+     {
+      "bin": "70–80%",
+      "n": 35,
+      "p_media": 0.7303,
+      "acierto_real": 0.4286
+     },
+     {
+      "bin": "80–90%",
+      "n": 2,
+      "p_media": 0.8517,
+      "acierto_real": 0.5
+     }
+    ]
+   },
+   "goles": {
+    "n": 162,
+    "brier_antes": 0.24963859779475103,
+    "brier_despues": 0.23971495887263358,
+    "brier_wf": 0.25095936555491877,
+    "n_wf": 91,
+    "pendiente": 0.47032803162590586,
+    "ic95": [
+     0.07898346397305611,
+     0.8616725992787556
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente > 0 pero el calibrado no supera a la moneda (Brier 0.25) fuera de muestra → no se publica",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 1,
+      "p_media": 0.0981,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "10–20%",
+      "n": 4,
+      "p_media": 0.1667,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "20–30%",
+      "n": 11,
+      "p_media": 0.2569,
+      "acierto_real": 0.5455
+     },
+     {
+      "bin": "30–40%",
+      "n": 5,
+      "p_media": 0.3434,
+      "acierto_real": 0.6
+     },
+     {
+      "bin": "40–50%",
+      "n": 19,
+      "p_media": 0.4522,
+      "acierto_real": 0.5789
+     },
+     {
+      "bin": "50–60%",
+      "n": 39,
+      "p_media": 0.5693,
+      "acierto_real": 0.4103
+     },
+     {
+      "bin": "60–70%",
+      "n": 39,
+      "p_media": 0.6409,
+      "acierto_real": 0.5385
+     },
+     {
+      "bin": "70–80%",
+      "n": 25,
+      "p_media": 0.7319,
+      "acierto_real": 0.64
+     },
+     {
+      "bin": "80–90%",
+      "n": 14,
+      "p_media": 0.837,
+      "acierto_real": 0.7857
+     },
+     {
+      "bin": "90–100%",
+      "n": 5,
+      "p_media": 0.9188,
+      "acierto_real": 0.6
+     }
+    ]
+   },
+   "todas": {
+    "n": 593,
+    "brier_antes": 0.2558255945492499,
+    "brier_despues": 0.24878126976700143,
+    "brier_wf": 0.2503527129573664,
+    "n_wf": 414,
+    "pendiente": 0.3199331200797579,
+    "ic95": [
+     0.09166348707928496,
+     0.5482027530802308
+    ],
+    "publicable": false,
+    "evidencia": false,
+    "motivo": "pendiente > 0 pero el calibrado no supera a la moneda (Brier 0.25) fuera de muestra → no se publica",
+    "curva": [
+     {
+      "bin": "0–10%",
+      "n": 1,
+      "p_media": 0.0981,
+      "acierto_real": 0.0
+     },
+     {
+      "bin": "10–20%",
+      "n": 16,
+      "p_media": 0.1782,
+      "acierto_real": 0.375
+     },
+     {
+      "bin": "20–30%",
+      "n": 44,
+      "p_media": 0.2675,
+      "acierto_real": 0.5
+     },
+     {
+      "bin": "30–40%",
+      "n": 16,
+      "p_media": 0.3561,
+      "acierto_real": 0.5625
+     },
+     {
+      "bin": "40–50%",
+      "n": 35,
+      "p_media": 0.4581,
+      "acierto_real": 0.6571
+     },
+     {
+      "bin": "50–60%",
+      "n": 118,
+      "p_media": 0.5671,
+      "acierto_real": 0.4492
+     },
+     {
+      "bin": "60–70%",
+      "n": 229,
+      "p_media": 0.6448,
+      "acierto_real": 0.5939
+     },
+     {
+      "bin": "70–80%",
+      "n": 97,
+      "p_media": 0.7306,
+      "acierto_real": 0.5464
+     },
+     {
+      "bin": "80–90%",
+      "n": 30,
+      "p_media": 0.8345,
+      "acierto_real": 0.8
+     },
+     {
+      "bin": "90–100%",
+      "n": 7,
+      "p_media": 0.9178,
+      "acierto_real": 0.7143
+     }
+    ]
+   }
+  }
+ }
+}
