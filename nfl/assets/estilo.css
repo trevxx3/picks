@@ -459,7 +459,10 @@ table.tq.bx tr.pr td{white-space:normal;text-align:left;background:var(--paper2)
 
 /* 26-oct-2026: bloque Mercado (movimiento de línea, público, oscilador) */
 .mkt .mkr{margin:8px 0 0;padding-top:6px;border-top:1px dashed var(--rule)}
-.mkt .kv>div{min-width:0;overflow-wrap:anywhere}
+.mkt .kv{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);font-size:13px}
+.mkt .kv>div{min-width:0}
+.mkt .kv>div:nth-child(even){white-space:normal;overflow-wrap:anywhere}
+.mkt .kv .pn{display:block;font-size:10.5px;color:var(--dim);font-weight:500}
 .mkt .ztag{display:inline-block;margin-left:4px;padding:0 5px;border-radius:3px;font:700 10.5px/16px var(--mono);color:#fff;white-space:nowrap}
 .mkt .ztag.fav{background:#1f7a3a}.mkt .ztag.con{background:#b3261e}.mkt .ztag.nos{background:#85837c}
 .mkt .mkf{margin:8px 0 2px;padding:6px 8px;border:1px solid var(--ink);border-radius:3px;font:11px/1.45 var(--mono);overflow-wrap:anywhere}
