@@ -448,3 +448,11 @@ table.tq.bx tr.pr td{white-space:normal;text-align:left;background:var(--paper2)
 .escs .eb{grid-column:1/-1;height:8px;border:1px solid var(--ink);border-radius:2px;overflow:hidden;background:transparent}
 .escs .eb i{display:block;height:100%}
 .escs .esum{display:flex;flex-wrap:wrap;gap:2px 8px;margin-top:9px;padding-top:7px;border-top:1px dashed var(--rule);font-size:12.5px;overflow-wrap:anywhere}
+
+/* 26-oct-2026: marcadores exactos por escenario */
+.escs .etop{margin:4px 0 8px;padding:8px 10px;border:1px solid var(--ink);border-radius:3px;min-width:0;overflow-wrap:anywhere}
+.escs .etv{font:800 20px/1.15 var(--mono);margin:2px 0 3px;overflow-wrap:anywhere}
+.escs .emk{grid-column:1/-1;font-size:11.5px;line-height:1.35;color:var(--dim);min-width:0;overflow-wrap:anywhere}
+.escs .emk .num{color:var(--ink);font-weight:700;white-space:nowrap}
+.escs .ereal{color:var(--ink)}
+.escs .esc.real .el{font-weight:700}
