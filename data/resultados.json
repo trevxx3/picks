@@ -1,17 +1,17 @@
 {
- "generado_utc": "2026-10-26T19:07:58Z",
+ "generado_utc": "2026-10-27T04:35:20Z",
  "registro": {
   "total": {
    "todos": {
     "picks": 2,
-    "calificados": 0,
-    "pendientes": 2,
+    "calificados": 2,
+    "pendientes": 0,
     "push_anulados": 0,
     "retirados": 2,
-    "acierto": null,
-    "roi_stake": null,
-    "unidades": 0.0,
-    "roi_plano": null,
+    "acierto": 0.0,
+    "roi_stake": -1.0,
+    "unidades": -4.0,
+    "roi_plano": -1.0,
     "clv_medio": null,
     "n_clv": 0
    }
@@ -19,14 +19,14 @@
   "por_semana": {
    "NFL S7": {
     "picks": 2,
-    "calificados": 0,
-    "pendientes": 2,
+    "calificados": 2,
+    "pendientes": 0,
     "push_anulados": 0,
     "retirados": 2,
-    "acierto": null,
-    "roi_stake": null,
-    "unidades": 0.0,
-    "roi_plano": null,
+    "acierto": 0.0,
+    "roi_stake": -1.0,
+    "unidades": -4.0,
+    "roi_plano": -1.0,
     "clv_medio": null,
     "n_clv": 0
    }
@@ -34,14 +34,14 @@
   "por_mercado": {
    "NFL · props_qb": {
     "picks": 2,
-    "calificados": 0,
-    "pendientes": 2,
+    "calificados": 2,
+    "pendientes": 0,
     "push_anulados": 0,
     "retirados": 2,
-    "acierto": null,
-    "roi_stake": null,
-    "unidades": 0.0,
-    "roi_plano": null,
+    "acierto": 0.0,
+    "roi_stake": -1.0,
+    "unidades": -4.0,
+    "roi_plano": -1.0,
     "clv_medio": null,
     "n_clv": 0
    }
@@ -104,12 +104,13 @@
     "ev": "0.1442",
     "stake_sugerido": "2.00",
     "hora_publicacion": "2026-10-26T06:56:41Z",
-    "resultado": "",
+    "resultado": "fallo",
     "hora_cierre": "",
     "cuota_cierre": "",
     "retirado": false,
     "hora_retiro": "",
     "motivo_retiro": "",
+    "valor_real": "15",
     "grupo": "props_qb",
     "kickoff_utc": "2026-10-27T00:15:00Z"
    },
@@ -126,12 +127,13 @@
     "ev": "0.1655",
     "stake_sugerido": "2.00",
     "hora_publicacion": "2026-10-26T19:05:13Z",
-    "resultado": "",
+    "resultado": "fallo",
     "hora_cierre": "",
     "cuota_cierre": "",
     "retirado": false,
     "hora_retiro": "",
     "motivo_retiro": "",
+    "valor_real": "27",
     "grupo": "props_qb",
     "kickoff_utc": "2026-10-27T00:15:00Z"
    }
