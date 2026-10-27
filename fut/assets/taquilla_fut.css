@@ -599,7 +599,7 @@ blockquote{margin:6px 0;padding:6px 10px;border-left:3px solid var(--ink);backgr
 .sx-op .n{font:900 10.5px/1.1 var(--wide);text-transform:uppercase;letter-spacing:.6px}
 .sx-op .l{font:800 14.5px/1.25 var(--wide);overflow-wrap:anywhere}
 .sx-op .p{font:900 16px/1 var(--wide);font-stretch:80%;white-space:nowrap}
-.sx-op .so .n{color:var(--gr)}.sx-op .ag .n{color:var(--over)}.sx-op .at .n{color:var(--red)}
+.sx-op .so .n{color:var(--gr)}.sx-op .ag .n{color:var(--over)}.sx-op .at .n{color:var(--red)}.sx-op .cb .n{color:#7ec8ff}
 .sx-lc{margin:10px 0 0;font:700 14.5px/1.4 var(--wide);color:var(--ink);overflow-wrap:anywhere}
 .sx-cs{margin:8px 0 0;font:500 10.5px/1.4 var(--mono);color:var(--dim);overflow-wrap:anywhere}
 details.sx-fu{margin-top:6px}
