@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-10-26T16:23:38-06:00",
+ "updated": "2026-10-26T22:36:07-06:00",
  "entries": [
   {
    "id": "fut/2026-10-19/cartelera",
@@ -2914,7 +2914,7 @@
    "dir": "nfl/2026-10-26/dal-phi",
    "kind": "game",
    "title": "Dallas Cowboys @ Philadelphia Eagles",
-   "status": "pendiente",
+   "status": "final",
    "report": "nfl/2026-10-26/dal-phi/reporte/index.html",
    "pdf": "nfl/2026-10-26/dal-phi/dal-phi.pdf",
    "grading": null,
@@ -2935,10 +2935,12 @@
    "pick": "Pick principal: Dak Prescott Más de 36.5 pases intentados · DraftKings 1.94 · Prob. modelo 60.1% · EV +16.6%",
    "kickoff": "18:15",
    "league": "NFL · Semana 7",
-   "updated": "2026-10-26T16:21:06-06:00",
+   "updated": "2026-10-26T22:36:07-06:00",
    "page": "nfl/2026-10-26/dal-phi/index.html",
    "model_dir": "/workspace/nfl_analisis/2026-10-25/partidos/DAL-PHI/v22",
-   "stamp": "26 oct 2026 16:21"
+   "stamp": "26 oct 2026 16:21",
+   "pick_result": "fallo",
+   "score": "DAL 38 – PHI 21"
   }
  ],
  "sources": {
